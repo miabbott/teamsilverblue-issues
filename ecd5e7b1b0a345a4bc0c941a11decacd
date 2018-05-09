@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "\r\n\r\nCurrently, the google-chrome rpm can't be installed on an rpm-ostree system, since it puts\r\ncontent into /opt. Another example for this problem is puppet.\r\n\r\nClearly, we need to be able to install Chrome, so this needs fixing one way or another. Either by convincing google to change the chrome packaging away from /opt, or by making rpm-ostree handle\r\nit somehow.\r\n\r\nOn the rpm-ostree side, this is tracked in https://github.com/projectatomic/rpm-ostree/issues/233",
+    "custom_fields": [],
+    "date_created": "1525889942",
+    "depends": [],
+    "id": 14,
+    "last_updated": "1525889942",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": " Compatibility with existing 3rd party rpms",
+    "user": {
+        "default_email": "mclasen@redhat.com",
+        "emails": [
+            "mclasen@redhat.com"
+        ],
+        "fullname": "Matthias Clasen",
+        "name": "mclasen"
+    }
+}
