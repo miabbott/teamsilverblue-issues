@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "The nvidia driver is the most prominent example for why we need this.\r\n\r\nOn the rpm-ostree side, this is tracked in https://github.com/projectatomic/rpm-ostree/issues/1091",
+    "custom_fields": [],
+    "date_created": "1525888721",
+    "depends": [],
+    "id": 6,
+    "last_updated": "1525888721",
+    "milestone": "F29",
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Make rpm-ostree work with kernel modules",
+    "user": {
+        "default_email": "mclasen@redhat.com",
+        "emails": [
+            "mclasen@redhat.com"
+        ],
+        "fullname": "Matthias Clasen",
+        "name": "mclasen"
+    }
+}
