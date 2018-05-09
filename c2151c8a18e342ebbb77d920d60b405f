@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "It would be good if beyond installing all the commandline container tools, we could have some desktop integration for working with containers, and 'pet' containers in particular. This could be just like a 'smart terminal' that is aware of containers.\r\n\r\nWe have started initial work towards a design for this tool. Allan is currently doing some interviews with developers to learn about workflows.",
+    "custom_fields": [],
+    "date_created": "1525888657",
+    "depends": [],
+    "id": 5,
+    "last_updated": "1525888657",
+    "milestone": "F29",
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Support pet container workflows better with a new tool",
+    "user": {
+        "default_email": "mclasen@redhat.com",
+        "emails": [
+            "mclasen@redhat.com"
+        ],
+        "fullname": "Matthias Clasen",
+        "name": "mclasen"
+    }
+}
