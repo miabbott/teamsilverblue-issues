@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "We want to move to flatpaks as much as possible, and stop including apps like firefox as rpms in the OS image. Since we still want to preinstall a useful set of applications, we need to be able to preinstall flatpaks.\r\n\r\nFrom a hallway discussion with Colin a while ago, this probably requires us to have a flatpak repository on the iso and install the apps from there.\r\n\r\nI've started some initial discussion on this here:\r\n\r\nhttps://www.redhat.com/archives/anaconda-devel-list/2018-April/msg00002.html\r\n\r\nEndless is working on p2p support for ostree and flatpak that will be useful for this.",
+    "custom_fields": [],
+    "date_created": "1525888818",
+    "depends": [],
+    "id": 7,
+    "last_updated": "1525888818",
+    "milestone": "F29",
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": " Preinstall flatpaks",
+    "user": {
+        "default_email": "mclasen@redhat.com",
+        "emails": [
+            "mclasen@redhat.com"
+        ],
+        "fullname": "Matthias Clasen",
+        "name": "mclasen"
+    }
+}
