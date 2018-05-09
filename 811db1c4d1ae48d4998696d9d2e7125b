@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "With package layering, we end up with two identical items in the grub boot menu, which is confusing.\r\n\r\nThis is tracked in https://github.com/projectatomic/rpm-ostree/issues/1239\r\n\r\nUpdate from the meeting on March 19: Jakub and Allan are going to do a design review of the boot UX soon (with the grub package maintainers), and will take this issue into account when doing so.",
+    "custom_fields": [],
+    "date_created": "1525890260",
+    "depends": [],
+    "id": 16,
+    "last_updated": "1525890260",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Confusing grub menu",
+    "user": {
+        "default_email": "mclasen@redhat.com",
+        "emails": [
+            "mclasen@redhat.com"
+        ],
+        "fullname": "Matthias Clasen",
+        "name": "mclasen"
+    }
+}
