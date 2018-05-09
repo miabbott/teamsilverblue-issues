@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "A candidate is here: http://eclipse.matbooth.co.uk/flatpak/\r\nI've sent mail to Matt.\r\n\r\nMatt suggested that it would be good to target the next stable eclipse for moving to flathub, due out in June.",
+    "custom_fields": [],
+    "date_created": "1525888976",
+    "depends": [],
+    "id": 9,
+    "last_updated": "1525888976",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Make Eclipse available as flatpak",
+    "user": {
+        "default_email": "mclasen@redhat.com",
+        "emails": [
+            "mclasen@redhat.com"
+        ],
+        "fullname": "Matthias Clasen",
+        "name": "mclasen"
+    }
+}
