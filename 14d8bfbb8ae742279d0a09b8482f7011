@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "While at the moment there is flatpak override, this is obviously a CLI tool. The UX of overriding settings for a specific flatpak would be made smoother for new users if there was a way to do this with a GUI. This isn't a FAW specific problem, but I just thought I'd bring it up.\r\n\r\nSome thoughts around this are in this ticket:\r\n\r\nhttps://github.com/flatpak/flatpak/issues/275",
+    "custom_fields": [],
+    "date_created": "1525889705",
+    "depends": [],
+    "id": 12,
+    "last_updated": "1525889705",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "No way to set flatpak override settings via a GUI",
+    "user": {
+        "default_email": "mclasen@redhat.com",
+        "emails": [
+            "mclasen@redhat.com"
+        ],
+        "fullname": "Matthias Clasen",
+        "name": "mclasen"
+    }
+}
