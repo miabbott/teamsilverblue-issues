@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "Since the traditional and atomic workstation are basically the same (at least as far as package set and user experience are concerned), it would be nice to have a single installer for it which offers a choice between traditional and image mode.\r\n\r\nThis is going to require some nontrivial Anaconda work; there's definitely some benefits to a unified installer, but for the IMO \"default\" path of \"see website, download ISO\" it's less confusing to have two, since people already know what they want at that point.",
+    "custom_fields": [],
+    "date_created": "1525889781",
+    "depends": [],
+    "id": 13,
+    "last_updated": "1525889781",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "A unified installer",
+    "user": {
+        "default_email": "mclasen@redhat.com",
+        "emails": [
+            "mclasen@redhat.com"
+        ],
+        "fullname": "Matthias Clasen",
+        "name": "mclasen"
+    }
+}
