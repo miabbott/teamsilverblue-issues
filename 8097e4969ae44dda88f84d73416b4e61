@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "The rpm-ostree plugin of gnome-software should support the rebase operation to switch from one Fedora release to the next.\r\n\r\nupstream issue https://gitlab.gnome.org/GNOME/gnome-software/issues/307",
+    "custom_fields": [],
+    "date_created": "1525888308",
+    "depends": [],
+    "id": 3,
+    "last_updated": "1525888308",
+    "milestone": "F29",
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "gnome-software should support rebasing to a new OS release",
+    "user": {
+        "default_email": "mclasen@redhat.com",
+        "emails": [
+            "mclasen@redhat.com"
+        ],
+        "fullname": "Matthias Clasen",
+        "name": "mclasen"
+    }
+}
