@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "Atomic workstation seems to be the best distro for tablet PC's.\r\nI've tried to install atomic workstation on my tablet PC, but it has Realtek wi-fi module, so I can not establish internet connection and can not continue with installation.\r\nlinux-firmware package contains software for that wi-fi, so if the installation ISO would contains that package I will be able to install atomic on my tablet.\r\n\r\nThe original issue has quite a bit of discussion that I am not going to copy over: https://pagure.io/fedora-atomic-workstation/issue/18",
+    "custom_fields": [],
+    "date_created": "1525889271",
+    "depends": [],
+    "id": 11,
+    "last_updated": "1525889271",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Include `linux-firmware` package to installation ISO",
+    "user": {
+        "default_email": "mclasen@redhat.com",
+        "emails": [
+            "mclasen@redhat.com"
+        ],
+        "fullname": "Matthias Clasen",
+        "name": "mclasen"
+    }
+}
