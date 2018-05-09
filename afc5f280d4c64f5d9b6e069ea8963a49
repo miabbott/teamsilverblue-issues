@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "We want to do better marketing around atomic workstation as it becomes ready for prime time, and bring it out of the shadow of Project Atomic.\r\n\r\nThe name we have settled on is Silverblue / Team Silverblue, and we have a website here: \r\nhttps://teamsilverblue.org\r\n\r\nHere is the announcement we sent to the Fedora Council: https://lists.fedoraproject.org/archives/list/council-discuss@lists.fedoraproject.org/thread/GTYAKBYW3TMMI2SLQWKK2TS6AOFLOPXG/ \r\n\r\n\r\nNext step is to rename references and point to the Team Silverblue website in places where we a currently saying Atomic Workstation:\r\n\r\nhttps://fedoraproject.org/wiki/Workstation/AtomicWorkstation\r\nhttps://pagure.io/fedora-atomic-workstation\r\nhttps://www.projectatomic.io/\r\nhttps://www.projectatomic.io/docs/fedora-atomic-workstation/",
+    "custom_fields": [],
+    "date_created": "1525889131",
+    "depends": [],
+    "id": 10,
+    "last_updated": "1525889131",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": " rebrand atomic workstation ",
+    "user": {
+        "default_email": "mclasen@redhat.com",
+        "emails": [
+            "mclasen@redhat.com"
+        ],
+        "fullname": "Matthias Clasen",
+        "name": "mclasen"
+    }
+}
