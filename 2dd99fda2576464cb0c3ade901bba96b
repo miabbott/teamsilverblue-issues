@@ -1,0 +1,113 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": "1523910038",
+    "comments": [
+        {
+            "comment": "Update from the meeting on March 19: Kalev is working on this now.",
+            "date_created": "1521483440",
+            "edited_on": null,
+            "editor": null,
+            "id": 500323,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
+        },
+        {
+            "comment": "There are 3 separate things that we need here:\r\n\r\n1) rpm-ostree upgrade suppport to do OS updates\r\n2) rpm-ostree rebase support to go from one Fedora release to another\r\n3) package layering support so we can install add-ons like fonts, codecs or input methods",
+            "date_created": "1522342006",
+            "edited_on": null,
+            "editor": null,
+            "id": 502742,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
+        },
+        {
+            "comment": "upgrade works now with gnome-software-3.28.0-5 in both f28 and f29",
+            "date_created": "1522761239",
+            "edited_on": null,
+            "editor": null,
+            "id": 503157,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
+        },
+        {
+            "comment": "Lets split this into separate items to make tracking easier",
+            "date_created": "1523909777",
+            "edited_on": null,
+            "editor": null,
+            "id": 506291,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
+        },
+        {
+            "comment": "**Metadata Update from @mclasen**:\n- Issue status updated to: Closed (was: Open)",
+            "date_created": "1523910038",
+            "edited_on": null,
+            "editor": null,
+            "id": 506293,
+            "notification": true,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
+        }
+    ],
+    "content": "In our quick tests, gnome-software shows available OS updates correctly, but when i click update and reboot, it just reboots into the existing image and never calls upgrade.",
+    "custom_fields": [],
+    "date_created": "1519322285",
+    "depends": [],
+    "id": 1,
+    "last_updated": "1523910038",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Closed",
+    "tags": [],
+    "title": "gnome-software rpm-ostree support does not seem to work",
+    "user": {
+        "default_email": "mclasen@redhat.com",
+        "emails": [
+            "mclasen@redhat.com"
+        ],
+        "fullname": "Matthias Clasen",
+        "name": "mclasen"
+    }
+}
