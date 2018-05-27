@@ -20,6 +20,23 @@
                 "fullname": "Matthias Clasen",
                 "name": "mclasen"
             }
+        },
+        {
+            "comment": "**Metadata Update from @mclasen**:\n- Issue status updated to: Closed (was: Open)",
+            "date_created": "1527462148",
+            "edited_on": null,
+            "editor": null,
+            "id": 514112,
+            "notification": true,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
         }
     ],
     "content": "Here is an inconclusive attempt to make boxes work in a Flatpak:\r\n\r\nhttps://github.com/ramcq/boxes-flatpak/commits/master\r\n\r\nWe should find a working solution here, so we can provide Boxes in the same way as other desktop apps.",
@@ -27,7 +44,7 @@
     "date_created": "1525972089",
     "depends": [],
     "id": 17,
-    "last_updated": "1527462147",
+    "last_updated": "1527462148",
     "milestone": null,
     "priority": null,
     "private": false,
