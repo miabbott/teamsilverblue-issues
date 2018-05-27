@@ -2,18 +2,36 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
-    "comments": [],
+    "closed_at": "1527462145",
+    "comments": [
+        {
+            "comment": "boxes is available on flathub now",
+            "date_created": "1527462147",
+            "edited_on": null,
+            "editor": null,
+            "id": 514111,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
+        }
+    ],
     "content": "Here is an inconclusive attempt to make boxes work in a Flatpak:\r\n\r\nhttps://github.com/ramcq/boxes-flatpak/commits/master\r\n\r\nWe should find a working solution here, so we can provide Boxes in the same way as other desktop apps.",
     "custom_fields": [],
     "date_created": "1525972089",
     "depends": [],
     "id": 17,
-    "last_updated": "1525972089",
+    "last_updated": "1527462147",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [],
     "title": "Make GNOME Boxes work in a Flatpak",
     "user": {
