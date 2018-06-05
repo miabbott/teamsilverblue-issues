@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "1: Start gnome-boxes\r\n2: New --> Select FIle --> <file>.iso --> Next --> Choose Express Install (Set user+pw) --> Continue --> Create\r\n3: Error in Screenshot occures\r\n\r\n\r\n<!!image>\r\n",
+    "custom_fields": [],
+    "date_created": "1528211677",
+    "depends": [],
+    "id": 18,
+    "last_updated": "1528211677",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Error kickstarting installation in gnome-boxes",
+    "user": {
+        "default_email": "psmis@protonmail.com",
+        "emails": [
+            "psmis@protonmail.com"
+        ],
+        "fullname": "ps mis",
+        "name": "psmis"
+    }
+}
