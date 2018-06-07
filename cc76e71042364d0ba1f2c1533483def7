@@ -20,6 +20,24 @@
                 "fullname": "Matthias Clasen",
                 "name": "mclasen"
             }
+        },
+        {
+            "comment": "Everything in releng:\r\n\r\n- What does `/etc/os-release` say?\r\n- What does the anaconda install media say?\r\n- What refs does the user pull from ? \r\n- What anaconda install class does it use?\r\n- What is the media named?\r\n- What variants are used in the pungi configs? \r\n\r\nAll of these things (and more probably) require changes. We had just got everything done (it took a long time) for Atomic Workstation for f27. \r\n",
+            "date_created": "1528380322",
+            "edited_on": null,
+            "editor": null,
+            "id": 515806,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "If it is desired that the word Silverblue replace Atomic Workstation for Fedora 29 there is a lot of work that needs to be done to make that happen and the sooner it happens (before branching) the better for everyone. We will probably also need to submit a System Wide Change proposal.\r\n\r\nhttps://fedoraproject.org/wiki/Releases/29/Schedule\r\n\r\n",
@@ -27,7 +45,7 @@
     "date_created": "1528375498",
     "depends": [],
     "id": 20,
-    "last_updated": "1528379166",
+    "last_updated": "1528380322",
     "milestone": null,
     "priority": null,
     "private": false,
