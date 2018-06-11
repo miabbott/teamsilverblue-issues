@@ -57,11 +57,35 @@
             }
         },
         {
-            "comment": "anaconda issue: https://github.com/rhinstaller/anaconda/issues/1504",
+            "comment": "anaconda install media issue: https://github.com/rhinstaller/anaconda/issues/1504",
             "date_created": "1528757722",
+            "edited_on": "1528757826",
+            "editor": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            },
+            "id": 516419,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
+        },
+        {
+            "comment": "anaconda install class issue: https://github.com/rhinstaller/anaconda/issues/1505 ",
+            "date_created": "1528757845",
             "edited_on": null,
             "editor": null,
-            "id": 516419,
+            "id": 516420,
             "notification": false,
             "parent": null,
             "user": {
@@ -79,7 +103,7 @@
     "date_created": "1528375498",
     "depends": [],
     "id": 20,
-    "last_updated": "1528757722",
+    "last_updated": "1528757826",
     "milestone": null,
     "priority": null,
     "private": false,
