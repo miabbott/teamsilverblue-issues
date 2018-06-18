@@ -2,7 +2,7 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
+    "closed_at": "1529349400",
     "comments": [
         {
             "comment": "Problem has been solved with last gnome-boxes update.",
@@ -20,20 +20,37 @@
                 "fullname": "ps mis",
                 "name": "psmis"
             }
+        },
+        {
+            "comment": "**Metadata Update from @psmis**:\n- Issue status updated to: Closed (was: Open)",
+            "date_created": "1529349402",
+            "edited_on": null,
+            "editor": null,
+            "id": 517426,
+            "notification": true,
+            "parent": null,
+            "user": {
+                "default_email": "psmis@protonmail.com",
+                "emails": [
+                    "psmis@protonmail.com"
+                ],
+                "fullname": "ps mis",
+                "name": "psmis"
+            }
         }
     ],
-    "content": "1: Start gnome-boxes\r\n2: New --> Select FIle --> <file>.iso --> Next --> Choose Express Install (Set user+pw) --> Continue --> Create\r\n3: Error in Screenshot occures\r\n\r\n\r\n[![error.png](/teamsilverblue/issue/raw/53f34b23fc194e24449fcf06515692d1935458c84aaff415c8100cfe958849aa-error.png)](/teamsilverblue/issue/raw/53f34b23fc194e24449fcf06515692d1935458c84aaff415c8100cfe958849aa-error.png)\r\n",
+    "content": "1: Start gnome-boxes\r\n2: New --> Select FIle --> <file>.iso --> Next --> Choose Express Install (Set user+pw) --> Continue --> Create\r\n3: Error in Screenshot occures\r\n\r\n\r\n[![error.png](/teamsilverblue/issue/raw/53f34b23fc194e24449fcf06515692d1935458c84aaff415c8100cfe958849aa-error.png)](/teamsilverblue/issue/raw/53f34b23fc194e24449fcf06515692d1935458c84aaff415c8100cfe958849aa-error.png)\r\n\r\n[SOLVED]\r\nProblem has been solved with last gnome-boxes update.",
     "custom_fields": [],
     "date_created": "1528211677",
     "depends": [],
     "id": 18,
-    "last_updated": "1529349341",
+    "last_updated": "1529349402",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [],
-    "title": "Error kickstarting installation in gnome-boxes",
+    "title": "[SOLVED] Error kickstarting installation in gnome-boxes",
     "user": {
         "default_email": "psmis@protonmail.com",
         "emails": [
