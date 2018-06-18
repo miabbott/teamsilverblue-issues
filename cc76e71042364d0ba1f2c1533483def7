@@ -113,6 +113,23 @@
                 "fullname": "Matthias Clasen",
                 "name": "mclasen"
             }
+        },
+        {
+            "comment": "Here is a change page for tracking this in more detail\r\nhttps://fedoraproject.org/wiki/Changes/Silverblue",
+            "date_created": "1529342530",
+            "edited_on": null,
+            "editor": null,
+            "id": 517396,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
         }
     ],
     "content": "If it is desired that the word Silverblue replace Atomic Workstation for Fedora 29 there is a lot of work that needs to be done to make that happen and the sooner it happens (before branching) the better for everyone. We will probably also need to submit a System Wide Change proposal.\r\n\r\nhttps://fedoraproject.org/wiki/Releases/29/Schedule\r\n\r\n",
