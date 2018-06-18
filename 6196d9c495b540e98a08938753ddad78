@@ -3,13 +3,31 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
-    "content": "1: Start gnome-boxes\r\n2: New --> Select FIle --> <file>.iso --> Next --> Choose Express Install (Set user+pw) --> Continue --> Create\r\n3: Error in Screenshot occures\r\n\r\n\r\n<!!image>\r\n",
+    "comments": [
+        {
+            "comment": "Problem has been solved with last gnome-boxes update.",
+            "date_created": "1529349341",
+            "edited_on": null,
+            "editor": null,
+            "id": 517425,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "psmis@protonmail.com",
+                "emails": [
+                    "psmis@protonmail.com"
+                ],
+                "fullname": "ps mis",
+                "name": "psmis"
+            }
+        }
+    ],
+    "content": "1: Start gnome-boxes\r\n2: New --> Select FIle --> <file>.iso --> Next --> Choose Express Install (Set user+pw) --> Continue --> Create\r\n3: Error in Screenshot occures\r\n\r\n\r\n[![error.png](/teamsilverblue/issue/raw/53f34b23fc194e24449fcf06515692d1935458c84aaff415c8100cfe958849aa-error.png)](/teamsilverblue/issue/raw/53f34b23fc194e24449fcf06515692d1935458c84aaff415c8100cfe958849aa-error.png)\r\n",
     "custom_fields": [],
     "date_created": "1528211677",
     "depends": [],
     "id": 18,
-    "last_updated": "1528211677",
+    "last_updated": "1529349341",
     "milestone": null,
     "priority": null,
     "private": false,
