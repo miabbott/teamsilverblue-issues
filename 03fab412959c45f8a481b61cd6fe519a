@@ -3,13 +3,31 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "I believe this comes from `fedora-popular.xml` file which is provided by `appstream-data` package",
+            "date_created": "1529552400",
+            "edited_on": null,
+            "editor": null,
+            "id": 517849,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "harpreet.surdy@gmail.com",
+                "emails": [
+                    "harpreet.surdy@gmail.com"
+                ],
+                "fullname": "Harpreet Singh Gulati",
+                "name": "surdy"
+            }
+        }
+    ],
     "content": "I am running Silverblue, and GNOME Software is not showing these lists of applications to me.\r\nI think we are probably missing the plugin that usually provides this data.",
     "custom_fields": [],
     "date_created": "1528301421",
     "depends": [],
     "id": 19,
-    "last_updated": "1528301421",
+    "last_updated": "1529552400",
     "milestone": null,
     "priority": null,
     "private": false,
