@@ -59,10 +59,18 @@
             }
         },
         {
-            "comment": "> is not yet functional in Silverblue. \r\n\r\nSure it is: Use a Fedora container.  That's what you should be doing anyways even on [\"classic\" Fedora](https://pagure.io/Fedora-Council/tickets/issue/208).  Use case: I want to use Silverblue as a desktop and build applications in Python that target RHEL7.  Great!  Use a RHEL7 container, the same as you'd use a Fedora container.\r\n",
+            "comment": "> is not yet functional in Silverblue. \r\n\r\nSure it is: Use a Fedora container.  That's what you should be doing anyways even on [\"classic\" Fedora](https://pagure.io/Fedora-Council/tickets/issue/208).  Example: A developer wants to use Silverblue as a desktop but build applications in Python that target RHEL7.  Great!  They can use a RHEL7 container, which works the same as a Fedora container.\r\n",
             "date_created": "1531321020",
-            "edited_on": null,
-            "editor": null,
+            "edited_on": "1531321068",
+            "editor": {
+                "default_email": "walters@fedoraproject.org",
+                "emails": [
+                    "walters@fedoraproject.org",
+                    "walters@redhat.com"
+                ],
+                "fullname": "Colin Walters",
+                "name": "walters"
+            },
             "id": 521122,
             "notification": false,
             "parent": null,
