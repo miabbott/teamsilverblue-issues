@@ -103,10 +103,18 @@
             }
         },
         {
-            "comment": "> If we want people to always use containers, we need to re-think all of our messaging around Python in Fedora. Places like the Developer Portal start with \"create a venv\". I'm not aware of discussions that this should change.\r\n\r\nYou still haven't done the mental shift: Where you see instructions for \"Fedora\" - and most particularly developer focused command line things; those are things to do in a Fedora *container* (or VM0 on a CoreOS/Silverblue system.\r\n",
+            "comment": "> If we want people to always use containers, we need to re-think all of our messaging around Python in Fedora. Places like the Developer Portal start with \"create a venv\". I'm not aware of discussions that this should change.\r\n\r\nYou still haven't done the mental shift: Where you see instructions for \"Fedora\" - and most particularly developer focused command line things; those are things to do in a Fedora *container* (or VM) on a CoreOS/Silverblue system.\r\n\r\nAnd yes, I think CoreOS/Silverblue haven't succeeded until containers are the default.  Fixing that (IMO) is our mission.",
             "date_created": "1531322528",
-            "edited_on": null,
-            "editor": null,
+            "edited_on": "1531322586",
+            "editor": {
+                "default_email": "walters@fedoraproject.org",
+                "emails": [
+                    "walters@fedoraproject.org",
+                    "walters@redhat.com"
+                ],
+                "fullname": "Colin Walters",
+                "name": "walters"
+            },
             "id": 521124,
             "notification": false,
             "parent": null,
@@ -119,6 +127,25 @@
                 "fullname": "Colin Walters",
                 "name": "walters"
             }
+        },
+        {
+            "comment": "As I understand it, you do not do stuff in CoreOS/Silverblue directly, you only use it as a container host, hence you don't usually develop in Python on CoreOS/Silverblue directly, it's there just as a dependency for container related tools.\r\n\r\nOne exception might be when you actually develop container related tools that are supposed to work on CoreOS/Silverblue.",
+            "date_created": "1531398314",
+            "edited_on": null,
+            "editor": null,
+            "id": 521267,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "mhroncok@redhat.com",
+                "emails": [
+                    "churchyard@fedoraproject.org",
+                    "mhroncok@redhat.com",
+                    "miro@hroncok.cz"
+                ],
+                "fullname": "Miro Hron\u010dok",
+                "name": "churchyard"
+            }
         }
     ],
     "content": "Silverblue sets the timestamp of files on disk to 1970-01-01, which can't be represented in ZIP files.\r\nThe `zip` utility seems to work around this limitation by silently bumping the timestamp to the first representable date, `1980-01-01 00:00:00`.\r\nPython's `zipfile` module doesn't have this workaround:\r\n```console\r\n$ python3 -m zipfile -c foo.zip /etc/os-release\r\nTraceback (most recent call last):\r\n  ...\r\nValueError: ZIP does not support timestamps before 1980\r\n```\r\n(FWIW, I strongly prefer this to silently mangling data!)\r\n\r\nThis is a problem when bootstrapping Python virtual environments, mentioned in [Fedora bug 1599422](https://bugzilla.redhat.com/show_bug.cgi?id=1599422), the following does not work in Silverblue:\r\n```console\r\n$ python3 -m venv testing\r\nError: Command '['/tmp/testing/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\r\n```\r\n\r\nWhat happens here? When a venv (semi-isolated Python environment) is bootstrapped, `pip` (the package installer) is installed into it. Python normally bundles pip as a *wheel* (the Python-native distribution format), but Fedora unbundles this \u2013 it's a compiled blob upstream, and it's a needless duplicate of bits already present on disk. Instead, we use *rewheel* (a Fedora-specific thing) to pack the RPM-installed pip back into a *wheel*, and feed it to the normal installation machinery.\r\n\r\nWheels are a ZIP-based OS-independent format, and packing Silverblue stuff blows up with the `ZIP does not support timestamps before 1980` error.\r\n\r\nWe can possibly add some workaround to `rewheel`, but maybe this could be solved at a different level.\r\nHow important to Silverblue is having UNIX timestamps of zero? Could it be bumped to 1980 or later, to enable zipping OS components properly?\r\n",
@@ -126,7 +153,7 @@
     "date_created": "1531297487",
     "depends": [],
     "id": 21,
-    "last_updated": "1531322528",
+    "last_updated": "1531398314",
     "milestone": null,
     "priority": null,
     "private": false,
