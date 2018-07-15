@@ -190,6 +190,24 @@
                 "fullname": "Colin Walters",
                 "name": "walters"
             }
+        },
+        {
+            "comment": "Compare with the way e.g. Docker/OCI works - by default, the content isn't deduplicated on disk.  If something like that were to be implemented it'd need to rely on reflinks.\r\n\r\nOSTree predates overlayfs and reflinks.  It's proved that one can implement a transactional upgrade system with just plain hardlinks - but yes, some userspace changes are necessary.  So far...the benefits of moving to a reflink approach just aren't worth it, at this point most of the userspace that we care about has adapted.\r\n\r\n",
+            "date_created": "1531686437",
+            "edited_on": null,
+            "editor": null,
+            "id": 521619,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "walters@fedoraproject.org",
+                "emails": [
+                    "walters@fedoraproject.org",
+                    "walters@redhat.com"
+                ],
+                "fullname": "Colin Walters",
+                "name": "walters"
+            }
         }
     ],
     "content": "Silverblue sets the timestamp of files on disk to 1970-01-01, which can't be represented in ZIP files.\r\nThe `zip` utility seems to work around this limitation by silently bumping the timestamp to the first representable date, `1980-01-01 00:00:00`.\r\nPython's `zipfile` module doesn't have this workaround:\r\n```console\r\n$ python3 -m zipfile -c foo.zip /etc/os-release\r\nTraceback (most recent call last):\r\n  ...\r\nValueError: ZIP does not support timestamps before 1980\r\n```\r\n(FWIW, I strongly prefer this to silently mangling data!)\r\n\r\nThis is a problem when bootstrapping Python virtual environments, mentioned in [Fedora bug 1599422](https://bugzilla.redhat.com/show_bug.cgi?id=1599422), the following does not work in Silverblue:\r\n```console\r\n$ python3 -m venv testing\r\nError: Command '['/tmp/testing/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.\r\n```\r\n\r\nWhat happens here? When a venv (semi-isolated Python environment) is bootstrapped, `pip` (the package installer) is installed into it. Python normally bundles pip as a *wheel* (the Python-native distribution format), but Fedora unbundles this \u2013 it's a compiled blob upstream, and it's a needless duplicate of bits already present on disk. Instead, we use *rewheel* (a Fedora-specific thing) to pack the RPM-installed pip back into a *wheel*, and feed it to the normal installation machinery.\r\n\r\nWheels are a ZIP-based OS-independent format, and packing Silverblue stuff blows up with the `ZIP does not support timestamps before 1980` error.\r\n\r\nWe can possibly add some workaround to `rewheel`, but maybe this could be solved at a different level.\r\nHow important to Silverblue is having UNIX timestamps of zero? Could it be bumped to 1980 or later, to enable zipping OS components properly?\r\n",
@@ -197,7 +215,7 @@
     "date_created": "1531297487",
     "depends": [],
     "id": 21,
-    "last_updated": "1531686293",
+    "last_updated": "1531686437",
     "milestone": null,
     "priority": null,
     "private": false,
