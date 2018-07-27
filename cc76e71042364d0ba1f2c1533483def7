@@ -148,6 +148,24 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "From https://fedoraproject.org/wiki/Releases/29/Schedule: `2018-08-14 \tBranch Fedora 29 from Rawhide (Rawhide becomes future F30) `",
+            "date_created": "1532702791",
+            "edited_on": null,
+            "editor": null,
+            "id": 523865,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "If it is desired that the word Silverblue replace Atomic Workstation for Fedora 29 there is a lot of work that needs to be done to make that happen and the sooner it happens (before branching) the better for everyone. We will probably also need to submit a System Wide Change proposal.\r\n\r\nhttps://fedoraproject.org/wiki/Releases/29/Schedule\r\n\r\n",
@@ -155,7 +173,7 @@
     "date_created": "1528375498",
     "depends": [],
     "id": 20,
-    "last_updated": "1532356114",
+    "last_updated": "1532702791",
     "milestone": null,
     "priority": null,
     "private": false,
