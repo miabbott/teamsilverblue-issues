@@ -21,6 +21,23 @@
                 "fullname": "Jonathan Lebon",
                 "name": "jlebon"
             }
+        },
+        {
+            "comment": "Doesn\u2019t rpm-ostree need to update itself, to get the newest version of the requested package?\r\n\r\nI\u2019m not entirely sure, but I think I wanted to layer gnome-encfs-manager and the thing I was surprised about, is that some packages got deleted \u2013 what for me means, that this must have been part of a system update. Should\u2019ve keeped the logs\u2026",
+            "date_created": "1532966011",
+            "edited_on": null,
+            "editor": null,
+            "id": 524165,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "zyklon87@web.de",
+                "emails": [
+                    "zyklon87@web.de"
+                ],
+                "fullname": "Frank Bx",
+                "name": "zyklon"
+            }
         }
     ],
     "content": "**Host system details**\r\n\r\n```\r\natomic host status\r\nState: idle; auto updates disabled\r\nDeployments:\r\n\u25cf ostree://fedora-workstation:fedora/28/x86_64/workstation\r\n                   Version: 28.20180727.0 (2018-07-27 15:26:45)\r\n                BaseCommit: aef0eadd1b9aa0a2f51b74a9dd56aca55ec7eaefacd694ec431ef9eee9c30490\r\n              GPGSignature: Valid signature by 128CF232A9371991C8A65695E08E7E629DB62FB1\r\n           LayeredPackages: adapta-gtk-theme adobe-source-code-pro-fonts\r\n                            adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts\r\n                            android-tools chrome-gnome-shell chromium cockpit dconf-editor\r\n                            dnf easytag exa exfat-utils fd-find ffmpeg ffmpeg-libs gcolor2\r\n                            git glances gnome-encfs-manager gnome-tweaks gnome-usage gpick\r\n                            hack-fonts htop iftop julia linux-libertine-biolinum-fonts\r\n                            linux-libertine-fonts mosh mozilla-fira-mono-fonts\r\n                            mozilla-fira-sans-fonts neovim powerline-go pv pygobject3\r\n                            python3-matplotlib ripgrep setroubleshoot task tilix\r\n                            tilix-nautilus tmux tokei youtube-dl zsh\r\n             LocalPackages: rpmfusion-free-release-28-1.noarch\r\n                            rpmfusion-nonfree-release-28-1.noarch\r\n```\r\n\r\n**Expected vs actual behavior**\r\n\r\nWhen I run `atomic host upgrade`, it downloads \u201cmetadate objects\u201d at speeds of ~10\u202640 kB/s and \u201cestimates\u201d for like forever. But when I in contrast run an `(un)install` command, the system also gets updated without any speed issue.\r\n\r\n\r\n[Copied from https://github.com/projectatomic/rpm-ostree/issues/1476#issuecomment-408715096]",
@@ -28,7 +45,7 @@
     "date_created": "1532948939",
     "depends": [],
     "id": 24,
-    "last_updated": "1532957308",
+    "last_updated": "1532966011",
     "milestone": null,
     "priority": null,
     "private": false,
