@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "I'm currently on fedora/rawhide, but I don't get updates anymore since 2018-06-23. I'm missing something? Has the remote URL changed?\r\n\r\nrpm-ostree status:\r\n\r\nostree://fedora-workstation:fedora/rawhide/x86_64/workstation\r\nVersion: Rawhide.20180623.n.0 (2018-06-23 09:14:16)\r\nCommit: 942d0fa0d62ed7f260b6e9a833c02a7f5d9bcddc4f0654c4c2f15dae86e2c35c\r\nGPGSignature: Valid signature by 5A03B4DD8254ECA02FDA1637A20AA56B429476B4",
+    "custom_fields": [],
+    "date_created": "1533235075",
+    "depends": [],
+    "id": 25,
+    "last_updated": "1533235075",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "No updates for rawhide",
+    "user": {
+        "default_email": "haecker.felix1207@gmail.com",
+        "emails": [
+            "haecker.felix1207@gmail.com"
+        ],
+        "fullname": "H\u00e4cker Felix",
+        "name": "haeckerfelix"
+    }
+}
