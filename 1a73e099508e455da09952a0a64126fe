@@ -71,6 +71,24 @@
                 "fullname": "Michael Catanzaro",
                 "name": "catanzaro"
             }
+        },
+        {
+            "comment": "> Hm, I got a bit disoriented. I think this should be reported on the Workstation issue tracker, since it doesn't really have very much to do with Silverblue.\r\n\r\nAgree. Silverblue just inherits from workstation. ",
+            "date_created": "1533410806",
+            "edited_on": null,
+            "editor": null,
+            "id": 525000,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "For a true developer distribution we need some sort of `vim`, that\u2019s for sure. The shipped `vi` however is damn annoying due to all the deviations to `vim`, which often cause serious headaches (and I don\u2019t know of a single user actually using `vi`). As `vim` pulls in a lot of dependencies, I understand that you don\u2019t want to ship that \u2013 but `neovim` in contrast is pretty slim and just pulls in 5,7 MB. So I propose to go on in time and switch from `vi` to `neovim` \u2013 what do you think? :grin: ",
@@ -78,7 +96,7 @@
     "date_created": "1532827867",
     "depends": [],
     "id": 23,
-    "last_updated": "1533399789",
+    "last_updated": "1533410806",
     "milestone": null,
     "priority": null,
     "private": false,
