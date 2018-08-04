@@ -3,18 +3,38 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "I agree that `vi` is annoying and unnecessarily difficult to use compared to `vim`. I think we should just ship real `vim`. Do we have a way to calculate how much this will increase the size requirement for the live image? (I'm not so concerned about install footprint, but the live image should remain relatively small.)",
+            "date_created": "1533399697",
+            "edited_on": null,
+            "editor": null,
+            "id": 524975,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "mcatanzaro@gnome.org",
+                "emails": [
+                    "mcatanzaro@gnome.org"
+                ],
+                "fullname": "Michael Catanzaro",
+                "name": "catanzaro"
+            }
+        }
+    ],
     "content": "For a true developer distribution we need some sort of `vim`, that\u2019s for sure. The shipped `vi` however is damn annoying due to all the deviations to `vim`, which often cause serious headaches (and I don\u2019t know of a single user actually using `vi`). As `vim` pulls in a lot of dependencies, I understand that you don\u2019t want to ship that \u2013 but `neovim` in contrast is pretty slim and just pulls in 5,7 MB. So I propose to go on in time and switch from `vi` to `neovim` \u2013 what do you think? :grin: ",
     "custom_fields": [],
     "date_created": "1532827867",
     "depends": [],
     "id": 23,
-    "last_updated": "1533399696",
+    "last_updated": "1533399697",
     "milestone": null,
     "priority": null,
     "private": false,
     "status": "Open",
-    "tags": [],
+    "tags": [
+        "meeting"
+    ],
     "title": "Shipping neovim by default",
     "user": {
         "default_email": "zyklon87@web.de",
