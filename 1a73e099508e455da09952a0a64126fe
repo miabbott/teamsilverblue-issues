@@ -54,6 +54,23 @@
                 "fullname": "Michael Catanzaro",
                 "name": "catanzaro"
             }
+        },
+        {
+            "comment": "**Metadata Update from @catanzaro**:\n- Issue **un**tagged with: meeting",
+            "date_created": "1533399789",
+            "edited_on": null,
+            "editor": null,
+            "id": 524978,
+            "notification": true,
+            "parent": null,
+            "user": {
+                "default_email": "mcatanzaro@gnome.org",
+                "emails": [
+                    "mcatanzaro@gnome.org"
+                ],
+                "fullname": "Michael Catanzaro",
+                "name": "catanzaro"
+            }
         }
     ],
     "content": "For a true developer distribution we need some sort of `vim`, that\u2019s for sure. The shipped `vi` however is damn annoying due to all the deviations to `vim`, which often cause serious headaches (and I don\u2019t know of a single user actually using `vi`). As `vim` pulls in a lot of dependencies, I understand that you don\u2019t want to ship that \u2013 but `neovim` in contrast is pretty slim and just pulls in 5,7 MB. So I propose to go on in time and switch from `vi` to `neovim` \u2013 what do you think? :grin: ",
