@@ -75,6 +75,25 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "I guess worth noting that the installer ISO even apparently gets generated when the ostree task 'sorta fails' in this way - as it did so in 0802.n.0, but we got an Atomic Workstation installer ISO anyhow. I've no idea what was actually *on* it - perhaps it gets whichever version of the ostree last successfully synced, the one from June?",
+            "date_created": "1533671543",
+            "edited_on": null,
+            "editor": null,
+            "id": 525241,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "adamwill@fedoraproject.org",
+                "emails": [
+                    "adamwill",
+                    "adamwill@fedoraproject.org",
+                    "awilliam@redhat.com"
+                ],
+                "fullname": "Adam Williamson",
+                "name": "adamwill"
+            }
         }
     ],
     "content": "It has been failing for a while. I've reported it a few times in the IRC channel.\r\n\r\nFrom https://pagure.io/dusty/failed-composes/issue/569 we can see:\r\n\r\n```\r\n[INFO    ] [FAIL] Ostree (variant AtomicWorkstation, arch x86_64) failed, but going on anyway.\r\n[INFO    ] Runroot task failed: 28537122. See /mnt/koji/compose/rawhide/Fedora-Rawhide-20180723.n.0/logs/x86_64/AtomicWorkstation/ostree-4/runroot.log for more details.\r\n```\r\n\r\n\r\n\r\n",
@@ -82,7 +101,7 @@
     "date_created": "1532356210",
     "depends": [],
     "id": 22,
-    "last_updated": "1532610822",
+    "last_updated": "1533671543",
     "milestone": null,
     "priority": null,
     "private": false,
