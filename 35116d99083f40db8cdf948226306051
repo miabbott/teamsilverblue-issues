@@ -39,6 +39,25 @@
                 "fullname": "Colin Walters",
                 "name": "walters"
             }
+        },
+        {
+            "comment": "I do have `[Experimental] StageDeployments=true` in `/etc/rpm-ostreed.conf`\r\n\r\n```\r\n$ ls -ald /ostree/boot.*/*/*/*\r\nlrwxrwxrwx. 1 root root 108 Aug  8 12:18 /ostree/boot.0.0/fedora-workstation/4e3b649dce917f9210948b8fd12433f664294c86c0660a09ef70f74cad1fd8a2/0 -> ../../../deploy/fedora-workstation/deploy/d3051fd505ecb778e2a0951f000b37f8b5f80944ac330122cc327bdc8c317a21.0\r\nlrwxrwxrwx. 1 root root 108 Aug  8 12:18 /ostree/boot.0.0/fedora-workstation/4e3b649dce917f9210948b8fd12433f664294c86c0660a09ef70f74cad1fd8a2/1 -> ../../../deploy/fedora-workstation/deploy/d3051fd505ecb778e2a0951f000b37f8b5f80944ac330122cc327bdc8c317a21.1\r\nlrwxrwxrwx. 1 root root 108 Aug  8 07:13 /ostree/boot.0.1/fedora-workstation/321d724b4aaed18afcfa63f1e9d7a7f34a7dc2720a07c892f752bdf08dd9138d/0 -> ../../../deploy/fedora-workstation/deploy/4e7e3d537d9a5758cc5ea248c36eb1124624e8e5d966d64f4f58679f4dc602aa.0\r\nlrwxrwxrwx. 1 root root 108 Aug  8 07:13 /ostree/boot.0.1/fedora-workstation/4e3b649dce917f9210948b8fd12433f664294c86c0660a09ef70f74cad1fd8a2/0 -> ../../../deploy/fedora-workstation/deploy/d3051fd505ecb778e2a0951f000b37f8b5f80944ac330122cc327bdc8c317a21.0\r\nlrwxrwxrwx. 1 root root 108 Aug  8 12:18 /ostree/boot.0/fedora-workstation/4e3b649dce917f9210948b8fd12433f664294c86c0660a09ef70f74cad1fd8a2/0 -> ../../../deploy/fedora-workstation/deploy/d3051fd505ecb778e2a0951f000b37f8b5f80944ac330122cc327bdc8c317a21.0\r\nlrwxrwxrwx. 1 root root 108 Aug  8 12:18 /ostree/boot.0/fedora-workstation/4e3b649dce917f9210948b8fd12433f664294c86c0660a09ef70f74cad1fd8a2/1 -> ../../../deploy/fedora-workstation/deploy/d3051fd505ecb778e2a0951f000b37f8b5f80944ac330122cc327bdc8c317a21.1\r\n```",
+            "date_created": "1533758529",
+            "edited_on": null,
+            "editor": null,
+            "id": 525352,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "jbrooks@redhat.com",
+                "emails": [
+                    "JBROOKS@REDHAT.COM",
+                    "jasonbrooks@fedoraproject.org",
+                    "jbrooks@redhat.com"
+                ],
+                "fullname": "Jason Brooks",
+                "name": "jasonbrooks"
+            }
         }
     ],
     "content": "Today I installed a pkg w/ `rpm-ostree install` and then ran `rpm-ostree ex livefs` because I didn't want to reboot right away. I was notified, as is often the case with package layering, that some packages were replaced, and replace wasn't specified, so I ran `rpm-ostree ex livefs --replace`. That didn't work, and I don't recall what the specific output was, but I rebooted to find that my layered package wasn't installed.\r\n\r\nI rebooted and selected my second/previous(?) boot entry in grub, and the system wouldn't boot at all. I went back to the other boot entry, tried to get my `rpm-ostree status` and noticed that the service wasn't running. The error message is:\r\n\r\n```\r\nAug 08 12:31:45 sfjbrooks.localdomain systemd[1]: Starting RPM-OSTree System Management Daemon...\r\nAug 08 12:31:45 sfjbrooks.localdomain rpm-ostree[4987]: Reading config file '/etc/rpm-ostreed.conf'\r\nAug 08 12:31:45 sfjbrooks.localdomain rpm-ostree[4987]: error: Couldn't start daemon: Error setting up sysroot: readlinkat: No such file or directory\r\nAug 08 12:31:45 sfjbrooks.localdomain systemd[1]: rpm-ostreed.service: Main process exited, code=exited, status=1/FAILURE\r\nAug 08 12:31:45 sfjbrooks.localdomain systemd[1]: rpm-ostreed.service: Failed with result 'exit-code'.\r\nAug 08 12:31:45 sfjbrooks.localdomain systemd[1]: Failed to start RPM-OSTree System Management Daemon.\r\n```\r\n\r\n@walters suggested I post the result of this command:\r\n\r\n```\r\n# ls -ld /boot/loader*\r\nlrwxrwxrwx. 1 root root    8 Aug  8 07:13 /boot/loader -> loader.0\r\ndrwxr-xr-x. 3 root root 4096 Aug  8 07:13 /boot/loader.0\r\n```",
@@ -46,7 +65,7 @@
     "date_created": "1533757499",
     "depends": [],
     "id": 26,
-    "last_updated": "1533757777",
+    "last_updated": "1533758529",
     "milestone": null,
     "priority": null,
     "private": false,
