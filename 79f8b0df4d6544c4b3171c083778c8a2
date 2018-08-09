@@ -184,6 +184,24 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "Thanks Dusty! Here's a PR that should fix that: https://pagure.io/pungi-fedora/pull-request/629",
+            "date_created": "1533818325",
+            "edited_on": null,
+            "editor": null,
+            "id": 525432,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "klember@redhat.com",
+                "emails": [
+                    "kalevlember@gmail.com",
+                    "klember@redhat.com"
+                ],
+                "fullname": "Kalev Lember",
+                "name": "kalev"
+            }
         }
     ],
     "content": "It has been failing for a while. I've reported it a few times in the IRC channel.\r\n\r\nFrom https://pagure.io/dusty/failed-composes/issue/569 we can see:\r\n\r\n```\r\n[INFO    ] [FAIL] Ostree (variant AtomicWorkstation, arch x86_64) failed, but going on anyway.\r\n[INFO    ] Runroot task failed: 28537122. See /mnt/koji/compose/rawhide/Fedora-Rawhide-20180723.n.0/logs/x86_64/AtomicWorkstation/ostree-4/runroot.log for more details.\r\n```\r\n\r\n\r\n\r\n",
@@ -191,7 +209,7 @@
     "date_created": "1532356210",
     "depends": [],
     "id": 22,
-    "last_updated": "1533816513",
+    "last_updated": "1533818325",
     "milestone": null,
     "priority": null,
     "private": false,
