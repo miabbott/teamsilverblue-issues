@@ -130,6 +130,24 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "Now the main compose succeeded, but the AtomicWorkstation log in https://kojipkgs.fedoraproject.org/compose/rawhide/latest-Fedora-Rawhide/logs/x86_64/AtomicWorkstation/ostree-4/runroot.log still has errors:\r\n\r\n```\r\n+ pungi-make-ostree tree --repo=/mnt/koji/compose/atomic/repo/ --log-dir=/mnt/koji/compose/rawhide/Fedora-Rawhide-20180808.n.1/logs/x86_64/AtomicWorkstation/ostree-4 --treefile=/mnt/koji/compose/rawhide/Fedora-Rawhide-20180808.n.1/work/ostree-4/config_repo/fedora-ostree-workstation.json --version=Rawhide.20180808.n.1 --extra-config=/mnt/koji/compose/rawhide/Fedora-Rawhide-20180808.n.1/work/ostree-4/extra_config.json\r\nTraceback (most recent call last):\r\n  File \"/usr/bin/pungi-make-ostree\", line 15, in <module>\r\n    ostree.main()\r\n  File \"/usr/lib/python3.7/site-packages/pungi/ostree/__init__.py\", line 93, in main\r\n    func()\r\n  File \"/usr/lib/python3.7/site-packages/pungi/ostree/tree.py\", line 104, in run\r\n    tweak_treeconf(self.treefile, source_repos=repos, keep_original_sources=keep_original_sources, update_dict=update_dict)\r\n  File \"/usr/lib/python3.7/site-packages/pungi/ostree/utils.py\", line 76, in tweak_treeconf\r\n    with open(treeconf, 'r') as f:\r\nFileNotFoundError: [Errno 2] No such file or directory: '/mnt/koji/compose/rawhide/Fedora-Rawhide-20180808.n.1/work/ostree-4/config_repo/fedora-ostree-workstation.json'\r\n```\r\n\r\nAny idea what that might be?",
+            "date_created": "1533813866",
+            "edited_on": null,
+            "editor": null,
+            "id": 525427,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "klember@redhat.com",
+                "emails": [
+                    "kalevlember@gmail.com",
+                    "klember@redhat.com"
+                ],
+                "fullname": "Kalev Lember",
+                "name": "kalev"
+            }
         }
     ],
     "content": "It has been failing for a while. I've reported it a few times in the IRC channel.\r\n\r\nFrom https://pagure.io/dusty/failed-composes/issue/569 we can see:\r\n\r\n```\r\n[INFO    ] [FAIL] Ostree (variant AtomicWorkstation, arch x86_64) failed, but going on anyway.\r\n[INFO    ] Runroot task failed: 28537122. See /mnt/koji/compose/rawhide/Fedora-Rawhide-20180723.n.0/logs/x86_64/AtomicWorkstation/ostree-4/runroot.log for more details.\r\n```\r\n\r\n\r\n\r\n",
@@ -137,7 +155,7 @@
     "date_created": "1532356210",
     "depends": [],
     "id": 22,
-    "last_updated": "1533671779",
+    "last_updated": "1533813865",
     "milestone": null,
     "priority": null,
     "private": false,
