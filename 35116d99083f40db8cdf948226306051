@@ -231,6 +231,24 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "**Metadata Update from @otaylor**:\n- Issue status updated to: Closed (was: Open)",
+            "date_created": "1534347647",
+            "edited_on": null,
+            "editor": null,
+            "id": 526378,
+            "notification": true,
+            "parent": null,
+            "user": {
+                "default_email": "otaylor@redhat.com",
+                "emails": [
+                    "otaylor@fishsoup.net",
+                    "otaylor@redhat.com"
+                ],
+                "fullname": "Owen Taylor",
+                "name": "otaylor"
+            }
         }
     ],
     "content": "Today I installed a pkg w/ `rpm-ostree install` and then ran `rpm-ostree ex livefs` because I didn't want to reboot right away. I was notified, as is often the case with package layering, that some packages were replaced, and replace wasn't specified, so I ran `rpm-ostree ex livefs --replace`. That didn't work, and I don't recall what the specific output was, but I rebooted to find that my layered package wasn't installed.\r\n\r\nI rebooted and selected my second/previous(?) boot entry in grub, and the system wouldn't boot at all. I went back to the other boot entry, tried to get my `rpm-ostree status` and noticed that the service wasn't running. The error message is:\r\n\r\n```\r\nAug 08 12:31:45 sfjbrooks.localdomain systemd[1]: Starting RPM-OSTree System Management Daemon...\r\nAug 08 12:31:45 sfjbrooks.localdomain rpm-ostree[4987]: Reading config file '/etc/rpm-ostreed.conf'\r\nAug 08 12:31:45 sfjbrooks.localdomain rpm-ostree[4987]: error: Couldn't start daemon: Error setting up sysroot: readlinkat: No such file or directory\r\nAug 08 12:31:45 sfjbrooks.localdomain systemd[1]: rpm-ostreed.service: Main process exited, code=exited, status=1/FAILURE\r\nAug 08 12:31:45 sfjbrooks.localdomain systemd[1]: rpm-ostreed.service: Failed with result 'exit-code'.\r\nAug 08 12:31:45 sfjbrooks.localdomain systemd[1]: Failed to start RPM-OSTree System Management Daemon.\r\n```\r\n\r\n@walters suggested I post the result of this command:\r\n\r\n```\r\n# ls -ld /boot/loader*\r\nlrwxrwxrwx. 1 root root    8 Aug  8 07:13 /boot/loader -> loader.0\r\ndrwxr-xr-x. 3 root root 4096 Aug  8 07:13 /boot/loader.0\r\n```",
@@ -238,7 +256,7 @@
     "date_created": "1533757499",
     "depends": [],
     "id": 26,
-    "last_updated": "1534347646",
+    "last_updated": "1534347647",
     "milestone": null,
     "priority": null,
     "private": false,
