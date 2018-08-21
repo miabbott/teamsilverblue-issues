@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "This is a person gripe I know at least one other person has shared. After installing a fresh Silverblue system, large updates are required to get the system in an up-to-date state. This can be an issue because as [Issue #24](https://pagure.io/teamsilverblue/issue/24) mentions, the repos can be dog slow for some people. Perhaps releasing an ISO with a newer OStree image every so often would alleviate this problem. ",
+    "custom_fields": [],
+    "date_created": "1534831581",
+    "depends": [],
+    "id": 27,
+    "last_updated": "1534831581",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "ISO gets woefully out of date",
+    "user": {
+        "default_email": "adrianlucrececeleste@airmail.cc",
+        "emails": [
+            "adrianlucrececeleste@airmail.cc"
+        ],
+        "fullname": "Adrian Lucr\u00e8ce C\u00e9leste",
+        "name": "alc"
+    }
+}
