@@ -238,6 +238,24 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "Having a quick look at this, looks like the issue is now:\r\n\r\n```\r\nResolving dependencies... failed\r\nerror: Could not depsolve transaction; 1 problem detected:\r\n0. nothing provides gnome-shell >= 3.29.91 needed by gnome-shell-extension-common-3.29.91-1.fc30.noarch\r\n```\r\n\r\nThere is a `gnome-shell-3.29.91-1.fc30`, but it was built after `gnome-shell-extension-common-3.29.91-1.fc30`:\r\n\r\nhttps://koji.fedoraproject.org/koji/buildinfo?buildID=1137828\r\nhttps://koji.fedoraproject.org/koji/buildinfo?buildID=1137992\r\n\r\nSo my guess is that specific problem should be resolved in the next build.",
+            "date_created": "1534861264",
+            "edited_on": null,
+            "editor": null,
+            "id": 527295,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "jlebon@redhat.com",
+                "emails": [
+                    "jlebon@redhat.com",
+                    "jonathan@jlebon.com"
+                ],
+                "fullname": "Jonathan Lebon",
+                "name": "jlebon"
+            }
         }
     ],
     "content": "It has been failing for a while. I've reported it a few times in the IRC channel.\r\n\r\nFrom https://pagure.io/dusty/failed-composes/issue/569 we can see:\r\n\r\n```\r\n[INFO    ] [FAIL] Ostree (variant AtomicWorkstation, arch x86_64) failed, but going on anyway.\r\n[INFO    ] Runroot task failed: 28537122. See /mnt/koji/compose/rawhide/Fedora-Rawhide-20180723.n.0/logs/x86_64/AtomicWorkstation/ostree-4/runroot.log for more details.\r\n```\r\n\r\n\r\n\r\n",
@@ -245,7 +263,7 @@
     "date_created": "1532356210",
     "depends": [],
     "id": 22,
-    "last_updated": "1534856338",
+    "last_updated": "1534861264",
     "milestone": null,
     "priority": null,
     "private": false,
