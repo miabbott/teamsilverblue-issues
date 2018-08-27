@@ -1,0 +1,28 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "https://pagure.io/workstation-ostree-config/c/a0788c51ee3c9e42aca6bc1c9fbf2f608ade6596\r\n\r\nis the only thing bringing in `bzr` and `subversion` to the host.  I think we should probably document using `flatpak-builder` from inside a dev (`podman`) container. \r\n\r\nAnother thing we could do in addition is to downgrade those deps to `Recommends`?",
+    "custom_fields": [],
+    "date_created": "1535382334",
+    "depends": [],
+    "id": 30,
+    "last_updated": "1535382334",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "flatpak-builder drags in bzr/svn",
+    "user": {
+        "default_email": "walters@fedoraproject.org",
+        "emails": [
+            "walters@fedoraproject.org",
+            "walters@redhat.com"
+        ],
+        "fullname": "Colin Walters",
+        "name": "walters"
+    }
+}
