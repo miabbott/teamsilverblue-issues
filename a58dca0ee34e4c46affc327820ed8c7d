@@ -21,6 +21,23 @@
                 "fullname": "Colin Walters",
                 "name": "walters"
             }
+        },
+        {
+            "comment": "Given that we do have buildah on the host, i don't see why flatpak-builder shouldn't be there as well.\r\n \r\nRecommends seems like an ok solution to me.\r\n",
+            "date_created": "1535393579",
+            "edited_on": null,
+            "editor": null,
+            "id": 528183,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
         }
     ],
     "content": "https://pagure.io/workstation-ostree-config/c/a0788c51ee3c9e42aca6bc1c9fbf2f608ade6596\r\n\r\nis the only thing bringing in `bzr` and `subversion` to the host.  I think we should probably document using `flatpak-builder` from inside a dev (`podman`) container. \r\n\r\nAnother thing we could do in addition is to downgrade those deps to `Recommends`?",
