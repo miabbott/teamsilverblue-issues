@@ -74,6 +74,23 @@
                 "fullname": "Colin Walters",
                 "name": "walters"
             }
+        },
+        {
+            "comment": "flatpak-builder is not using host tooling, though. It uses tooling from the sdk",
+            "date_created": "1535401283",
+            "edited_on": null,
+            "editor": null,
+            "id": 528209,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
         }
     ],
     "content": "https://pagure.io/workstation-ostree-config/c/a0788c51ee3c9e42aca6bc1c9fbf2f608ade6596\r\n\r\nis the only thing bringing in `bzr` and `subversion` to the host.  I think we should probably document using `flatpak-builder` from inside a dev (`podman`) container. \r\n\r\nAnother thing we could do in addition is to downgrade those deps to `Recommends`?",
@@ -81,7 +98,7 @@
     "date_created": "1535382334",
     "depends": [],
     "id": 30,
-    "last_updated": "1535399198",
+    "last_updated": "1535401282",
     "milestone": null,
     "priority": null,
     "private": false,
