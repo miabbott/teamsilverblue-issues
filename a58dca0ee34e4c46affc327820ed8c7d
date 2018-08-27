@@ -76,10 +76,17 @@
             }
         },
         {
-            "comment": "flatpak-builder is not using host tooling, though. It uses tooling from the sdk",
+            "comment": "flatpak-builder is not using host tooling, though. It uses tooling from the sdk, at least for the toolchain. source control, it takes from the host, evidently.",
             "date_created": "1535401283",
-            "edited_on": null,
-            "editor": null,
+            "edited_on": "1535401327",
+            "editor": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            },
             "id": 528209,
             "notification": false,
             "parent": null,
