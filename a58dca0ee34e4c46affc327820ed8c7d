@@ -38,6 +38,24 @@
                 "fullname": "Matthias Clasen",
                 "name": "mclasen"
             }
+        },
+        {
+            "comment": "> Given that we do have buildah on the host, i don't see why flatpak-builder shouldn't be there as well.\r\n\r\nThis is a tricky topic.  In the default `Dockerfile` model, there is basically no usage of the host, and that's supported by `buildah bud`.  Now, it's definitely true that `buildah` was oriented around the idea of reusing the host tooling.  However, this has created a powerful tension with reproducibility.\r\n\r\n(It's also possible to use `buildah` from a container itself, though there are some tricks to that)",
+            "date_created": "1535394966",
+            "edited_on": null,
+            "editor": null,
+            "id": 528187,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "walters@fedoraproject.org",
+                "emails": [
+                    "walters@fedoraproject.org",
+                    "walters@redhat.com"
+                ],
+                "fullname": "Colin Walters",
+                "name": "walters"
+            }
         }
     ],
     "content": "https://pagure.io/workstation-ostree-config/c/a0788c51ee3c9e42aca6bc1c9fbf2f608ade6596\r\n\r\nis the only thing bringing in `bzr` and `subversion` to the host.  I think we should probably document using `flatpak-builder` from inside a dev (`podman`) container. \r\n\r\nAnother thing we could do in addition is to downgrade those deps to `Recommends`?",
@@ -45,7 +63,7 @@
     "date_created": "1535382334",
     "depends": [],
     "id": 30,
-    "last_updated": "1535393579",
+    "last_updated": "1535394966",
     "milestone": null,
     "priority": null,
     "private": false,
