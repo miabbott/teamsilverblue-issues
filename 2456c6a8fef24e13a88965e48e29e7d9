@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "After passing `gnome-initial-setup`, a Help window is supposed to open. Currently, in F29, `yelp` isn't available in the base image, so that doesn't happen.",
+    "custom_fields": [],
+    "date_created": "1535616256",
+    "depends": [],
+    "id": 31,
+    "last_updated": "1535616256",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Help doesn't show up after initial setup in F29 Silverblue",
+    "user": {
+        "default_email": "exalm7659@gmail.com",
+        "emails": [
+            "exalm7659@gmail.com"
+        ],
+        "fullname": "Alexander Mikhaylenko",
+        "name": "exalm"
+    }
+}
