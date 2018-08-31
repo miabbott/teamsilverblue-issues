@@ -39,6 +39,23 @@
                 "fullname": "Matthias Clasen",
                 "name": "mclasen"
             }
+        },
+        {
+            "comment": "**Metadata Update from @mclasen**:\n- Issue status updated to: Closed (was: Open)",
+            "date_created": "1535740068",
+            "edited_on": null,
+            "editor": null,
+            "id": 529151,
+            "notification": true,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
         }
     ],
     "content": "\"Maybe it's a bit out of scope, but it would be amazing if they included systemd-boot as an alternative to GRUB.\" https://twitter.com/thelinemain/status/993262699650977792\r\n\r\nThis has had quite a bit of discussion in the original ticket that I am not going to copy over here: \r\nhttps://pagure.io/fedora-atomic-workstation/issue/22",
@@ -46,7 +63,7 @@
     "date_created": "1525888048",
     "depends": [],
     "id": 2,
-    "last_updated": "1535740067",
+    "last_updated": "1535740068",
     "milestone": null,
     "priority": null,
     "private": false,
