@@ -2,7 +2,7 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
+    "closed_at": "1535739692",
     "comments": [
         {
             "comment": "see https://pagure.io/teamsilverblue/issue/22 and also https://pagure.io/koji/issue/1010",
@@ -38,6 +38,23 @@
                 "fullname": "Matthias Clasen",
                 "name": "mclasen"
             }
+        },
+        {
+            "comment": "**Metadata Update from @mclasen**:\n- Issue status updated to: Closed (was: Open)",
+            "date_created": "1535739693",
+            "edited_on": null,
+            "editor": null,
+            "id": 529146,
+            "notification": true,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
         }
     ],
     "content": "I am currently on fedora/rawhide, but I'm not getting any updates since 23-06-2008. Did I miss anything? Has the remote URL changed?\r\n\r\nrpm-ostree status:\r\n\r\nostree://fedora-workstation:fedora/rawhide/x86_64/workstation\r\nVersion: Rawhide.20180623.n.0 (2018-06-23 09:14:16)\r\nCommit: 942d0fa0d62ed7f260b6e9a833c02a7f5d9bcddc4f0654c4c2f15dae86e2c35c\r\nGPGSignature: Valid signature by 5A03B4DD8254ECA02FDA1637A20AA56B429476B4",
@@ -45,11 +62,11 @@
     "date_created": "1533235075",
     "depends": [],
     "id": 25,
-    "last_updated": "1535739680",
+    "last_updated": "1535739693",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [],
     "title": "No updates for rawhide",
     "user": {
