@@ -2,7 +2,7 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
+    "closed_at": "1535739757",
     "comments": [
         {
             "comment": "This might get us moving in the right direction: https://pagure.io/fedora-comps/pull-request/282#comment-58996",
@@ -291,6 +291,23 @@
                 "fullname": "Matthias Clasen",
                 "name": "mclasen"
             }
+        },
+        {
+            "comment": "**Metadata Update from @mclasen**:\n- Issue status updated to: Closed (was: Open)",
+            "date_created": "1535739759",
+            "edited_on": null,
+            "editor": null,
+            "id": 529148,
+            "notification": true,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
         }
     ],
     "content": "It has been failing for a while. I've reported it a few times in the IRC channel.\r\n\r\nFrom https://pagure.io/dusty/failed-composes/issue/569 we can see:\r\n\r\n```\r\n[INFO    ] [FAIL] Ostree (variant AtomicWorkstation, arch x86_64) failed, but going on anyway.\r\n[INFO    ] Runroot task failed: 28537122. See /mnt/koji/compose/rawhide/Fedora-Rawhide-20180723.n.0/logs/x86_64/AtomicWorkstation/ostree-4/runroot.log for more details.\r\n```\r\n\r\n\r\n\r\n",
@@ -298,11 +315,11 @@
     "date_created": "1532356210",
     "depends": [],
     "id": 22,
-    "last_updated": "1535739748",
+    "last_updated": "1535739759",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [],
     "title": "no one is looking at rawhide composes to make sure silverblue composes",
     "user": {
