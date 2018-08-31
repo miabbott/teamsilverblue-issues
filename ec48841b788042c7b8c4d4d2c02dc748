@@ -2,7 +2,7 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
+    "closed_at": "1535740067",
     "comments": [
         {
             "comment": "Continuing discussion from the original ticket:\r\n\r\nIt would be useful to quantify exactly what is meant by 'include as an alternative', here. An alternative to be presented how? To be maintained by whom? To meet what quality requirements, to be checked by whom? How is all this to be arranged?",
@@ -46,11 +46,11 @@
     "date_created": "1525888048",
     "depends": [],
     "id": 2,
-    "last_updated": "1535740013",
+    "last_updated": "1535740067",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [],
     "title": "Include systemd-boot as an alternative to GRUB",
     "user": {
