@@ -3,13 +3,50 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "Continuing discussion from the original ticket:\r\n\r\nIt would be useful to quantify exactly what is meant by 'include as an alternative', here. An alternative to be presented how? To be maintained by whom? To meet what quality requirements, to be checked by whom? How is all this to be arranged?",
+            "date_created": "1526259361",
+            "edited_on": null,
+            "editor": null,
+            "id": 511767,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "adamwill@fedoraproject.org",
+                "emails": [
+                    "adamwill",
+                    "adamwill@fedoraproject.org",
+                    "awilliam@redhat.com"
+                ],
+                "fullname": "Adam Williamson",
+                "name": "adamwill"
+            }
+        },
+        {
+            "comment": "grub is getting replaced by something else instead. So this ticket is probably no longer relevant.",
+            "date_created": "1535740013",
+            "edited_on": null,
+            "editor": null,
+            "id": 529150,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
+        }
+    ],
     "content": "\"Maybe it's a bit out of scope, but it would be amazing if they included systemd-boot as an alternative to GRUB.\" https://twitter.com/thelinemain/status/993262699650977792\r\n\r\nThis has had quite a bit of discussion in the original ticket that I am not going to copy over here: \r\nhttps://pagure.io/fedora-atomic-workstation/issue/22",
     "custom_fields": [],
     "date_created": "1525888048",
     "depends": [],
     "id": 2,
-    "last_updated": "1525888048",
+    "last_updated": "1535740013",
     "milestone": null,
     "priority": null,
     "private": false,
