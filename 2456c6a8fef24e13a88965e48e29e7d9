@@ -3,13 +3,31 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "yes, we need to put yelp back for that to work",
+            "date_created": "1535739619",
+            "edited_on": null,
+            "editor": null,
+            "id": 529143,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
+        }
+    ],
     "content": "After passing `gnome-initial-setup`, a Help window is supposed to open. Currently, in F29, `yelp` isn't available in the base image, so that doesn't happen.",
     "custom_fields": [],
     "date_created": "1535616256",
     "depends": [],
     "id": 31,
-    "last_updated": "1535616256",
+    "last_updated": "1535739619",
     "milestone": null,
     "priority": null,
     "private": false,
