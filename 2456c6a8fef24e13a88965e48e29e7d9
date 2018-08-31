@@ -32,7 +32,9 @@
     "priority": null,
     "private": false,
     "status": "Open",
-    "tags": [],
+    "tags": [
+        "meeting"
+    ],
     "title": "Help doesn't show up after initial setup in F29 Silverblue",
     "user": {
         "default_email": "exalm7659@gmail.com",
