@@ -116,6 +116,24 @@
                 "fullname": "Jonathan Lebon",
                 "name": "jlebon"
             }
+        },
+        {
+            "comment": "Also a note that `podman build` now exists, so we don't strictly need `buildah` either in the host anymore. (Though I'm not entirely sure if there are addtional use cases that `buildah` provides that we want to support OOTB).",
+            "date_created": "1536073204",
+            "edited_on": null,
+            "editor": null,
+            "id": 529537,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "jlebon@redhat.com",
+                "emails": [
+                    "jlebon@redhat.com",
+                    "jonathan@jlebon.com"
+                ],
+                "fullname": "Jonathan Lebon",
+                "name": "jlebon"
+            }
         }
     ],
     "content": "https://pagure.io/workstation-ostree-config/c/a0788c51ee3c9e42aca6bc1c9fbf2f608ade6596\r\n\r\nis the only thing bringing in `bzr` and `subversion` to the host.  I think we should probably document using `flatpak-builder` from inside a dev (`podman`) container. \r\n\r\nAnother thing we could do in addition is to downgrade those deps to `Recommends`?",
@@ -123,7 +141,7 @@
     "date_created": "1535382334",
     "depends": [],
     "id": 30,
-    "last_updated": "1536072997",
+    "last_updated": "1536073204",
     "milestone": null,
     "priority": null,
     "private": false,
