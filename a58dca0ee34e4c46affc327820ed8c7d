@@ -98,6 +98,24 @@
                 "fullname": "Matthias Clasen",
                 "name": "mclasen"
             }
+        },
+        {
+            "comment": "Shouldn't we encourage flatpak development through GNOME Builder instead?",
+            "date_created": "1536072997",
+            "edited_on": null,
+            "editor": null,
+            "id": 529536,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "jlebon@redhat.com",
+                "emails": [
+                    "jlebon@redhat.com",
+                    "jonathan@jlebon.com"
+                ],
+                "fullname": "Jonathan Lebon",
+                "name": "jlebon"
+            }
         }
     ],
     "content": "https://pagure.io/workstation-ostree-config/c/a0788c51ee3c9e42aca6bc1c9fbf2f608ade6596\r\n\r\nis the only thing bringing in `bzr` and `subversion` to the host.  I think we should probably document using `flatpak-builder` from inside a dev (`podman`) container. \r\n\r\nAnother thing we could do in addition is to downgrade those deps to `Recommends`?",
@@ -105,7 +123,7 @@
     "date_created": "1535382334",
     "depends": [],
     "id": 30,
-    "last_updated": "1535401283",
+    "last_updated": "1536072997",
     "milestone": null,
     "priority": null,
     "private": false,
