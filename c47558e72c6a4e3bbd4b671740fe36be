@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "Some people (myself included) have had a pretty rough experience recently, with an upgrade that removed lvm2, leading to unbootable systems.\r\n\r\nWe should figure out a way to avoid a repeat.",
+    "custom_fields": [],
+    "date_created": "1536187525",
+    "depends": [],
+    "id": 33,
+    "last_updated": "1536187525",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "quality control",
+    "user": {
+        "default_email": "mclasen@redhat.com",
+        "emails": [
+            "mclasen@redhat.com"
+        ],
+        "fullname": "Matthias Clasen",
+        "name": "mclasen"
+    }
+}
