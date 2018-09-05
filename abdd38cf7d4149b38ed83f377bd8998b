@@ -3,13 +3,31 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "https://pagure.io/releng/issue/7761",
+            "date_created": "1536189081",
+            "edited_on": null,
+            "editor": null,
+            "id": 529831,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
+        }
+    ],
     "content": "Currently, we have both /workstation and /silverblue refs and people get confused about which is the 'good' one. Lets remove the other one and make sure we have all docs pointing at the right place.",
     "custom_fields": [],
     "date_created": "1536187432",
     "depends": [],
     "id": 32,
-    "last_updated": "1536187432",
+    "last_updated": "1536189081",
     "milestone": null,
     "priority": null,
     "private": false,
