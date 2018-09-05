@@ -3,13 +3,31 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "The lvm issue is solved for now by this commit:  https://pagure.io/workstation-ostree-config/c/75314ee3d7d2655cc441addbe1f862a4aaaf0434?branch=master",
+            "date_created": "1536189120",
+            "edited_on": null,
+            "editor": null,
+            "id": 529832,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
+        }
+    ],
     "content": "Some people (myself included) have had a pretty rough experience recently, with an upgrade that removed lvm2, leading to unbootable systems.\r\n\r\nWe should figure out a way to avoid a repeat.",
     "custom_fields": [],
     "date_created": "1536187525",
     "depends": [],
     "id": 33,
-    "last_updated": "1536187525",
+    "last_updated": "1536189120",
     "milestone": null,
     "priority": null,
     "private": false,
