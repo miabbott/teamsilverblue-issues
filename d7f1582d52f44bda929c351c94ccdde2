@@ -2,7 +2,7 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
+    "closed_at": "1536331203",
     "comments": [
         {
             "comment": "> authconfig --enableshadow --passalgo=sha512\r\n\r\nThat line is only necessary for RHEL7, everything after has sane defaults.\r\n\r\nTrying to include `authselect` would bring back https://github.com/pbrezina/authselect/issues/48",
@@ -57,6 +57,24 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "**Metadata Update from @dustymabe**:\n- Issue status updated to: Closed (was: Open)",
+            "date_created": "1536331205",
+            "edited_on": null,
+            "editor": null,
+            "id": 530211,
+            "notification": true,
+            "parent": null,
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "Fedora-Silverblue-ostree-x86_64-29-20180905.n.0.iso\r\n\r\nIf a provided kickstart has an authconfig line in it then the install will fail:\r\n\r\n```\r\nmsg: /usr/sbin/authconfig is missing. Cannot setup authentication.\r\n```\r\n\r\nmy kickstart happened to have the following line in it:\r\n\r\n```\r\nauthconfig --enableshadow --passalgo=sha512\r\n```\r\n\r\nshould authconfig be included in silverblue? ",
@@ -64,11 +82,11 @@
     "date_created": "1536330909",
     "depends": [],
     "id": 34,
-    "last_updated": "1536331182",
+    "last_updated": "1536331203",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [],
     "title": "should silverblue have authconfig in it - anaconda install failure",
     "user": {
