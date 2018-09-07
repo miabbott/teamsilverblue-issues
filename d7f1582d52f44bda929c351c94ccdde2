@@ -21,6 +21,24 @@
                 "fullname": "Colin Walters",
                 "name": "walters"
             }
+        },
+        {
+            "comment": "So basically, delete that from your kickstart.",
+            "date_created": "1536331132",
+            "edited_on": null,
+            "editor": null,
+            "id": 530209,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "walters@fedoraproject.org",
+                "emails": [
+                    "walters@fedoraproject.org",
+                    "walters@redhat.com"
+                ],
+                "fullname": "Colin Walters",
+                "name": "walters"
+            }
         }
     ],
     "content": "Fedora-Silverblue-ostree-x86_64-29-20180905.n.0.iso\r\n\r\nIf a provided kickstart has an authconfig line in it then the install will fail:\r\n\r\n```\r\nmsg: /usr/sbin/authconfig is missing. Cannot setup authentication.\r\n```\r\n\r\nmy kickstart happened to have the following line in it:\r\n\r\n```\r\nauthconfig --enableshadow --passalgo=sha512\r\n```\r\n\r\nshould authconfig be included in silverblue? ",
@@ -28,7 +46,7 @@
     "date_created": "1536330909",
     "depends": [],
     "id": 34,
-    "last_updated": "1536331113",
+    "last_updated": "1536331132",
     "milestone": null,
     "priority": null,
     "private": false,
