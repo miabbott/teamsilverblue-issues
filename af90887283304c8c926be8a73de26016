@@ -38,6 +38,23 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "I'll go with the rebase - I want as much GNOME 3.30 as I ca get. ;-)\r\n\r\nOn Mon, Sep 10, 2018 at 6:24 AM Dusty Mabe <pagure@pagure.io> wrote:\r\n\r\n>\r\n> dustymabe added a new comment to an issue you are following:\r\n> ``\r\n> yeah the `updates-testing` repo stays enabled until after beta I think.\r\n> This issue will resolve itself when they switch it to disabled by default.\r\n>\r\n> alternatively you can rebase to the testing ref and then you should be\r\n> able to install all packages from that repo: `rpm-ostree rebase\r\n> :fedora/29/x86_64/testing/silverblue`\r\n> ``\r\n>\r\n> To reply, visit the link below or just reply to this email\r\n> https://pagure.io/teamsilverblue/issue/36\r\n>\r\n-- \r\nHow many people can stand on the shoulders of a giant before the giant\r\ncollapses?\r\n",
+            "date_created": "1536588482",
+            "edited_on": null,
+            "editor": null,
+            "id": 530558,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "znmeb@znmeb.net",
+                "emails": [
+                    "znmeb@znmeb.net"
+                ],
+                "fullname": "M. Edward (Ed) Borasky",
+                "name": "znmeb"
+            }
         }
     ],
     "content": "I just upgraded my laptop from Silverblue 28 to 29. In the process, it removed Docker. And I can't install it now - there's some kind of conflict with GNOME shell:\r\n\r\n```\r\n$ rpm-ostree install docker\r\nChecking out tree 8781ad5... done\r\nEnabled rpm-md repositories: updates-testing updates fedora updates-modular updates-testing-modular fedora-modular\r\nrpm-md repo 'updates-testing' (cached); generated: 2018-09-08 16:07:40\r\nrpm-md repo 'updates' (cached); generated: 2018-02-20 19:18:14\r\nrpm-md repo 'fedora' (cached); generated: 2018-09-09 10:00:58\r\nrpm-md repo 'updates-modular' (cached); generated: 2018-02-20 19:18:14\r\nrpm-md repo 'updates-testing-modular' (cached); generated: 2018-02-20 19:18:14\r\nrpm-md repo 'fedora-modular' (cached); generated: 2018-09-07 10:07:41\r\nImporting metadata [=============] 100%\r\nResolving dependencies... Forbidden base package replacements:\r\n  gnome-shell-extension-launch-new-instance 3.29.91-1.fc29 -> 3.30.0-1.fc29 (updates-testing)\r\n  gnome-shell-extension-window-list 3.29.91-1.fc29 -> 3.30.0-1.fc29 (updates-testing)\r\n  gnome-shell-extension-alternate-tab 3.29.91-1.fc29 -> 3.30.0-1.fc29 (updates-testing)\r\n  gnome-shell-extension-common 3.29.91-1.fc29 -> 3.30.0-1.fc29 (updates-testing)\r\n  gnome-shell-extension-places-menu 3.29.91-1.fc29 -> 3.30.0-1.fc29 (updates-testing)\r\n  gnome-shell 3.29.91-1.fc29 -> 3.30.0-1.fc29 (updates-testing)\r\n  git-core 2.19.0-0.0.rc0.fc29 -> 2.19.0-0.2.rc1.fc29 (updates-testing)\r\n  mutter 3.29.91-1.fc29 -> 3.30.0-1.fc29 (updates-testing)\r\n  gnome-shell-extension-apps-menu 3.29.91-1.fc29 -> 3.30.0-1.fc29 (updates-testing)\r\n  gnome-classic-session 3.29.91-1.fc29 -> 3.30.0-1.fc29 (updates-testing)\r\nfailed\r\nerror: Some base packages would be replaced\r\n\r\n```",
@@ -45,7 +62,7 @@
     "date_created": "1536537656",
     "depends": [],
     "id": 36,
-    "last_updated": "1536585879",
+    "last_updated": "1536588482",
     "milestone": null,
     "priority": null,
     "private": false,
