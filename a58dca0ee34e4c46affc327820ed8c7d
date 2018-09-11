@@ -134,6 +134,23 @@
                 "fullname": "Jonathan Lebon",
                 "name": "jlebon"
             }
+        },
+        {
+            "comment": "There's also an alternative approach to consider here: does flatpak-builder need to exist on the host at all? There's org.flatpak.Builder where the dependencies are isolated to within Flatpak. Looks like also org.gnome.Builder exists but it's still using flatpak-builder 0.10.x which is reasonably old.",
+            "date_created": "1536683376",
+            "edited_on": null,
+            "editor": null,
+            "id": 530806,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "seppo.yli-olli@iki.fi",
+                "emails": [
+                    "seppo.yli-olli@iki.fi"
+                ],
+                "fullname": "Seppo Yli-Olli",
+                "name": "nanonyme"
+            }
         }
     ],
     "content": "https://pagure.io/workstation-ostree-config/c/a0788c51ee3c9e42aca6bc1c9fbf2f608ade6596\r\n\r\nis the only thing bringing in `bzr` and `subversion` to the host.  I think we should probably document using `flatpak-builder` from inside a dev (`podman`) container. \r\n\r\nAnother thing we could do in addition is to downgrade those deps to `Recommends`?",
@@ -141,7 +158,7 @@
     "date_created": "1535382334",
     "depends": [],
     "id": 30,
-    "last_updated": "1536073204",
+    "last_updated": "1536683376",
     "milestone": null,
     "priority": null,
     "private": false,
