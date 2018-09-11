@@ -100,10 +100,19 @@
             }
         },
         {
-            "comment": "Is xorg-x11-drv-modesetting installed? Per @ajax , he would usually expect that driver to work in this case.",
+            "comment": "Is xorg-x11-drv-modesetting installed? Per @ajax , he would usually expect that driver to work in this case.\r\n\r\nEdit: actually modesetting is part of xorg-x11-server-Xorg now, according to @ajax ...so it should've been available. Can we tell why it wasn't, or didn't work, at all?",
             "date_created": "1536690570",
-            "edited_on": null,
-            "editor": null,
+            "edited_on": "1536690753",
+            "editor": {
+                "default_email": "adamwill@fedoraproject.org",
+                "emails": [
+                    "adamwill",
+                    "adamwill@fedoraproject.org",
+                    "awilliam@redhat.com"
+                ],
+                "fullname": "Adam Williamson",
+                "name": "adamwill"
+            },
             "id": 530848,
             "notification": false,
             "parent": null,
@@ -124,7 +133,7 @@
     "date_created": "1536639000",
     "depends": [],
     "id": 37,
-    "last_updated": "1536690570",
+    "last_updated": "1536691004",
     "milestone": null,
     "priority": null,
     "private": false,
