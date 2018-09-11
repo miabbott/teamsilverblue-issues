@@ -325,6 +325,24 @@
                 "fullname": "M. Edward (Ed) Borasky",
                 "name": "znmeb"
             }
+        },
+        {
+            "comment": "in a few hours I can send you the exact commands.. ",
+            "date_created": "1536701284",
+            "edited_on": null,
+            "editor": null,
+            "id": 530891,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "How to reproduce:\r\n\r\n1. Log in to Silverblue 28 with the default (GNOME - default is Wayland), it works.\r\n2. Log out.\r\n3. Try to log in with \"GNOME on Xorg\". The screen flashes and it goes back to the login screen.\r\n\r\nWhat's happening is that X is segfaulting - see attached Xorg.0.log. Are there some packages missing?\r\n[![Xorg.0.log](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)\r\n",
@@ -332,7 +350,7 @@
     "date_created": "1536639000",
     "depends": [],
     "id": 37,
-    "last_updated": "1536700968",
+    "last_updated": "1536701283",
     "milestone": null,
     "priority": null,
     "private": false,
