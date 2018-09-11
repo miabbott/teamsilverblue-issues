@@ -186,6 +186,25 @@
                 "fullname": "M. Edward (Ed) Borasky",
                 "name": "znmeb"
             }
+        },
+        {
+            "comment": "@znmeb yes, please do test. Basically, what @ajax is saying is, you shouldn't *need* to install xorg-x11-drv-amdgpu : X should work with the 'modesetting' driver. He thinks the reason it didn't might be a bug that is fixed by https://koji.fedoraproject.org/koji/taskinfo?taskID=29620484 .\r\n\r\nSo basically we would like you to test the affected system *without* xorg-x11-drv-amdgpu installed, but *with* your system updated with the packages from that scratch build, and see if X works that way.\r\n\r\nThanks!",
+            "date_created": "1536693707",
+            "edited_on": null,
+            "editor": null,
+            "id": 530858,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "adamwill@fedoraproject.org",
+                "emails": [
+                    "adamwill",
+                    "adamwill@fedoraproject.org",
+                    "awilliam@redhat.com"
+                ],
+                "fullname": "Adam Williamson",
+                "name": "adamwill"
+            }
         }
     ],
     "content": "How to reproduce:\r\n\r\n1. Log in to Silverblue 28 with the default (GNOME - default is Wayland), it works.\r\n2. Log out.\r\n3. Try to log in with \"GNOME on Xorg\". The screen flashes and it goes back to the login screen.\r\n\r\nWhat's happening is that X is segfaulting - see attached Xorg.0.log. Are there some packages missing?\r\n[![Xorg.0.log](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)\r\n",
@@ -193,7 +212,7 @@
     "date_created": "1536639000",
     "depends": [],
     "id": 37,
-    "last_updated": "1536693415",
+    "last_updated": "1536693707",
     "milestone": null,
     "priority": null,
     "private": false,
