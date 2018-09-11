@@ -1,0 +1,49 @@
+[   454.577] 
+X.Org X Server 1.19.6
+Release Date: 2017-12-20
+[   454.578] X Protocol Version 11, Revision 0
+[   454.578] Build Operating System:  4.15.3-300.fc27.x86_64 
+[   454.578] Current Operating System: Linux Silverblue 4.17.19-200.fc28.x86_64 #1 SMP Fri Aug 24 15:47:41 UTC 2018 x86_64
+[   454.579] Kernel command line: BOOT_IMAGE=/ostree/fedora-workstation-0a995a731718d03247dd24d8d67cc746ea8e0cc70483c5b7eff3eb69365e254a/vmlinuz-4.17.19-200.fc28.x86_64 resume=UUID=90704e22-407e-488f-9f27-6b87a2aa035a rhgb root=UUID=7089a930-e953-41ec-b1c0-28222e72c7cd video=1366x768@60 modprobe.blacklist=radeon amdgpu.cik_support=1 radeon.cik_support=0 ostree=/ostree/boot.0/fedora-workstation/0a995a731718d03247dd24d8d67cc746ea8e0cc70483c5b7eff3eb69365e254a/0
+[   454.581] Build Date: 23 April 2018  06:16:50PM
+[   454.581] Build ID: xorg-x11-server 1.19.6-8.fc28 
+[   454.582] Current version of pixman: 0.34.0
+[   454.583] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[   454.583] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[   454.585] (==) Log file: "/var/log/Xorg.0.log", Time: Mon Sep 10 20:54:22 2018
+[   454.585] (II) Loader magic: 0x825e00
+[   454.585] (II) Module ABI versions:
+[   454.585] 	X.Org ANSI C Emulation: 0.4
+[   454.585] 	X.Org Video Driver: 23.0
+[   454.585] 	X.Org XInput driver : 24.1
+[   454.585] 	X.Org Server Extension : 10.0
+[   454.588] (--) using VT number 1
+
+[   454.588] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[   454.589] (II) xfree86: Adding drm device (/dev/dri/card0)
+[   454.591] (EE) 
+[   454.592] (EE) Backtrace:
+[   454.612] (EE) 0: /usr/libexec/Xorg (OsLookupColor+0x13d) [0x59d5bd]
+[   454.615] (EE) 1: /lib64/libpthread.so.0 (funlockfile+0x50) [0x7fe238119fff]
+[   454.617] (EE) 2: /usr/libexec/Xorg (xf86PlatformMatchDriver+0x2ad) [0x4948fd]
+[   454.617] (EE) 3: /usr/libexec/Xorg (xf86BusProbe+0xd) [0x46bc9d]
+[   454.618] (EE) 4: /usr/libexec/Xorg (InitOutput+0x7ba) [0x47ad0a]
+[   454.619] (EE) 5: /usr/libexec/Xorg (InitFonts+0x20d) [0x438d5d]
+[   454.634] (EE) 6: /lib64/libc.so.6 (__libc_start_main+0xeb) [0x7fe237d6b11b]
+[   454.636] (EE) 7: /usr/libexec/Xorg (_start+0x2a) [0x42290a]
+[   454.638] (EE) 
+[   454.639] (EE) Segmentation fault at address 0x50
+[   454.640] (EE) 
+Fatal server error:
+[   454.642] (EE) Caught signal 11 (Segmentation fault). Server aborting
+[   454.642] (EE) 
+[   454.643] (EE) 
+Please consult the Fedora Project support 
+	 at http://wiki.x.org
+ for help. 
+[   454.645] (EE) Please also check the log file at "/var/log/Xorg.0.log" for additional information.
+[   454.646] (EE) 
+[   454.647] (EE) Server terminated with error (1). Closing log file.
