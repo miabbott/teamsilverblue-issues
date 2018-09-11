@@ -224,10 +224,18 @@
             }
         },
         {
-            "comment": "@znmeb can you do a few things for us:\r\n\r\n- open a bug in bugzilla for this issue: [link](https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora&component=distribution)\r\n- test out the above `xorg-x11-server` build by\r\n\r\nto do the 2nd part:\r\n\r\n- First remove the `xorg-x11-drv-amdgpu` with `rpm-ostree uninstall xorg-x11-drv-amdgpu`\r\n- download `xorg-x11-server` rpms from x86_64 koji build and run `rpm-ostree override replace rpm1.rpm rpm2.rpm rpm3.rpm...` ",
+            "comment": "@znmeb can you do a few things for us:\r\n\r\n- open a bug in bugzilla for this issue: [link](https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora&component=distribution)\r\n- test out the above `xorg-x11-server` build by\r\n\r\nto do the 2nd part:\r\n\r\n- First remove the `xorg-x11-drv-amdgpu` with `rpm-ostree uninstall xorg-x11-drv-amdgpu`\r\n- download `xorg-x11-server` rpms from x86_64 koji build and run `rpm-ostree override replace rpm1.rpm rpm2.rpm rpm3.rpm...`\r\n- reboot",
             "date_created": "1536695031",
-            "edited_on": null,
-            "editor": null,
+            "edited_on": "1536695091",
+            "editor": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            },
             "id": 530860,
             "notification": false,
             "parent": null,
