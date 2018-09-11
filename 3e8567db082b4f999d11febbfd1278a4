@@ -40,10 +40,17 @@
             }
         },
         {
-            "comment": "I'd say it's a must-have - the older AMD cards will work with the `radeon` or `ati` drivers but the newer ones need `amdgpu`. ",
+            "comment": "I'd say it's a must-have - the older AMD cards will work with the `radeon` or `ati` drivers but the newer ones need `amdgpu`. \r\n\r\nhttps://www.phoronix.com/scan.php?page=search&q=AMDGPU",
             "date_created": "1536688021",
-            "edited_on": null,
-            "editor": null,
+            "edited_on": "1536688094",
+            "editor": {
+                "default_email": "znmeb@znmeb.net",
+                "emails": [
+                    "znmeb@znmeb.net"
+                ],
+                "fullname": "M. Edward (Ed) Borasky",
+                "name": "znmeb"
+            },
             "id": 530830,
             "notification": false,
             "parent": null,
