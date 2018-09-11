@@ -128,10 +128,18 @@
             }
         },
         {
-            "comment": "do you see anything missing from this list: https://pagure.io/workstation-ostree-config/blob/master/f/fedora-common-ostree-pkgs.json#_219-233 ?",
+            "comment": "do you see anything missing from this list: https://pagure.io/workstation-ostree-config/blob/master/f/fedora-common-ostree-pkgs.json#_219-233 ?\r\n\r\nthese manifests get synced with comps via a script. ",
             "date_created": "1536691004",
-            "edited_on": null,
-            "editor": null,
+            "edited_on": "1536691053",
+            "editor": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            },
             "id": 530851,
             "notification": false,
             "parent": null,
@@ -144,6 +152,23 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "> do you see anything missing from this list: https://pagure.io/workstation-ostree-config/blob/master/f/fedora-common-ostree-pkgs.json#_219-233 ?\r\n> these manifests get synced with comps via a script.\r\n\r\nThat list looks fine.\r\n\r\nI'd be a little cautious in attempting to fix this by installing amdgpu, at least in a \"release blocker\" sense. Existing machines where this bug doesn't appear might find themselves running amdgpu instead of modesetting; probably that's fine, but it's a larger change than you might be willing to absorb.\r\n\r\nThere's a patch in xserver master that looks relevant. Try this test build instead (without amdgpu installed):\r\n\r\nhttps://koji.fedoraproject.org/koji/taskinfo?taskID=29620484",
+            "date_created": "1536693226",
+            "edited_on": null,
+            "editor": null,
+            "id": 530853,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "ajax@redhat.com",
+                "emails": [
+                    "ajax@redhat.com"
+                ],
+                "fullname": "Adam Jackson",
+                "name": "ajax"
+            }
         }
     ],
     "content": "How to reproduce:\r\n\r\n1. Log in to Silverblue 28 with the default (GNOME - default is Wayland), it works.\r\n2. Log out.\r\n3. Try to log in with \"GNOME on Xorg\". The screen flashes and it goes back to the login screen.\r\n\r\nWhat's happening is that X is segfaulting - see attached Xorg.0.log. Are there some packages missing?\r\n[![Xorg.0.log](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)\r\n",
@@ -151,7 +176,7 @@
     "date_created": "1536639000",
     "depends": [],
     "id": 37,
-    "last_updated": "1536691004",
+    "last_updated": "1536693226",
     "milestone": null,
     "priority": null,
     "private": false,
