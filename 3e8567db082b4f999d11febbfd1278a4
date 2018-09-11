@@ -169,6 +169,23 @@
                 "fullname": "Adam Jackson",
                 "name": "ajax"
             }
+        },
+        {
+            "comment": "I can run tests / grab logs on this system if you want - I don't know\r\nwhether modesetting worked or not.\r\n\r\nOn Tue, Sep 11, 2018 at 12:13 PM Adam Jackson <pagure@pagure.io> wrote:\r\n\r\n>\r\n> ajax added a new comment to an issue you are following:\r\n> ``\r\n> > do you see anything missing from this list:\r\n> https://pagure.io/workstation-ostree-config/blob/master/f/fedora-common-ostree-pkgs.json#_219-233\r\n> ?\r\n> > these manifests get synced with comps via a script.\r\n>\r\n> That list looks fine.\r\n>\r\n> I'd be a little cautious in attempting to fix this by installing amdgpu,\r\n> at least in a \"release blocker\" sense. Existing machines where this bug\r\n> doesn't appear might find themselves running amdgpu instead of modesetting;\r\n> probably that's fine, but it's a larger change than you might be willing to\r\n> absorb.\r\n>\r\n> There's a patch in xserver master that looks relevant. Try this test build\r\n> instead (without amdgpu installed):\r\n>\r\n> https://koji.fedoraproject.org/koji/taskinfo?taskID=29620484\r\n> ``\r\n>\r\n> To reply, visit the link below or just reply to this email\r\n> https://pagure.io/teamsilverblue/issue/37\r\n>\r\n-- \r\nHow many people can stand on the shoulders of a giant before the giant\r\ncollapses?\r\n",
+            "date_created": "1536693415",
+            "edited_on": null,
+            "editor": null,
+            "id": 530856,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "znmeb@znmeb.net",
+                "emails": [
+                    "znmeb@znmeb.net"
+                ],
+                "fullname": "M. Edward (Ed) Borasky",
+                "name": "znmeb"
+            }
         }
     ],
     "content": "How to reproduce:\r\n\r\n1. Log in to Silverblue 28 with the default (GNOME - default is Wayland), it works.\r\n2. Log out.\r\n3. Try to log in with \"GNOME on Xorg\". The screen flashes and it goes back to the login screen.\r\n\r\nWhat's happening is that X is segfaulting - see attached Xorg.0.log. Are there some packages missing?\r\n[![Xorg.0.log](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)\r\n",
@@ -176,7 +193,7 @@
     "date_created": "1536639000",
     "depends": [],
     "id": 37,
-    "last_updated": "1536693226",
+    "last_updated": "1536693415",
     "milestone": null,
     "priority": null,
     "private": false,
