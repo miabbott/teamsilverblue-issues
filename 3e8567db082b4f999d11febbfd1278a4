@@ -534,6 +534,25 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "@znmeb I am actually curious about something: have you ever tried running Xorg on a 'regular' (not ostree/atomic/silverblue) Fedora install on this system? Does that work? Could you try perhaps the F28 KDE live image and see if it boots OK and if so, what X driver it uses? Thanks!",
+            "date_created": "1536730839",
+            "edited_on": null,
+            "editor": null,
+            "id": 530932,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "adamwill@fedoraproject.org",
+                "emails": [
+                    "adamwill",
+                    "adamwill@fedoraproject.org",
+                    "awilliam@redhat.com"
+                ],
+                "fullname": "Adam Williamson",
+                "name": "adamwill"
+            }
         }
     ],
     "content": "How to reproduce:\r\n\r\n1. Log in to Silverblue 28 with the default (GNOME - default is Wayland), it works.\r\n2. Log out.\r\n3. Try to log in with \"GNOME on Xorg\". The screen flashes and it goes back to the login screen.\r\n\r\nWhat's happening is that X is segfaulting - see attached Xorg.0.log. Are there some packages missing?\r\n[![Xorg.0.log](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)\r\n",
@@ -541,7 +560,7 @@
     "date_created": "1536639000",
     "depends": [],
     "id": 37,
-    "last_updated": "1536725862",
+    "last_updated": "1536730839",
     "milestone": null,
     "priority": null,
     "private": false,
