@@ -20,6 +20,23 @@
                 "fullname": "Sinny Kumari",
                 "name": "sinnykumari"
             }
+        },
+        {
+            "comment": "Silverblue Test Day wiki page is up https://fedoraproject.org/wiki/Test_Day:2018-09-20_Silverblue_Testday now. Link of latest Silverblue media to be tested will be added before Test Day.\r\n\r\nSome initial Silverblue Test cases has been created at http://testdays.fedorainfracloud.org/events/47 . @mclasen , @otaylor and others, can you please review them and see if existing test cases are ok? Also, can we have additional test cases (if any) listed in comment so that @sumantrom and other QA members can get additional test cases created as well?",
+            "date_created": "1536764786",
+            "edited_on": null,
+            "editor": null,
+            "id": 531045,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "ksinny@gmail.com",
+                "emails": [
+                    "ksinny@gmail.com"
+                ],
+                "fullname": "Sinny Kumari",
+                "name": "sinnykumari"
+            }
         }
     ],
     "content": "During Fedora 28, we tested Silverblue(FAW) as part of [Fedora 28 Cloud/Atomic Test Day](http://testdays.fedorainfracloud.org/events/39).\r\n\r\nWith F29 approaching, it will be nice to plan in advance a Test Day for Fedora 29 Silverblue. We have a  [QA ticket](https://pagure.io/fedora-qa/issue/564) opened by @sumantrom to have a Test Day for Fedora Silverblue.\r\n\r\nThis ticket is to come up with a date when we can have Test Day and Test cases which we want to get tested by community during F29 Silverblue Test Day.\r\n\r\nAccording to current [F29 schedule](https://fedoraproject.org/wiki/Releases/29/Schedule) -\r\n- Preferred target for Beta Release 2018-09-18 \r\n- Final Freeze 2018-10-09\r\n- Preferred target for GA 2018-10-23",
@@ -27,7 +44,7 @@
     "date_created": "1534852528",
     "depends": [],
     "id": 28,
-    "last_updated": "1536042724",
+    "last_updated": "1536764786",
     "milestone": null,
     "priority": null,
     "private": false,
