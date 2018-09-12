@@ -608,6 +608,23 @@
                 "fullname": "Adam Williamson",
                 "name": "adamwill"
             }
+        },
+        {
+            "comment": "I booted the F29 i386 KDE Live (https://kojipkgs.fedoraproject.org/compose/branched/Fedora-29-20180911.n.0/compose/Spins/i386/iso/Fedora-KDE-Live-i386-29-20180911.n.0.iso)\r\n\r\nIt looks like the kernel is loading both the `amdgpu` and `radeon` modules, which I think isn't supposed to work on the newer cards but may be OK for this one. It didn't cause any problems.\r\n\r\nHere's what `dnf list installed | grep xorg` says:\r\n\r\n```\r\nabrt-addon-xorg.i686                             2.10.10-4.fc29                      @anaconda\r\nxorg-x11-apps.i686                               7.7-22.fc29                         @anaconda\r\nxorg-x11-drv-ati.i686                            18.0.1-2.fc29                       @anaconda\r\nxorg-x11-drv-evdev.i686                          2.10.6-3.fc29                       @anaconda\r\nxorg-x11-drv-fbdev.i686                          0.5.0-2.fc29                        @anaconda\r\nxorg-x11-drv-intel.i686                          2.99.917-39.20180618.fc29           @anaconda\r\nxorg-x11-drv-libinput.i686                       0.28.0-2.fc29                       @anaconda\r\nxorg-x11-drv-nouveau.i686                        1:1.0.15-6.fc29                     @anaconda\r\nxorg-x11-drv-openchrome.i686                     0.6.0-6.fc29                        @anaconda\r\nxorg-x11-drv-qxl.i686                            0.1.5-10.fc29                       @anaconda\r\nxorg-x11-drv-vesa.i686                           2.4.0-4.fc29                        @anaconda\r\nxorg-x11-drv-vmware.i686                         13.2.1-8.fc29                       @anaconda\r\nxorg-x11-drv-wacom.i686                          0.36.1-5.fc29                       @anaconda\r\nxorg-x11-drv-wacom-serial-support.i686           0.36.1-5.fc29                       @anaconda\r\nxorg-x11-font-utils.i686                         1:7.5-40.fc29                       @anaconda\r\nxorg-x11-fonts-misc.noarch                       7.5-20.fc29                         @anaconda\r\nxorg-x11-server-Xorg.i686                        1.20.1-1.fc29                       @anaconda\r\nxorg-x11-server-common.i686                      1.20.1-1.fc29                       @anaconda\r\nxorg-x11-server-utils.i686                       7.7-26.fc29                         @anaconda\r\nxorg-x11-utils.i686                              7.5-29.fc29                         @anaconda\r\nxorg-x11-xauth.i686                              1:1.0.9-13.fc29                     @anaconda\r\nxorg-x11-xbitmaps.noarch                         1.1.1-15.fc29                       @anaconda\r\nxorg-x11-xinit.i686                              1.4.0-3.fc29                        @anaconda\r\nxorg-x11-xkb-utils.i686                          7.7-27.fc29                         @anaconda\r\n```\r\n\r\nX found the `radeon` driver but not the `amdgpu` driver. I'm guessing if I switch my kernel arguments around and don't blacklist the `radeon` kernel module X will come up in Silverblue 28 too. \r\n\r\nYou should probably test on a newer AMD card - one that requires the `amdgpu` kernel module - to see what happens. I can't help you there; this will be the last AMD GPU I ever buy. ;-)",
+            "date_created": "1536737169",
+            "edited_on": null,
+            "editor": null,
+            "id": 530952,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "znmeb@znmeb.net",
+                "emails": [
+                    "znmeb@znmeb.net"
+                ],
+                "fullname": "M. Edward (Ed) Borasky",
+                "name": "znmeb"
+            }
         }
     ],
     "content": "How to reproduce:\r\n\r\n1. Log in to Silverblue 28 with the default (GNOME - default is Wayland), it works.\r\n2. Log out.\r\n3. Try to log in with \"GNOME on Xorg\". The screen flashes and it goes back to the login screen.\r\n\r\nWhat's happening is that X is segfaulting - see attached Xorg.0.log. Are there some packages missing?\r\n[![Xorg.0.log](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)\r\n",
