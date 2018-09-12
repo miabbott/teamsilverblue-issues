@@ -694,6 +694,23 @@
                 "fullname": "M. Edward (Ed) Borasky",
                 "name": "znmeb"
             }
+        },
+        {
+            "comment": "> \r\n> @znmeb maybe we should wait for f29 beta to come out and then have you try f29 silverblue beta to see if you have this issue or not\r\n> \r\n> That's my plan ... I am on the mailing lists so I should see the Go-No Go meetings. I'm planning to do the Silverblue test day on the 20th. Meanwhile I'll be wringing out the OpenCL stuff on Silverblue 28 as much as possible.\r\n\r\nIt looks like there is a Silverblue 29 Beta - I managed to get a rebase to work.\r\n\r\n```\r\n$ rpm-ostree status\r\nState: idle\r\nAutomaticUpdates: disabled\r\nDeployments:\r\n\u25cf ostree://fedora-workstation:fedora/28/x86_64/workstation\r\n                   Version: 28.20180911.0 (2018-09-11 15:06:50)\r\n                BaseCommit: acfb4afdebf0731ce0b9134adf434173472a970328d75ece68d5015af27b33e4\r\n              GPGSignature: Valid signature by 128CF232A9371991C8A65695E08E7E629DB62FB1\r\n           LayeredPackages: chrome-gnome-shell cockpit docker-compose f28-backgrounds-extras-gnome git git-lfs\r\n                            kernel-tools mediawriter powertop python3-speedtest-cli vim-enhanced xorg-x11-drv-amdgpu\r\n\r\n  ostree://fedora-workstation:fedora/29/x86_64/silverblue\r\n                   Version: 29_Beta.1.1 (2018-09-12 11:43:54)\r\n                BaseCommit: 478cb224043d9f5175ba282ffc787350a9c6e1ff46411e0f19f262d60df97e93\r\n              GPGSignature: Valid signature by 5A03B4DD8254ECA02FDA1637A20AA56B429476B4\r\n           LayeredPackages: chrome-gnome-shell cockpit docker-compose f28-backgrounds-extras-gnome git git-lfs\r\n                            kernel-tools mediawriter powertop python3-speedtest-cli vim-enhanced xorg-x11-drv-amdgpu\r\n```\r\n\r\nI'll do some more testing tonight now that I have an F29 workstation live USB stick to test with. ",
+            "date_created": "1536794876",
+            "edited_on": null,
+            "editor": null,
+            "id": 531102,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "znmeb@znmeb.net",
+                "emails": [
+                    "znmeb@znmeb.net"
+                ],
+                "fullname": "M. Edward (Ed) Borasky",
+                "name": "znmeb"
+            }
         }
     ],
     "content": "How to reproduce:\r\n\r\n1. Log in to Silverblue 28 with the default (GNOME - default is Wayland), it works.\r\n2. Log out.\r\n3. Try to log in with \"GNOME on Xorg\". The screen flashes and it goes back to the login screen.\r\n\r\nWhat's happening is that X is segfaulting - see attached Xorg.0.log. Are there some packages missing?\r\n[![Xorg.0.log](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)\r\n",
@@ -701,7 +718,7 @@
     "date_created": "1536639000",
     "depends": [],
     "id": 37,
-    "last_updated": "1536783598",
+    "last_updated": "1536794876",
     "milestone": null,
     "priority": null,
     "private": false,
