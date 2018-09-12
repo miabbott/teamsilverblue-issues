@@ -625,6 +625,23 @@
                 "fullname": "M. Edward (Ed) Borasky",
                 "name": "znmeb"
             }
+        },
+        {
+            "comment": "> Info on f25 or Arch isn't much use, what I'm curious about is whether we have this same problem in a similar-but-not-ostree-ish Fedora image.\r\n> Here's an F29 KDE live: https://kojipkgs.fedoraproject.org/compose/branched/Fedora-29-20180911.n.0/compose/Spins/x86_64/iso/Fedora-KDE-Live-x86_64-29-20180911.n.0.iso\r\n\r\nI tried the KDE F29 i386 live compose - see https://pagure.io/teamsilverblue/issue/37#comment-530952\r\n\r\nIt looks like F29 is OK on this old AMD card - it works with either the `radeon` or `amdgpu` kernel module. But you'll need to test on a newer AMD card - I think some of them require the `amdgpu` kernel module.",
+            "date_created": "1536742983",
+            "edited_on": null,
+            "editor": null,
+            "id": 530967,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "znmeb@znmeb.net",
+                "emails": [
+                    "znmeb@znmeb.net"
+                ],
+                "fullname": "M. Edward (Ed) Borasky",
+                "name": "znmeb"
+            }
         }
     ],
     "content": "How to reproduce:\r\n\r\n1. Log in to Silverblue 28 with the default (GNOME - default is Wayland), it works.\r\n2. Log out.\r\n3. Try to log in with \"GNOME on Xorg\". The screen flashes and it goes back to the login screen.\r\n\r\nWhat's happening is that X is segfaulting - see attached Xorg.0.log. Are there some packages missing?\r\n[![Xorg.0.log](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)\r\n",
@@ -632,7 +649,7 @@
     "date_created": "1536639000",
     "depends": [],
     "id": 37,
-    "last_updated": "1536737169",
+    "last_updated": "1536742983",
     "milestone": null,
     "priority": null,
     "private": false,
