@@ -37,6 +37,23 @@
                 "fullname": "Sinny Kumari",
                 "name": "sinnykumari"
             }
+        },
+        {
+            "comment": "I'm currently testing\r\n\r\n1. Rebase from Silverblue 28 to 29 and rollbacks\r\n2. AMD old-ish (Sea Islands) GPU usage. I've run into some things that should probably be tested on the latest AMD cards; I've got work-arounds for mine.\r\n3. OpenCL. A lot of this is probably upstream in freedesktop.org packages but some of it is Fedora.",
+            "date_created": "1536784497",
+            "edited_on": null,
+            "editor": null,
+            "id": 531076,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "znmeb@znmeb.net",
+                "emails": [
+                    "znmeb@znmeb.net"
+                ],
+                "fullname": "M. Edward (Ed) Borasky",
+                "name": "znmeb"
+            }
         }
     ],
     "content": "During Fedora 28, we tested Silverblue(FAW) as part of [Fedora 28 Cloud/Atomic Test Day](http://testdays.fedorainfracloud.org/events/39).\r\n\r\nWith F29 approaching, it will be nice to plan in advance a Test Day for Fedora 29 Silverblue. We have a  [QA ticket](https://pagure.io/fedora-qa/issue/564) opened by @sumantrom to have a Test Day for Fedora Silverblue.\r\n\r\nThis ticket is to come up with a date when we can have Test Day and Test cases which we want to get tested by community during F29 Silverblue Test Day.\r\n\r\nAccording to current [F29 schedule](https://fedoraproject.org/wiki/Releases/29/Schedule) -\r\n- Preferred target for Beta Release 2018-09-18 \r\n- Final Freeze 2018-10-09\r\n- Preferred target for GA 2018-10-23",
@@ -44,7 +61,7 @@
     "date_created": "1534852528",
     "depends": [],
     "id": 28,
-    "last_updated": "1536764786",
+    "last_updated": "1536784497",
     "milestone": null,
     "priority": null,
     "private": false,
