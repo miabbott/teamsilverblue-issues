@@ -589,6 +589,25 @@
                 "fullname": "Adam Williamson",
                 "name": "adamwill"
             }
+        },
+        {
+            "comment": "or I guess you could try the Workstation live:\r\n\r\nhttps://kojipkgs.fedoraproject.org/compose/branched/Fedora-29-20180911.n.0/compose/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-29-20180911.n.0.iso\r\n\r\nlog out of the Shell after it boots, then try logging into the X session...",
+            "date_created": "1536734193",
+            "edited_on": null,
+            "editor": null,
+            "id": 530936,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "adamwill@fedoraproject.org",
+                "emails": [
+                    "adamwill",
+                    "adamwill@fedoraproject.org",
+                    "awilliam@redhat.com"
+                ],
+                "fullname": "Adam Williamson",
+                "name": "adamwill"
+            }
         }
     ],
     "content": "How to reproduce:\r\n\r\n1. Log in to Silverblue 28 with the default (GNOME - default is Wayland), it works.\r\n2. Log out.\r\n3. Try to log in with \"GNOME on Xorg\". The screen flashes and it goes back to the login screen.\r\n\r\nWhat's happening is that X is segfaulting - see attached Xorg.0.log. Are there some packages missing?\r\n[![Xorg.0.log](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)\r\n",
@@ -596,7 +615,7 @@
     "date_created": "1536639000",
     "depends": [],
     "id": 37,
-    "last_updated": "1536734151",
+    "last_updated": "1536734193",
     "milestone": null,
     "priority": null,
     "private": false,
