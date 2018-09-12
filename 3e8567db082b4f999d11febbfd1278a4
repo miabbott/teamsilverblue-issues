@@ -460,10 +460,17 @@
             }
         },
         {
-            "comment": "1. I don't know if it affects F29 or not. I can't even get a greeter from `gdm` on this machine with Silverblue 29. I'll be moving on to troubleshooting that as soon as we figure out what this one is.\r\n\r\n2. I got the rpm-ostree override to work but F28 still can't bring up GNOME on Xorg. I have `dmesg` logs and `journalctl -u gdm` logs with debug enabled if you need them, but I think X is still crashing.\r\n\r\nI stopped `gdm` and did `X -configure` to capture an error log. (attached). It looks like the `amdgpu` driver is still missing. The `radeon` kernel module is blacklisted but I don't know why X couldn't use one of the other drivers. ",
+            "comment": "1. I don't know if it affects F29 or not. I can't even get a greeter from `gdm` on this machine with Silverblue 29. I'll be moving on to troubleshooting that as soon as we figure out what this one is.\r\n\r\n2. I got the rpm-ostree override to work but F28 still can't bring up GNOME on Xorg. I have `dmesg` logs and `journalctl -u gdm` logs with debug enabled if you need them, but I think X is still crashing.\r\n\r\nI stopped `gdm` and did `X -configure` to capture an error log. (attached). It looks like the `amdgpu` driver is still missing. The `radeon` kernel module is blacklisted but I don't know why X couldn't use one of the other drivers. \r\n\r\nP.S.: This AMD card is a nightmare - the kernel modules are a rapidly moving target as are the kernel command line arguments to make it work. I may be the only one in the world that's got this issue.",
             "date_created": "1536724415",
-            "edited_on": null,
-            "editor": null,
+            "edited_on": "1536725327",
+            "editor": {
+                "default_email": "znmeb@znmeb.net",
+                "emails": [
+                    "znmeb@znmeb.net"
+                ],
+                "fullname": "M. Edward (Ed) Borasky",
+                "name": "znmeb"
+            },
             "id": 530913,
             "notification": false,
             "parent": null,
@@ -509,6 +516,24 @@
                 "fullname": "M. Edward (Ed) Borasky",
                 "name": "znmeb"
             }
+        },
+        {
+            "comment": "@ajax FYI ^^ ",
+            "date_created": "1536725862",
+            "edited_on": null,
+            "editor": null,
+            "id": 530916,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "How to reproduce:\r\n\r\n1. Log in to Silverblue 28 with the default (GNOME - default is Wayland), it works.\r\n2. Log out.\r\n3. Try to log in with \"GNOME on Xorg\". The screen flashes and it goes back to the login screen.\r\n\r\nWhat's happening is that X is segfaulting - see attached Xorg.0.log. Are there some packages missing?\r\n[![Xorg.0.log](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)\r\n",
@@ -516,7 +541,7 @@
     "date_created": "1536639000",
     "depends": [],
     "id": 37,
-    "last_updated": "1536724539",
+    "last_updated": "1536725862",
     "milestone": null,
     "priority": null,
     "private": false,
