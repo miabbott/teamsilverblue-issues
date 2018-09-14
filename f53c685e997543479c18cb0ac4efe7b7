@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "Using a QEMU/KVM VM on Fedora 28 with:\r\n\r\nCPU: host-passthrough\r\nQ35 chipset\r\nUEFI\r\nVirtIO tablet + keyboard + VirtIO-GPU + VirtIO-SCSI HDD (QCOW2)\r\n\r\nI get through most of the setup, even put in information for the user to be created, but the installer seems to get stuck with the message \"waiting for 1 threads to finish\". FWIW, I also encountered this with the Fedora28-IoT OsTree installer, but in that case, it seemingly unstuck itself after a while of waiting.\r\n\r\n[image of installer](https://i.imgur.com/LsWoX7U.png)",
+    "custom_fields": [],
+    "date_created": "1536893982",
+    "depends": [],
+    "id": 38,
+    "last_updated": "1536893982",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Installer gets stuck at: \"Waiting for 1 Threads to Finish\"",
+    "user": {
+        "default_email": "adrianlucrececeleste@airmail.cc",
+        "emails": [
+            "adrianlucrececeleste@airmail.cc"
+        ],
+        "fullname": "Adrian Lucr\u00e8ce C\u00e9leste",
+        "name": "alc"
+    }
+}
