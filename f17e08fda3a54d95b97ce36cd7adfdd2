@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "Shall we add slirp4netns to Silverblue - I think it is needed by podman for running containers:\r\n\r\n```\r\n$ podman run fedora bash\r\nERRO[0008] could not find slirp4netns, the network namespace won't be configured: exec: \"slirp4netns\": executable file not found in $PATH \r\n$ podman run -it fedora bash\r\nERRO[0012] could not find slirp4netns, the network namespace won't be configured: exec: \"slirp4netns\": executable file not found in $PATH \r\n[root@3abb925a4b3a /]# exit\r\n```",
+    "custom_fields": [],
+    "date_created": "1536923014",
+    "depends": [],
+    "id": 39,
+    "last_updated": "1536923014",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "podman needs slirp4netns",
+    "user": {
+        "default_email": "petersen@redhat.com",
+        "emails": [
+            "petersen@redhat.com"
+        ],
+        "fullname": "Jens Petersen",
+        "name": "petersen"
+    }
+}
