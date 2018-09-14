@@ -3,13 +3,31 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "> Error while installing stocks@infinicode.de: DownloadExtensionError (6)\r\n\r\nThe number in parentheses is the status code returned by libsoup, 6 is SOUP_KNOWN_STATUS_CODE_SSL_FAILED.",
+            "date_created": "1536941927",
+            "edited_on": null,
+            "editor": null,
+            "id": 531335,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "fmuellner@redhat.com",
+                "emails": [
+                    "fmuellner@redhat.com"
+                ],
+                "fullname": "Florian M\u00fcllner",
+                "name": "fmuellner"
+            }
+        }
+    ],
     "content": "Trying to install extensions using gnome-software and it fails every time:\r\n\r\n```\r\nSep 07 13:19:00 localhost.localdomain gnome-shell[1491]: Object St.Widget (0x55d1aac77250), has been already finalized. Impossible to get any property from it.\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: == Stack trace for context 0x55d1aa8271a0 ==\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #0 0x7fff7028c3a0 b   resource:///org/gnome/shell/ui/tweener.js:73 (0x7f064c0c8cd0 @ 9)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #1 0x7fff7028c440 b   resource:///org/gnome/shell/ui/tweener.js:105 (0x7f064c0c8f78 @ 36)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #2 0x55d1aacd7950 i   resource:///org/gnome/shell/ui/tweener.js:92 (0x7f064c0c8de0 @ 52)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #3 0x7fff7028d8c0 b   resource:///org/gnome/gjs/modules/tweener/tweener.js:208 (0x7f064c0d2918 @ 54)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #4 0x7fff7028da10 b   resource:///org/gnome/gjs/modules/tweener/tweener.js:337 (0x7f064c0d29a0 @ 1626)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #5 0x7fff7028dac0 b   resource:///org/gnome/gjs/modules/tweener/tweener.js:350 (0x7f064c0d2a28 @ 100)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #6 0x7fff7028db50 b   resource:///org/gnome/gjs/modules/tweener/tweener.js:365 (0x7f064c0d2ab0 @ 10)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #7 0x7fff7028dbd0 I   resource:///org/gnome/gjs/modules/signals.js:128 (0x7f064c0cff78 @ 386)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #8 0x7fff7028dc80 b   resource:///org/gnome/shell/ui/tweener.js:207 (0x7f064c0cf5e8 @ 159)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #9 0x7fff7028dce0 I   resource:///org/gnome/gjs/modules/_legacy.js:82 (0x7f064c0b5de0 @ 71)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #10 0x7fff7028dd80 b   resource:///org/gnome/shell/ui/tweener.js:182 (0x7f064c0cf560 @ 15)\r\nSep 07 13:19:00 localhost.localdomain gnome-shell[1491]: Object St.Widget (0x55d1aac77250), has been already finalized. Impossible to set any property to it.\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: == Stack trace for context 0x55d1aa8271a0 ==\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #0 0x7fff7028c3a0 b   resource:///org/gnome/shell/ui/tweener.js:80 (0x7f064c0c8cd0 @ 82)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #1 0x7fff7028c440 b   resource:///org/gnome/shell/ui/tweener.js:105 (0x7f064c0c8f78 @ 36)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #2 0x55d1aacd7950 i   resource:///org/gnome/shell/ui/tweener.js:92 (0x7f064c0c8de0 @ 52)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #3 0x7fff7028d8c0 b   resource:///org/gnome/gjs/modules/tweener/tweener.js:208 (0x7f064c0d2918 @ 54)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #4 0x7fff7028da10 b   resource:///org/gnome/gjs/modules/tweener/tweener.js:337 (0x7f064c0d29a0 @ 1626)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #5 0x7fff7028dac0 b   resource:///org/gnome/gjs/modules/tweener/tweener.js:350 (0x7f064c0d2a28 @ 100)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #6 0x7fff7028db50 b   resource:///org/gnome/gjs/modules/tweener/tweener.js:365 (0x7f064c0d2ab0 @ 10)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #7 0x7fff7028dbd0 I   resource:///org/gnome/gjs/modules/signals.js:128 (0x7f064c0cff78 @ 386)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #8 0x7fff7028dc80 b   resource:///org/gnome/shell/ui/tweener.js:207 (0x7f064c0cf5e8 @ 159)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #9 0x7fff7028dce0 I   resource:///org/gnome/gjs/modules/_legacy.js:82 (0x7f064c0b5de0 @ 71)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: #10 0x7fff7028dd80 b   resource:///org/gnome/shell/ui/tweener.js:182 (0x7f064c0cf560 @ 15)\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: Window manager warning: HW cursor for format 875713089 not supported\r\nSep 07 13:19:00 localhost.localdomain org.gnome.Shell.desktop[1491]: Window manager warning: HW cursor for format 875713089 not supported\r\nSep 07 13:19:00 localhost.localdomain gnome-shell[1491]: Error while installing stocks@infinicode.de: DownloadExtensionError (6)\r\nSep 07 13:19:00 localhost.localdomain gnome-software[1753]: not GsPlugin error from plugin shell-extensions g-io-error-quark:36: GDBus.Error:org.gnome.Shell.DownloadExtensionError: 6\r\nSep 07 13:19:00 localhost.localdomain gnome-software[1753]: failed to call gs_plugin_app_install on shell-extensions: GDBus.Error:org.gnome.Shell.DownloadExtensionError: 6\r\n```\r\n\r\n```\r\nbash-4.4# rpm-ostree status\r\nState: idle\r\nAutomaticUpdates: disabled\r\nDeployments:\r\n\u25cf ostree://fedora:fedora/29/x86_64/silverblue\r\n                   Version: 29.20180905.n.0 (2018-09-06 02:15:39)\r\n                BaseCommit: 8781ad5a58f3a7dbedaad23391fa439dbb6bb3bcf9a7b267148e4fa3aad102c0\r\n           LayeredPackages: chrome-gnome-shell gnome-tweak-tool\r\n```",
     "custom_fields": [],
     "date_created": "1536340895",
     "depends": [],
     "id": 35,
-    "last_updated": "1536340895",
+    "last_updated": "1536941927",
     "milestone": null,
     "priority": null,
     "private": false,
