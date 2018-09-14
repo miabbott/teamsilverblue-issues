@@ -39,10 +39,17 @@
             }
         },
         {
-            "comment": "I'm currently testing\r\n\r\n1. Rebase from Silverblue 28 to 29 and rollbacks\r\n2. AMD old-ish (Sea Islands) GPU usage. I've run into some things that should probably be tested on the latest AMD cards; I've got work-arounds for mine.\r\n3. OpenCL. A lot of this is probably upstream in freedesktop.org packages but some of it is Fedora.",
+            "comment": "I'm currently testing\r\n\r\n1. Rebase from Silverblue 28 to 29 and rollbacks. 28 to 29 currently does not work.\r\n2. AMD old-ish (Sea Islands) GPU usage. I've run into some things that should probably be tested on the latest AMD cards; I've got work-arounds for mine. The symptom is that you can log in with Wayland but not with GNOME on Xorg - X crashes.\r\n3. OpenCL. A lot of the issues are probably upstream in freedesktop.org packages but some of it is Fedora. The test case is to install `pocl` and the Mesa OpenCL libraries and run `clinfo` and `clpeak`.",
             "date_created": "1536784497",
-            "edited_on": null,
-            "editor": null,
+            "edited_on": "1536784944",
+            "editor": {
+                "default_email": "znmeb@znmeb.net",
+                "emails": [
+                    "znmeb@znmeb.net"
+                ],
+                "fullname": "M. Edward (Ed) Borasky",
+                "name": "znmeb"
+            },
             "id": 531076,
             "notification": false,
             "parent": null,
@@ -54,6 +61,23 @@
                 "fullname": "M. Edward (Ed) Borasky",
                 "name": "znmeb"
             }
+        },
+        {
+            "comment": "\r\n\r\n----- Original Message -----\r\n> From: \"Sinny Kumari\" <pagure@pagure.io>\r\n> To: sumukher@redhat.com\r\n> Sent: Wednesday, September 12, 2018 8:36:26 PM\r\n> Subject: [teamsilverblue] Issue #28: Fedora 29 Silverblue Test Day\r\n> \r\n> \r\n> sinnykumari added a new comment to an issue you are following:\r\n> ``\r\n> Silverblue Test Day wiki page is up\r\n> https://fedoraproject.org/wiki/Test_Day:2018-09-20_Silverblue_Testday now.\r\n> Link of latest Silverblue media to be tested will be added before Test Day.\r\n> \r\n> Some initial Silverblue Test cases has been created at\r\n> http://testdays.fedorainfracloud.org/events/47 . @mclasen , @otaylor and\r\n> others, can you please review them and see if existing test cases are ok?\r\n> Also, can we have additional test cases (if any) listed in comment so that\r\n> @sumantrom and other QA members can get additional test cases created as\r\n> well?\r\n> ``\r\n> \r\n> To reply, visit the link below or just reply to this email\r\n> https://pagure.io/teamsilverblue/issue/28\r\n> \r\n\r\nHey!\r\n\r\nI will be more than happy to write test cases and get more coverage!\r\nThanks, Sinny for starting this thread. The announcement is now public \r\nhttps://fedoramagazine.org/give-fedora-silverblue-a-test-drive/\r\n\r\nThanks\r\n//sumantro\r\n",
+            "date_created": "1536918858",
+            "edited_on": null,
+            "editor": null,
+            "id": 531283,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "sumukher@redhat.com",
+                "emails": [
+                    "sumukher@redhat.com"
+                ],
+                "fullname": "Sumantro Mukherjee",
+                "name": "sumantrom"
+            }
         }
     ],
     "content": "During Fedora 28, we tested Silverblue(FAW) as part of [Fedora 28 Cloud/Atomic Test Day](http://testdays.fedorainfracloud.org/events/39).\r\n\r\nWith F29 approaching, it will be nice to plan in advance a Test Day for Fedora 29 Silverblue. We have a  [QA ticket](https://pagure.io/fedora-qa/issue/564) opened by @sumantrom to have a Test Day for Fedora Silverblue.\r\n\r\nThis ticket is to come up with a date when we can have Test Day and Test cases which we want to get tested by community during F29 Silverblue Test Day.\r\n\r\nAccording to current [F29 schedule](https://fedoraproject.org/wiki/Releases/29/Schedule) -\r\n- Preferred target for Beta Release 2018-09-18 \r\n- Final Freeze 2018-10-09\r\n- Preferred target for GA 2018-10-23",
@@ -61,7 +85,7 @@
     "date_created": "1534852528",
     "depends": [],
     "id": 28,
-    "last_updated": "1536784497",
+    "last_updated": "1536918858",
     "milestone": null,
     "priority": null,
     "private": false,
