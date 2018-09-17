@@ -54,6 +54,23 @@
                 "fullname": "Matthias Clasen",
                 "name": "mclasen"
             }
+        },
+        {
+            "comment": "I updated my system today and tried to look if I have yelp already installed on my system and I found its already installed. So hopefully this issue is fixed now?",
+            "date_created": "1537190547",
+            "edited_on": null,
+            "editor": null,
+            "id": 531455,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "pnemade@redhat.com",
+                "emails": [
+                    "pnemade@redhat.com"
+                ],
+                "fullname": "Parag Nemade",
+                "name": "pnemade"
+            }
         }
     ],
     "content": "After passing `gnome-initial-setup`, a Help window is supposed to open. Currently, in F29, `yelp` isn't available in the base image, so that doesn't happen.",
@@ -61,7 +78,7 @@
     "date_created": "1535616256",
     "depends": [],
     "id": 31,
-    "last_updated": "1536189062",
+    "last_updated": "1537190547",
     "milestone": null,
     "priority": null,
     "private": false,
