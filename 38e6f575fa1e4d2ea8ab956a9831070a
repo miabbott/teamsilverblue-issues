@@ -3,13 +3,32 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
-    "content": "I have a plug-in USB WiFi adapter (Ralink Technology, Corp. RT5372 Wireless Adapter). I can set up my phone as a hotspot and connect to it from the workstation. But when I try to set up the adapter as a hotspot itself in the WiFi setting, it creates the hotspot, but it crashes. And once it's been created, it keeps trying and crashing.\r\n\r\nThere's already an issue in Bugzilla for this: https://bugzilla.redhat.com/show_bug.cgi?id=1591162. I have the same issue on Fedora 29 beta, so if it makes more sense to troubleshoot it there, let me know.\r\n\r\nThere are two `wpa_supplicant.conf` files, one in `dbus-1/system.d` and one in `/etc/wpa_supplicant`. I've attached both of them, and a `journalctl` log. I'm guessing this is a configuration file problem; the adapter works on other distros with this kernel.\r\n\r\n\r\n<!!image>\r\n<!!image>\r\n<!!image>\r\n",
+    "comments": [
+        {
+            "comment": "\r\n> There's already an issue in Bugzilla for this: https://bugzilla.redhat.com/show_bug.cgi?id=1591162. I have the same issue on Fedora 29 beta, so if it makes more sense to troubleshoot it there, let me know.\r\n\r\nIf there's already a bug for it then I say let's debug/comment in that bug and discontinue the conversation here. ",
+            "date_created": "1537228461",
+            "edited_on": null,
+            "editor": null,
+            "id": 531605,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
+        }
+    ],
+    "content": "I have a plug-in USB WiFi adapter (Ralink Technology, Corp. RT5372 Wireless Adapter). I can set up my phone as a hotspot and connect to it from the workstation. But when I try to set up the adapter as a hotspot itself in the WiFi setting, it creates the hotspot, but it crashes. And once it's been created, it keeps trying and crashing.\r\n\r\nThere's already an issue in Bugzilla for this: https://bugzilla.redhat.com/show_bug.cgi?id=1591162. I have the same issue on Fedora 29 beta, so if it makes more sense to troubleshoot it there, let me know.\r\n\r\nThere are two `wpa_supplicant.conf` files, one in `dbus-1/system.d` and one in `/etc/wpa_supplicant`. I've attached both of them, and a `journalctl` log. I'm guessing this is a configuration file problem; the adapter works on other distros with this kernel.\r\n\r\n\r\n[![dbus-1_system.d_wpa_supplicant.conf](/teamsilverblue/issue/raw/053e0dc80b14fa1f31ca5944ddb33b9af6756cd2c233ea1f39a50576eed7c169-dbus-1_system.d_wpa_supplicant.conf)](/teamsilverblue/issue/raw/053e0dc80b14fa1f31ca5944ddb33b9af6756cd2c233ea1f39a50576eed7c169-dbus-1_system.d_wpa_supplicant.conf)\r\n[![journalctl](/teamsilverblue/issue/raw/255e5b2774bcc171547ef28fb86b54113412146415da3fa4a4b0b4410d251614-journalctl)](/teamsilverblue/issue/raw/255e5b2774bcc171547ef28fb86b54113412146415da3fa4a4b0b4410d251614-journalctl)\r\n[![wpa_supplicant_wpa_supplicant.conf](/teamsilverblue/issue/raw/28e1a3a05d8033716719a72bd81115294b7b8ec5044f13611fbf7a88f48a9356-wpa_supplicant_wpa_supplicant.conf)](/teamsilverblue/issue/raw/28e1a3a05d8033716719a72bd81115294b7b8ec5044f13611fbf7a88f48a9356-wpa_supplicant_wpa_supplicant.conf)\r\n",
     "custom_fields": [],
     "date_created": "1537222235",
     "depends": [],
     "id": 40,
-    "last_updated": "1537222235",
+    "last_updated": "1537228461",
     "milestone": null,
     "priority": null,
     "private": false,
