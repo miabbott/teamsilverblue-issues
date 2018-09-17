@@ -71,6 +71,24 @@
                 "fullname": "Parag Nemade",
                 "name": "pnemade"
             }
+        },
+        {
+            "comment": "**Metadata Update from @dustymabe**:\n- Issue status updated to: Closed (was: Open)",
+            "date_created": "1537191320",
+            "edited_on": null,
+            "editor": null,
+            "id": 531476,
+            "notification": true,
+            "parent": null,
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "After passing `gnome-initial-setup`, a Help window is supposed to open. Currently, in F29, `yelp` isn't available in the base image, so that doesn't happen.",
@@ -78,7 +96,7 @@
     "date_created": "1535616256",
     "depends": [],
     "id": 31,
-    "last_updated": "1537191319",
+    "last_updated": "1537191320",
     "milestone": null,
     "priority": null,
     "private": false,
