@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "I have a plug-in USB WiFi adapter (Ralink Technology, Corp. RT5372 Wireless Adapter). I can set up my phone as a hotspot and connect to it from the workstation. But when I try to set up the adapter as a hotspot itself in the WiFi setting, it creates the hotspot, but it crashes. And once it's been created, it keeps trying and crashing.\r\n\r\nThere's already an issue in Bugzilla for this: https://bugzilla.redhat.com/show_bug.cgi?id=1591162. I have the same issue on Fedora 29 beta, so if it makes more sense to troubleshoot it there, let me know.\r\n\r\nThere are two `wpa_supplicant.conf` files, one in `dbus-1/system.d` and one in `/etc/wpa_supplicant`. I've attached both of them, and a `journalctl` log. I'm guessing this is a configuration file problem; the adapter works on other distros with this kernel.\r\n\r\n\r\n<!!image>\r\n<!!image>\r\n<!!image>\r\n",
+    "custom_fields": [],
+    "date_created": "1537222235",
+    "depends": [],
+    "id": 40,
+    "last_updated": "1537222235",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Ralink Technology, Corp. RT5372 Wireless Adapter - WiFi can connect to a hotspot but can't serve up a hotspot",
+    "user": {
+        "default_email": "znmeb@znmeb.net",
+        "emails": [
+            "znmeb@znmeb.net"
+        ],
+        "fullname": "M. Edward (Ed) Borasky",
+        "name": "znmeb"
+    }
+}
