@@ -3,18 +3,56 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "Going to pick this up",
+            "date_created": "1537191349",
+            "edited_on": null,
+            "editor": null,
+            "id": 531477,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "sadin@fedoraproject.org",
+                "emails": [
+                    "sadin.fpo@gmail.com",
+                    "sadin@fedoraproject.org"
+                ],
+                "fullname": "Zachary Snyder",
+                "name": "sadin"
+            }
+        },
+        {
+            "comment": "**Metadata Update from @sanja**:\n- Issue tagged with: good-first-issue",
+            "date_created": "1537191381",
+            "edited_on": null,
+            "editor": null,
+            "id": 531478,
+            "notification": true,
+            "parent": null,
+            "user": {
+                "default_email": "sanja@redhat.com",
+                "emails": [
+                    "sanja@redhat.com"
+                ],
+                "fullname": "Sanja Bonic",
+                "name": "sanja"
+            }
+        }
+    ],
     "content": "The media-writer is the preferred way to install Fedora variants. Therefore, Silverblue should be on the list. I've filed an upstream issue for it here:\r\n\r\nhttps://github.com/FedoraQt/MediaWriter/issues/166\r\n",
     "custom_fields": [],
     "date_created": "1525886957",
     "depends": [],
     "id": 1,
-    "last_updated": "1525887634",
+    "last_updated": "1537191381",
     "milestone": null,
     "priority": null,
     "private": false,
     "status": "Open",
-    "tags": [],
+    "tags": [
+        "good-first-issue"
+    ],
     "title": "add Silverblue to the list of installs in fedora-media-writer",
     "user": {
         "default_email": "mclasen@redhat.com",
