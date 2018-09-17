@@ -2,7 +2,7 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
+    "closed_at": "1537191319",
     "comments": [
         {
             "comment": "yes, we need to put yelp back for that to work",
@@ -78,11 +78,11 @@
     "date_created": "1535616256",
     "depends": [],
     "id": 31,
-    "last_updated": "1537190547",
+    "last_updated": "1537191319",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [
         "meeting"
     ],
