@@ -2,7 +2,7 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
+    "closed_at": "1537190811",
     "comments": [
         {
             "comment": "Yep - I installed `xorg-x11-drv-amdgpu` and now I can log in with GNOME on Xorg! `amdgpu` is the video card I have - AMD \"Bonaire\" (\"Sea Islands\" architecture). ",
@@ -745,6 +745,42 @@
                 "fullname": "M. Edward (Ed) Borasky",
                 "name": "znmeb"
             }
+        },
+        {
+            "comment": "+1 closing this out",
+            "date_created": "1537190812",
+            "edited_on": null,
+            "editor": null,
+            "id": 531463,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
+        },
+        {
+            "comment": "**Metadata Update from @dustymabe**:\n- Issue status updated to: Closed (was: Open)",
+            "date_created": "1537190812",
+            "edited_on": null,
+            "editor": null,
+            "id": 531464,
+            "notification": true,
+            "parent": null,
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "How to reproduce:\r\n\r\n1. Log in to Silverblue 28 with the default (GNOME - default is Wayland), it works.\r\n2. Log out.\r\n3. Try to log in with \"GNOME on Xorg\". The screen flashes and it goes back to the login screen.\r\n\r\nWhat's happening is that X is segfaulting - see attached Xorg.0.log. Are there some packages missing?\r\n[![Xorg.0.log](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)](/teamsilverblue/issue/raw/015db9137f3dd492da777fbb2b58a071ae8d57370f397585cb01a27c1c8cc1a7-Xorg.0.log)\r\n",
@@ -752,11 +788,11 @@
     "date_created": "1536639000",
     "depends": [],
     "id": 37,
-    "last_updated": "1537172738",
+    "last_updated": "1537190812",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [],
     "title": "Can't log in as \"GNOME on Xorg\" on Silverblue 28",
     "user": {
