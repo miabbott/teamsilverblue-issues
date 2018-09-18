@@ -21,6 +21,23 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "Sounds good :thumbsup: thanks",
+            "date_created": "1537289097",
+            "edited_on": null,
+            "editor": null,
+            "id": 531743,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "petersen@redhat.com",
+                "emails": [
+                    "petersen@redhat.com"
+                ],
+                "fullname": "Jens Petersen",
+                "name": "petersen"
+            }
         }
     ],
     "content": "Shall we add slirp4netns to Silverblue - I think it is needed by podman for running containers:\r\n\r\n```\r\n$ podman run fedora bash\r\nERRO[0008] could not find slirp4netns, the network namespace won't be configured: exec: \"slirp4netns\": executable file not found in $PATH \r\n$ podman run -it fedora bash\r\nERRO[0012] could not find slirp4netns, the network namespace won't be configured: exec: \"slirp4netns\": executable file not found in $PATH \r\n[root@3abb925a4b3a /]# exit\r\n```",
@@ -28,7 +45,7 @@
     "date_created": "1536923014",
     "depends": [],
     "id": 39,
-    "last_updated": "1536932262",
+    "last_updated": "1537289097",
     "milestone": null,
     "priority": null,
     "private": false,
