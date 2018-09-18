@@ -112,6 +112,23 @@
                 "fullname": "Matthias Clasen",
                 "name": "mclasen"
             }
+        },
+        {
+            "comment": "I was doing that until the 1.3 beta showed up. I never did get Silverblue\r\n29 to come up that way on my workstation. There were display issues. Those\r\nwent away when I installed from the Silverblue 29 ISO.\r\n\r\nOn Tue, Sep 18, 2018, 11:00 Matthias Clasen <pagure@pagure.io> wrote:\r\n\r\n>\r\n> mclasen added a new comment to an issue you are following:\r\n> ``\r\n> Some suggested tests that might be good to add to the list:\r\n>\r\n> - Start from an f28 Silverblue install and rebase to f29 by running\r\n> rpm-ostree rebase fedora/29/x86_64/silverblue\r\n>\r\n> - Start from an 28 Silverblue install, update it with rpm-ostree upgrade\r\n> and then rebase to f29\r\n>\r\n> - Repeat the same with a non-standard partition setup\r\n>\r\n> - For the \"update notification\" test notice that gnome-software now does\r\n> automatic updates for Flatpaks by default. We should update the test\r\n> description to factor that in, and test the various settings that exist\r\n> around that - whether to do automatic updates or not, and whether to notify\r\n> about them or not.\r\n> ``\r\n>\r\n> To reply, visit the link below or just reply to this email\r\n> https://pagure.io/teamsilverblue/issue/28\r\n>\r\n",
+            "date_created": "1537302241",
+            "edited_on": null,
+            "editor": null,
+            "id": 531790,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "znmeb@znmeb.net",
+                "emails": [
+                    "znmeb@znmeb.net"
+                ],
+                "fullname": "M. Edward (Ed) Borasky",
+                "name": "znmeb"
+            }
         }
     ],
     "content": "During Fedora 28, we tested Silverblue(FAW) as part of [Fedora 28 Cloud/Atomic Test Day](http://testdays.fedorainfracloud.org/events/39).\r\n\r\nWith F29 approaching, it will be nice to plan in advance a Test Day for Fedora 29 Silverblue. We have a  [QA ticket](https://pagure.io/fedora-qa/issue/564) opened by @sumantrom to have a Test Day for Fedora Silverblue.\r\n\r\nThis ticket is to come up with a date when we can have Test Day and Test cases which we want to get tested by community during F29 Silverblue Test Day.\r\n\r\nAccording to current [F29 schedule](https://fedoraproject.org/wiki/Releases/29/Schedule) -\r\n- Preferred target for Beta Release 2018-09-18 \r\n- Final Freeze 2018-10-09\r\n- Preferred target for GA 2018-10-23",
@@ -119,7 +136,7 @@
     "date_created": "1534852528",
     "depends": [],
     "id": 28,
-    "last_updated": "1537293648",
+    "last_updated": "1537302241",
     "milestone": null,
     "priority": null,
     "private": false,
