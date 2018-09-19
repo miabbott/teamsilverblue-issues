@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "While installing Silverblue F29, it doesnt display the correct branding as it does for server and WS",
+    "custom_fields": [],
+    "date_created": "1537336629",
+    "depends": [],
+    "id": 42,
+    "last_updated": "1537336629",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Installer doesnt have the correct branding",
+    "user": {
+        "default_email": "sumukher@redhat.com",
+        "emails": [
+            "sumukher@redhat.com"
+        ],
+        "fullname": "Sumantro Mukherjee",
+        "name": "sumantrom"
+    }
+}
