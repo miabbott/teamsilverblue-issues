@@ -146,6 +146,23 @@
                 "fullname": "Sumantro Mukherjee",
                 "name": "sumantrom"
             }
+        },
+        {
+            "comment": "@sumantrom Made some changes in https://fedoraproject.org/wiki/User:Sumantrom/Draft/Testcase_silverblue_rebase and https://fedoraproject.org/wiki/User:Sumantrom/Draft/Testcase_silverblue_upgrade in section How to Test",
+            "date_created": "1537352618",
+            "edited_on": null,
+            "editor": null,
+            "id": 531902,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "ksinny@gmail.com",
+                "emails": [
+                    "ksinny@gmail.com"
+                ],
+                "fullname": "Sinny Kumari",
+                "name": "sinnykumari"
+            }
         }
     ],
     "content": "During Fedora 28, we tested Silverblue(FAW) as part of [Fedora 28 Cloud/Atomic Test Day](http://testdays.fedorainfracloud.org/events/39).\r\n\r\nWith F29 approaching, it will be nice to plan in advance a Test Day for Fedora 29 Silverblue. We have a  [QA ticket](https://pagure.io/fedora-qa/issue/564) opened by @sumantrom to have a Test Day for Fedora Silverblue.\r\n\r\nThis ticket is to come up with a date when we can have Test Day and Test cases which we want to get tested by community during F29 Silverblue Test Day.\r\n\r\nAccording to current [F29 schedule](https://fedoraproject.org/wiki/Releases/29/Schedule) -\r\n- Preferred target for Beta Release 2018-09-18 \r\n- Final Freeze 2018-10-09\r\n- Preferred target for GA 2018-10-23",
@@ -153,7 +170,7 @@
     "date_created": "1534852528",
     "depends": [],
     "id": 28,
-    "last_updated": "1537328423",
+    "last_updated": "1537352618",
     "milestone": null,
     "priority": null,
     "private": false,
