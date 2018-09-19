@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "I'd like to suggest that the bootloader_menu_autohide be false (default) for silverblue for now. There are too many things related to partitioning, bootloader, assembly and startup and this polish feature I'm finding to be a hindrance in testing. \r\n\r\nI find the feature enabled in Workstation here:\r\nhttps://github.com/rhinstaller/anaconda/blob/master/pyanaconda/installclasses/fedora_workstation.py\r\n\r\nBut I'm not finding a silverblue specific install class, so I'm guessing silverblue is using the workstation one because my recent silverblue 29 installs definitely hide the grub menu.",
+    "custom_fields": [],
+    "date_created": "1537321145",
+    "depends": [],
+    "id": 41,
+    "last_updated": "1537321145",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "disable bootloader_menu_autohide for now",
+    "user": {
+        "default_email": "bugzilla@colorremedies.com",
+        "emails": [
+            "bugzilla@colorremedies.com"
+        ],
+        "fullname": "Chris Murphy",
+        "name": "chrismurphy"
+    }
+}
