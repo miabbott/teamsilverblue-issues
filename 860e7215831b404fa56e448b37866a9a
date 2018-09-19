@@ -3,7 +3,25 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "Here is the anaconda issue I filed about branding a while ago. It has some hints what needs to be done to improve this:\r\n\r\nhttps://github.com/rhinstaller/anaconda/issues/1504",
+            "date_created": "1537353404",
+            "edited_on": null,
+            "editor": null,
+            "id": 531907,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
+        }
+    ],
     "content": "While installing Silverblue F29, it doesnt display the correct branding as it does for server and WS",
     "custom_fields": [],
     "date_created": "1537336629",
