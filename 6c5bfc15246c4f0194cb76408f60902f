@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "I'm currently doing a test install of Silverblue 29 beta 1.5 in a virtual machine. In the test day documentation I ran across these manual partitioning instructions: https://docs.fedoraproject.org/en-US/fedora-silverblue/installation-guide/#manual-partition. Since it's a virtual machine, I opted for a custom partitioning so I could look at what the automatic partitioner was generating.\r\n\r\nIt turns out that it is generating an LVM partitioning with `swap`, a `/boot`, a `/`, and a `/home`. But the manual partitioning setup uses `/var/home`! So who's right - Anaconda's automatic partitioner or the manual partitioning directions? Or does the Silverblue 29 installer do the symlinking for me? I changed `/home` to `/var/home`. Was I wrong?",
+    "custom_fields": [],
+    "date_created": "1537475732",
+    "depends": [],
+    "id": 44,
+    "last_updated": "1537475732",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Confusing install documentation",
+    "user": {
+        "default_email": "znmeb@znmeb.net",
+        "emails": [
+            "znmeb@znmeb.net"
+        ],
+        "fullname": "M. Edward (Ed) Borasky",
+        "name": "znmeb"
+    }
+}
