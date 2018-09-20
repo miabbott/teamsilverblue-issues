@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "When testing: https://fedoraproject.org/wiki/QA:Testcase_base_services_start?rd=QA:Testcase_Services_start\r\n\r\nExpected result: All services should start properly and systemctl should report no failed service\r\nActual result:\r\n\r\n```\r\n[jmccall@localhost ~]$ systemctl --all --failed\r\n  UNIT           LOAD   ACTIVE SUB    DESCRIPTION                           \r\n\u25cf mcelog.service loaded failed failed Machine Check Exception Logging Daemon\r\n\r\nLOAD   = Reflects whether the unit definition was properly loaded.\r\nACTIVE = The high-level unit activation state, i.e. generalization of SUB.\r\nSUB    = The low-level unit activation state, values depend on unit type.\r\n\r\n1 loaded units listed.\r\nTo show all installed unit files use 'systemctl list-unit-files'.\r\n```",
+    "custom_fields": [],
+    "date_created": "1537441896",
+    "depends": [],
+    "id": 43,
+    "last_updated": "1537441896",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "mcelog.service failed to start",
+    "user": {
+        "default_email": "fas@joe.mccall.email",
+        "emails": [
+            "fas@joe.mccall.email"
+        ],
+        "fullname": "Joe McCall",
+        "name": "joem86"
+    }
+}
