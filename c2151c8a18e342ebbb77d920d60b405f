@@ -3,13 +3,31 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "Did anything ever happen with this? Is there a repository?",
+            "date_created": "1537828346",
+            "edited_on": null,
+            "editor": null,
+            "id": 532633,
+            "notification": false,
+            "parent": null,
+            "user": {
+                "default_email": "znmeb@znmeb.net",
+                "emails": [
+                    "znmeb@znmeb.net"
+                ],
+                "fullname": "M. Edward (Ed) Borasky",
+                "name": "znmeb"
+            }
+        }
+    ],
     "content": "It would be good if beyond installing all the commandline container tools, we could have some desktop integration for working with containers, and 'pet' containers in particular. This could be just like a 'smart terminal' that is aware of containers.\r\n\r\nWe have started initial work towards a design for this tool. Allan is currently doing some interviews with developers to learn about workflows.",
     "custom_fields": [],
     "date_created": "1525888657",
     "depends": [],
     "id": 5,
-    "last_updated": "1525888657",
+    "last_updated": "1537828346",
     "milestone": "F29",
     "priority": null,
     "private": false,
