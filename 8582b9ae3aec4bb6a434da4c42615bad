@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "Hello.  I'm new to Fedora (and Linux in general,) and I've been playing around with Silverblue recently. I wanted the secondary drive in my system to mount automatically at startup because I noticed it wasn't. I used the Gnome disk utility, ungreyed the options and checked the box to automatically mount at startup. I also changed  \"identify as\" to a label I set for the drive rather than the random string of characters it used to be. To test it out, I rebooted system and was met with the \"F\" logo slowly filling up, but never quite making it. This usually works fine in the non-Silverblue Fedora workstations, but it seems bugged here. I can snap a pick of the output and post momentarily.",
+    "custom_fields": [],
+    "date_created": "1538401964",
+    "depends": [],
+    "id": 46,
+    "last_updated": "1538401964",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Editing mount point options in Gnome disk utility renders system unbootable",
+    "user": {
+        "default_email": "bellr607@gmail.com",
+        "emails": [
+            "bellr607@gmail.com"
+        ],
+        "fullname": "Nicholas Jones",
+        "name": "neowave"
+    }
+}
