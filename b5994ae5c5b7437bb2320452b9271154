@@ -3,13 +3,32 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "This is not a very actionable ticket.  Please file individual, concrete problems, so we can actually resolve things.",
+            "date_created": "1538397717",
+            "edited_on": null,
+            "editor": null,
+            "id": 534226,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
+        }
+    ],
     "content": "I've had some display problems with Wayland that go away when I switch to Xorg. In Firefox, I can't seem to copy - I right-click on a link and select \"Copy Link\" and there's nothing there when I go to paste it. This happens on Wayland. On Xorg it works as expected.\r\n\r\nWith Virtual Machine Manager and Boxes, things look normal but some things don't work, especially in full screen. Sometimes the keyboard doesn't work, sometime you can click a button with the mouse and nothing happens. All of this works on Xorg.\r\n\r\nThis isn't new and isn't confined to Fedora as far as I can tell. Every time there's a new GNOME Desktop I try Wayland for a while and eventually drop back to Xorg. ",
     "custom_fields": [],
     "date_created": "1537860110",
     "depends": [],
     "id": 45,
-    "last_updated": "1537860110",
+    "last_updated": "1538397717",
     "milestone": null,
     "priority": null,
     "private": false,
