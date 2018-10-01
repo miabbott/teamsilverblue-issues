@@ -21,6 +21,42 @@
                 "fullname": "Matthias Clasen",
                 "name": "mclasen"
             }
+        },
+        {
+            "comment": "This looks fixed now",
+            "date_created": "1538398657",
+            "edited_on": null,
+            "editor": null,
+            "id": 534236,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
+        },
+        {
+            "comment": "**Metadata Update from @mclasen**:\n- Issue status updated to: Closed (was: Open)",
+            "date_created": "1538398658",
+            "edited_on": null,
+            "editor": null,
+            "id": 534237,
+            "notification": true,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
         }
     ],
     "content": "Currently, we have both /workstation and /silverblue refs and people get confused about which is the 'good' one. Lets remove the other one and make sure we have all docs pointing at the right place.",
@@ -28,7 +64,7 @@
     "date_created": "1536187432",
     "depends": [],
     "id": 32,
-    "last_updated": "1538398656",
+    "last_updated": "1538398658",
     "milestone": null,
     "priority": null,
     "private": false,
