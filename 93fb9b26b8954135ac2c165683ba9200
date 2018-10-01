@@ -2,18 +2,37 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
-    "comments": [],
+    "closed_at": "1538425278",
+    "comments": [
+        {
+            "comment": "there is now an f29 beta iso",
+            "date_created": "1538425280",
+            "edited_on": null,
+            "editor": null,
+            "id": 534310,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
+        }
+    ],
     "content": "This is a person gripe I know at least one other person has shared. After installing a fresh Silverblue system, large updates are required to get the system in an up-to-date state. This can be an issue because as [Issue #24](https://pagure.io/teamsilverblue/issue/24) mentions, the repos can be dog slow for some people. Perhaps releasing an ISO with a newer OStree image every so often would alleviate this problem. ",
     "custom_fields": [],
     "date_created": "1534831581",
     "depends": [],
     "id": 27,
-    "last_updated": "1534831581",
+    "last_updated": "1538425280",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [],
     "title": "ISO gets woefully out of date",
     "user": {
