@@ -59,6 +59,24 @@
                 "fullname": "Colin Walters",
                 "name": "walters"
             }
+        },
+        {
+            "comment": "**Metadata Update from @mclasen**:\n- Issue status updated to: Closed (was: Open)",
+            "date_created": "1538397647",
+            "edited_on": null,
+            "editor": null,
+            "id": 534222,
+            "notification": true,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
         }
     ],
     "content": "Shall we add slirp4netns to Silverblue - I think it is needed by podman for running containers:\r\n\r\n```\r\n$ podman run fedora bash\r\nERRO[0008] could not find slirp4netns, the network namespace won't be configured: exec: \"slirp4netns\": executable file not found in $PATH \r\n$ podman run -it fedora bash\r\nERRO[0012] could not find slirp4netns, the network namespace won't be configured: exec: \"slirp4netns\": executable file not found in $PATH \r\n[root@3abb925a4b3a /]# exit\r\n```",
@@ -66,7 +84,7 @@
     "date_created": "1536923014",
     "depends": [],
     "id": 39,
-    "last_updated": "1538397645",
+    "last_updated": "1538397647",
     "milestone": null,
     "priority": null,
     "private": false,
