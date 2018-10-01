@@ -3,13 +3,33 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "I think this is some sort of race condition; possibly related to the rpmostreepayload.  It might also be related to the amount of RAM.  (How much RAM did you give the guest here?)\r\n\r\nI haven't been able to reproduce this in a brief manual test; doing some automated kickstart installs in a loop might be useful, though the main problem here is extracting useful information from Anaconda.",
+            "date_created": "1538399197",
+            "edited_on": null,
+            "editor": null,
+            "id": 534238,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "walters@fedoraproject.org",
+                "emails": [
+                    "walters@fedoraproject.org",
+                    "walters@redhat.com"
+                ],
+                "fullname": "Colin Walters",
+                "name": "walters"
+            }
+        }
+    ],
     "content": "Using a QEMU/KVM VM on Fedora 28 with:\r\n\r\nCPU: host-passthrough\r\nQ35 chipset\r\nUEFI\r\nVirtIO tablet + keyboard + VirtIO-GPU + VirtIO-SCSI HDD (QCOW2)\r\n\r\nI get through most of the setup, even put in information for the user to be created, but the installer seems to get stuck with the message \"waiting for 1 threads to finish\". FWIW, I also encountered this with the Fedora28-IoT OsTree installer, but in that case, it seemingly unstuck itself after a while of waiting.\r\n\r\n[image of installer](https://i.imgur.com/LsWoX7U.png)",
     "custom_fields": [],
     "date_created": "1536893982",
     "depends": [],
     "id": 38,
-    "last_updated": "1536893982",
+    "last_updated": "1538399197",
     "milestone": null,
     "priority": null,
     "private": false,
