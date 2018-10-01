@@ -3,13 +3,32 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "we have automatic updates for flatpaks in f29. rpm-ostree will follow later",
+            "date_created": "1538425741",
+            "edited_on": null,
+            "editor": null,
+            "id": 534312,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
+        }
+    ],
     "content": "This is a feature that rpm-ostree is going to have at some point in the future. For the workstation use, we may need to reimplement this in gnome-software, so we can have meaningful UI for it.\r\n\r\nOn the rpm-ostree side, this is tracked here: https://github.com/projectatomic/rpm-ostree/issues/247\r\n\r\nFor gnome-software, this design incorporates automatic updates: https://wiki.gnome.org/Design/Apps/Software/Updates",
     "custom_fields": [],
     "date_created": "1525890142",
     "depends": [],
     "id": 15,
-    "last_updated": "1525890142",
+    "last_updated": "1538425741",
     "milestone": null,
     "priority": null,
     "private": false,
