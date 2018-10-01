@@ -12,6 +12,7 @@
             "id": 532633,
             "notification": false,
             "parent": null,
+            "reactions": {},
             "user": {
                 "default_email": "znmeb@znmeb.net",
                 "emails": [
@@ -20,6 +21,24 @@
                 "fullname": "M. Edward (Ed) Borasky",
                 "name": "znmeb"
             }
+        },
+        {
+            "comment": "the work on this is happening in https://github.com/debarshiray/fedora-toolbox",
+            "date_created": "1538425232",
+            "edited_on": null,
+            "editor": null,
+            "id": 534309,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
         }
     ],
     "content": "It would be good if beyond installing all the commandline container tools, we could have some desktop integration for working with containers, and 'pet' containers in particular. This could be just like a 'smart terminal' that is aware of containers.\r\n\r\nWe have started initial work towards a design for this tool. Allan is currently doing some interviews with developers to learn about workflows.",
@@ -27,7 +46,7 @@
     "date_created": "1525888657",
     "depends": [],
     "id": 5,
-    "last_updated": "1537828346",
+    "last_updated": "1538425232",
     "milestone": "F29",
     "priority": null,
     "private": false,
