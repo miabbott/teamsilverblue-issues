@@ -2,7 +2,7 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
+    "closed_at": "1538397645",
     "comments": [
         {
             "comment": "see https://pagure.io/workstation-ostree-config/pull-request/103 we think podman should add a dependency for it",
@@ -66,11 +66,11 @@
     "date_created": "1536923014",
     "depends": [],
     "id": 39,
-    "last_updated": "1538248537",
+    "last_updated": "1538397645",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [],
     "title": "podman needs slirp4netns",
     "user": {
