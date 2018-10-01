@@ -2,7 +2,7 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
+    "closed_at": "1538401947",
     "comments": [
         {
             "comment": "Looks like there's an easy work-around - disable the `updates-testing` repository. I assume this is all going to get sorted out in the GNOME 3.30 testing / integration.",
@@ -12,6 +12,7 @@
             "id": 530465,
             "notification": false,
             "parent": null,
+            "reactions": {},
             "user": {
                 "default_email": "znmeb@znmeb.net",
                 "emails": [
@@ -29,6 +30,7 @@
             "id": 530536,
             "notification": false,
             "parent": null,
+            "reactions": {},
             "user": {
                 "default_email": "dusty@dustymabe.com",
                 "emails": [
@@ -47,6 +49,7 @@
             "id": 530558,
             "notification": false,
             "parent": null,
+            "reactions": {},
             "user": {
                 "default_email": "znmeb@znmeb.net",
                 "emails": [
@@ -62,11 +65,11 @@
     "date_created": "1536537656",
     "depends": [],
     "id": 36,
-    "last_updated": "1536588482",
+    "last_updated": "1538401947",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [],
     "title": "Can't install Docker on Silverblue 29 // error: Some base packages would be replaced",
     "user": {
