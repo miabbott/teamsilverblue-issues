@@ -1,0 +1,46 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [
+        {
+            "comment": "this is starting to be possible now",
+            "date_created": "1538425086",
+            "edited_on": null,
+            "editor": null,
+            "id": 534308,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
+        }
+    ],
+    "content": "Build flatpaks in koji, reusing the modularity infrastructure.\r\n",
+    "custom_fields": [],
+    "date_created": "1525888918",
+    "depends": [],
+    "id": 8,
+    "last_updated": "1525888918",
+    "milestone": "F29",
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "get flatpaks built in fedora from rpms ",
+    "user": {
+        "default_email": "mclasen@redhat.com",
+        "emails": [
+            "mclasen@redhat.com"
+        ],
+        "fullname": "Matthias Clasen",
+        "name": "mclasen"
+    }
+}
