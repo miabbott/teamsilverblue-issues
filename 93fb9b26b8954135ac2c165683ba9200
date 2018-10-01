@@ -21,6 +21,24 @@
                 "fullname": "Matthias Clasen",
                 "name": "mclasen"
             }
+        },
+        {
+            "comment": "**Metadata Update from @mclasen**:\n- Issue status updated to: Closed (was: Open)",
+            "date_created": "1538425280",
+            "edited_on": null,
+            "editor": null,
+            "id": 534311,
+            "notification": true,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "mclasen@redhat.com",
+                "emails": [
+                    "mclasen@redhat.com"
+                ],
+                "fullname": "Matthias Clasen",
+                "name": "mclasen"
+            }
         }
     ],
     "content": "This is a person gripe I know at least one other person has shared. After installing a fresh Silverblue system, large updates are required to get the system in an up-to-date state. This can be an issue because as [Issue #24](https://pagure.io/teamsilverblue/issue/24) mentions, the repos can be dog slow for some people. Perhaps releasing an ISO with a newer OStree image every so often would alleviate this problem. ",
