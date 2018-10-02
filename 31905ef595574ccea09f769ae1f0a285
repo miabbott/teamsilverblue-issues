@@ -21,6 +21,24 @@
                 "fullname": "Matthias Clasen",
                 "name": "mclasen"
             }
+        },
+        {
+            "comment": "a) creation of grub.cfg is completely different on rpm-ostree based systems; if the user decides to poke around and add customer boot params and regenerate the grub.cfg using grub2-mkconfig, the system will be unbootable; this has been an ongoing source of confusion and lack of sane well documented work arounds for a long time. \r\n\r\nb) bootloaderscript by default is a major change on the way that will change how we boot, there will inevitably be regressions (I've run into a couple) that are solved by\r\n\r\nc) many if not the vast majority, of possible custom partitioning layouts result in an unbootable system; either due to failure at installation time, or failure in assembly during startup.\r\n\r\nIn theory, in all of these cases, the lack of boot success means the next boot should mean the grub menu is visible. And possibly examples of each of these problems needs their own silverblue issue rather than as bug reports. So it isn't any sort of deal killer to have autohide enabled, I just find it's more of a burden and premature while so many things are not stable yet.",
+            "date_created": "1538500635",
+            "edited_on": null,
+            "editor": null,
+            "id": 534543,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "bugzilla@colorremedies.com",
+                "emails": [
+                    "bugzilla@colorremedies.com"
+                ],
+                "fullname": "Chris Murphy",
+                "name": "chrismurphy"
+            }
         }
     ],
     "content": "I'd like to suggest that the bootloader_menu_autohide be false (default) for silverblue for now. There are too many things related to partitioning, bootloader, assembly and startup and this polish feature I'm finding to be a hindrance in testing. \r\n\r\nI find the feature enabled in Workstation here:\r\nhttps://github.com/rhinstaller/anaconda/blob/master/pyanaconda/installclasses/fedora_workstation.py\r\n\r\nBut I'm not finding a silverblue specific install class, so I'm guessing silverblue is using the workstation one because my recent silverblue 29 installs definitely hide the grub menu.",
@@ -28,7 +46,7 @@
     "date_created": "1537321145",
     "depends": [],
     "id": 41,
-    "last_updated": "1538397607",
+    "last_updated": "1538500635",
     "milestone": null,
     "priority": null,
     "private": false,
