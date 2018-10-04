@@ -1,0 +1,28 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "I have some repositories installed by Dropbox and RHEL rhpkg that sometimes they fail to connect to their servers. These repositories block any other operation by rpm-ostree.\r\n\r\nIdeally these repositories would be skipped if they fail to connect to their remote, as dnf does.",
+    "custom_fields": [],
+    "date_created": "1538659126",
+    "depends": [],
+    "id": 47,
+    "last_updated": "1538659126",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Repositories that fail to connect block all rpm-ostree operations",
+    "user": {
+        "default_email": "csoriano@gnome.org",
+        "emails": [
+            "csoriano@gnome.org",
+            "csoriano@redhat.com"
+        ],
+        "fullname": "Carlos Soriano",
+        "name": "csoriano"
+    }
+}
