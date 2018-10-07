@@ -22,6 +22,25 @@
                 "fullname": "Colin Walters",
                 "name": "walters"
             }
+        },
+        {
+            "comment": "I poked around with this problem in a VM, using the steps described by @neowave.  I was able to reproduce the problem as described.\r\n\r\nI used `rd.break enforcing=0` as kernel args after rebooting, so I could edit `/etc/fstab` and alter some of the options for the secondary disk.  After booting into the initramfs (due to the use of `rd.break`):\r\n\r\n```\r\n# mount -o remount,rw /sysroot/\r\n# chroot /sysroot/ostree/boot.0/fedora-workstation/ac11951e4d0add8abf633d461de9739b56d63355462c88f2ce2a31fd7955a165/0/\r\n# vi /etc/fstab\r\n```\r\n\r\nThe default line in `/etc/fstab` for the secondary disk looked like this:\r\n\r\n`LABEL=extra_disk /mnt/extra_disk auto nosuid,nodev,nofail,x-gvfs-show 0 0`\r\n\r\nI tried changing a number of the options, but nothing seemed to make any difference until I changed the mount point to `/var/mnt/extra_disk`\r\n\r\nThis allowed me to successfully mount the second disk during boot.\r\n\r\nDo we have to further alter the `fstab-generator` to understand the use of `/var/mnt` on `ostree` systems?",
+            "date_created": "1538919692",
+            "edited_on": null,
+            "editor": null,
+            "id": 535325,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "miabbott@redhat.com",
+                "emails": [
+                    "miabbott@redhat.com",
+                    "micah.abbott@gmail.com"
+                ],
+                "fullname": "Micah Abbott",
+                "name": "miabbott"
+            }
         }
     ],
     "content": "Hello.  I'm new to Fedora (and Linux in general,) and I've been playing around with Silverblue recently. I wanted the secondary drive in my system to mount automatically at startup because I noticed it wasn't. I used the Gnome disk utility, ungreyed the options and checked the box to automatically mount at startup. I also changed  \"identify as\" to a label I set for the drive rather than the random string of characters it used to be. To test it out, I rebooted system and was met with the \"F\" logo slowly filling up, but never quite making it. This usually works fine in the non-Silverblue Fedora workstations, but it seems bugged here. \r\n\r\nsnapshot: https://postimg.cc/ykQqtDb5",
@@ -29,7 +48,7 @@
     "date_created": "1538401964",
     "depends": [],
     "id": 46,
-    "last_updated": "1538765505",
+    "last_updated": "1538919692",
     "milestone": null,
     "priority": null,
     "private": false,
