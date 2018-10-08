@@ -21,6 +21,25 @@
                 "fullname": "Alexis Diavatis",
                 "name": "alex285"
             }
+        },
+        {
+            "comment": "Right, no idea why I filed it here... thanks pointing that out!\r\n\r\nhttps://github.com/projectatomic/rpm-ostree/issues/1602",
+            "date_created": "1538997601",
+            "edited_on": null,
+            "editor": null,
+            "id": 535366,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "csoriano@gnome.org",
+                "emails": [
+                    "csoriano@gnome.org",
+                    "csoriano@redhat.com"
+                ],
+                "fullname": "Carlos Soriano",
+                "name": "csoriano"
+            }
         }
     ],
     "content": "I have some repositories installed by Dropbox and RHEL rhpkg that sometimes they fail to connect to their servers. These repositories block any other operation by rpm-ostree.\r\n\r\nIdeally these repositories would be skipped if they fail to connect to their remote, as dnf does.",
@@ -28,7 +47,7 @@
     "date_created": "1538659126",
     "depends": [],
     "id": 47,
-    "last_updated": "1538992721",
+    "last_updated": "1538997601",
     "milestone": null,
     "priority": null,
     "private": false,
