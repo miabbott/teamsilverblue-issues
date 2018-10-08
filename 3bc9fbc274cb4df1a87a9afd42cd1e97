@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "GNOME Todo is a core GNOME app that we can get from Flathub. One of the core features of Todo (even if a plugin really) is the Todoist integration\r\n\r\nWhen we try to setup a Todoist account from Todo, we cannot, because Todoist is missing from GOA",
+    "custom_fields": [],
+    "date_created": "1538991877",
+    "depends": [],
+    "id": 48,
+    "last_updated": "1538991877",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Todoist backend is missing from GNOME Online Accounts",
+    "user": {
+        "default_email": "alexis.diavatis@gmail.com",
+        "emails": [
+            "alexis.diavatis@gmail.com"
+        ],
+        "fullname": "Alexis Diavatis",
+        "name": "alex285"
+    }
+}
