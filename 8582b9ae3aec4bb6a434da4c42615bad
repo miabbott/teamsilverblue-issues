@@ -41,6 +41,25 @@
                 "fullname": "Micah Abbott",
                 "name": "miabbott"
             }
+        },
+        {
+            "comment": "The problem is SELinux policy:\r\n\r\n```\r\nOct 08 14:31:05 localhost.localdomain audit[1]: AVC avc:  denied  { getattr } for  pid=1 comm=\"systemd\" path=\"/mnt\" dev=\"dm-0\" ino=33554545 scontext=system_u:system_r:init_t:s0 tcontext=system_u:object_r:mnt_t:s\r\n0 tclass=lnk_file permissive=0\r\nOct 08 14:30:51 localhost.localdomain audit[3176]: AVC avc:  denied  { getattr } for  pid=3176 comm=\"systemd-fstab-g\" path=\"/mnt\" dev=\"dm-0\" ino=33554545 scontext=system_u:system_r:init_t:s0 tcontext=system_u:ob\r\nject_r:mnt_t:s0 tclass=lnk_file permissive=0\r\n```\r\n\r\nThis is easier to debug if you avoid rebooting, just add the mount to `/etc/fstab` then `systemctl daemon-reload`.  You'll see the new generated mount unit in `/run/systemd/generator`, like `mnt-foo.mount` for `/mnt/foo`.\r\n\r\nTrying to `systemctl start mnt-foo.mount` crashes systemd here as it's not expecting denials.",
+            "date_created": "1539009311",
+            "edited_on": null,
+            "editor": null,
+            "id": 535428,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "walters@fedoraproject.org",
+                "emails": [
+                    "walters@fedoraproject.org",
+                    "walters@redhat.com"
+                ],
+                "fullname": "Colin Walters",
+                "name": "walters"
+            }
         }
     ],
     "content": "Hello.  I'm new to Fedora (and Linux in general,) and I've been playing around with Silverblue recently. I wanted the secondary drive in my system to mount automatically at startup because I noticed it wasn't. I used the Gnome disk utility, ungreyed the options and checked the box to automatically mount at startup. I also changed  \"identify as\" to a label I set for the drive rather than the random string of characters it used to be. To test it out, I rebooted system and was met with the \"F\" logo slowly filling up, but never quite making it. This usually works fine in the non-Silverblue Fedora workstations, but it seems bugged here. \r\n\r\nsnapshot: https://postimg.cc/ykQqtDb5",
@@ -48,7 +67,7 @@
     "date_created": "1538401964",
     "depends": [],
     "id": 46,
-    "last_updated": "1538919692",
+    "last_updated": "1539009311",
     "milestone": null,
     "priority": null,
     "private": false,
