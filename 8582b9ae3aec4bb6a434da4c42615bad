@@ -50,7 +50,12 @@
             "id": 535428,
             "notification": false,
             "parent": null,
-            "reactions": {},
+            "reactions": {
+                "Thumbs up": [
+                    "miabbott",
+                    "neowave"
+                ]
+            },
             "user": {
                 "default_email": "walters@fedoraproject.org",
                 "emails": [
@@ -69,7 +74,11 @@
             "id": 535429,
             "notification": false,
             "parent": null,
-            "reactions": {},
+            "reactions": {
+                "Thumbs up": [
+                    "neowave"
+                ]
+            },
             "user": {
                 "default_email": "walters@fedoraproject.org",
                 "emails": [
@@ -79,6 +88,24 @@
                 "fullname": "Colin Walters",
                 "name": "walters"
             }
+        },
+        {
+            "comment": "Sorry for the delay. I can confirm that miabott's suggestion to set mount point to /var/mnt/another_disk works. the system boots just fine and mounts the 2nd disk automatically. Thanks for the help!\r\n\r\nIt also seems that @walters has found the root issue and filed a bug report on Red Hat's Bugzilla. Is it safe to close this now? \r\n\r\n",
+            "date_created": "1539106160",
+            "edited_on": null,
+            "editor": null,
+            "id": 535675,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "bellr607@gmail.com",
+                "emails": [
+                    "bellr607@gmail.com"
+                ],
+                "fullname": "Nicholas Jones",
+                "name": "neowave"
+            }
         }
     ],
     "content": "Hello.  I'm new to Fedora (and Linux in general,) and I've been playing around with Silverblue recently. I wanted the secondary drive in my system to mount automatically at startup because I noticed it wasn't. I used the Gnome disk utility, ungreyed the options and checked the box to automatically mount at startup. I also changed  \"identify as\" to a label I set for the drive rather than the random string of characters it used to be. To test it out, I rebooted system and was met with the \"F\" logo slowly filling up, but never quite making it. This usually works fine in the non-Silverblue Fedora workstations, but it seems bugged here. \r\n\r\nsnapshot: https://postimg.cc/ykQqtDb5",
@@ -86,7 +113,7 @@
     "date_created": "1538401964",
     "depends": [],
     "id": 46,
-    "last_updated": "1539009417",
+    "last_updated": "1539106160",
     "milestone": null,
     "priority": null,
     "private": false,
