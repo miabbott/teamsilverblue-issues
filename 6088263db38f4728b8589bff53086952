@@ -1,0 +1,28 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "As documented here - https://discussion.fedoraproject.org/t/silverblue-upgrade-woes/520\r\n\r\n...the experience upgrading from F28 to F29 is not smooth.  \r\n\r\nWe should expand the [upgrade docs](https://docs.fedoraproject.org/en-US/fedora-silverblue/upgrades/) to have a section specific to F29 that covers some of the major changes that are coming:\r\n\r\n  - renamed ref\r\n  - removal of `docker`\r\n  - missing GNOME apps (see blacklist: https://pagure.io/workstation-ostree-config/blob/f29/f/comps-sync-blacklist.yml)",
+    "custom_fields": [],
+    "date_created": "1539613665",
+    "depends": [],
+    "id": 50,
+    "last_updated": "1539613665",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "docs:  add section to upgrade docs for F28 - > F29",
+    "user": {
+        "default_email": "miabbott@redhat.com",
+        "emails": [
+            "miabbott@redhat.com",
+            "micah.abbott@gmail.com"
+        ],
+        "fullname": "Micah Abbott",
+        "name": "miabbott"
+    }
+}
