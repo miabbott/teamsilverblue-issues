@@ -40,6 +40,24 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "This has some overlap with the devel@ thread \"Installation image layout\". Actually, might be worth it to skip to the conversion section at the bottom and see what I might be missing there, before going through the squashfs and btrfs ideas.\r\n\r\n- squashfs\r\n- btrfs\r\n- on-the-fly conversion, at install time, of an ostree workstation into a traditional one\r\n\r\n**squashfs**\r\nDeduplicates by default. The documentation lacks details, but I know mksquashfs computes a hash per file to identify duplicates, and then they are \"removed\" per documentation, which sounds a bit weird or even scary. Testing shows duplicate files are present in the mounted squashfs file system, each file has its own inode, and copying each file works as you'd expect, but the squash file is reduced as if the extra copy isn't present. Kinda like a reflink? I'm not sure.\r\n\r\nDeduplication means the traditional and ostree installs need to share the same squashfs volume. That doesn't immediately strike me as a problem. Both are derived from the same RPMs, so the binary files should be identical and thus deduplicateable. The traditional installation would ignore the ostree/ directory; and the rpmostree installation would copy the payload in ostree/ directory, ignoring the traditional directories, and then deploy. \r\n\r\nWhat's the catch? First, compose must drop using ext4 as root.img found in squashfs.img, and go exclusively with squashfs. Second and third, both compose process and anaconda would need to be aware of the two layouts, how to create, use, and install them both. Anaconda would need UI to choose. For compose, maybe it means continuing to create the existing separate ISO media for traditional and rpmostree, with an additional compose step that creates a 3rd media that marries the two of them, and considers the separate ISOs as throwaways; and as an optimization the two throwaway ISOs can be made with no compression, leaving that to the shotgun wedding step to deduplicate and compress. (Whether xz or zstd, compose uses a high compression level and it's kinda expensive.)\r\n\r\n**btrfs**\r\nSupports deduplication with reflinks (shared extents) and zstd compression. By putting the traditional rootfs.img content into one subvolume; and the rpmostree rootfs.img content into a different subvolume, the choice can appear in the bootloader menu. No work needs to be done at all in anaconda. Compose process changes are similar to squashfs although there is a possible optimization for root image reuse because Anaconda grants an exception to reformat enforcement on Btrfs, by only requiring additional roots go into their own subvolume.\r\n\r\nWhat are the gotchas? First, the bootloader menu is a clunky and limited interface for choosing; there is enough description space per menu entry for about two sentences. Second, the patches for configurable zstd compression levels isn't yet merged (they are for zlib so this is not a new idea, and the kernel code already supports variable compression levels for decompression but we need high level zstd in order to be in the ballpark for the current xz method in mksquashfs.)\r\n\r\nAnd then only after I thought of those two, did I think of probably an even simpler way, unless I'm missing something significant:\r\n\r\n**conversion**\r\nIf rpm-ostree workstation is made the superset of both workstation variants, I think it's possible that an assembled rpmostree system can just be rsync'd (with maybe a few adjustments, e.g. no -H option or possibly more granular --include= --exclude=) to end up with a traditional workstation installation. That is, the deliverable image would be silverblue. The Anaconda UI choice controls whether to use (modified) rsync to arrive at a traditional install, or rpm-ostree deploy to arrive at an rpm-ostree install. This wouldn't require any compose side changes, just some anaconda changes and awareness. And it's already deduplicated, so none of that is needed.\r\n\r\nThe catch is, I can't think of a catch. This makes me deeply suspicious! There would still need to be some anaconda work to make it aware of both methods (but it's one payload so that's still simpler) and provide UI for the choosing.",
+            "date_created": "1539720509",
+            "edited_on": null,
+            "editor": null,
+            "id": 536592,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "bugzilla@colorremedies.com",
+                "emails": [
+                    "bugzilla@colorremedies.com"
+                ],
+                "fullname": "Chris Murphy",
+                "name": "chrismurphy"
+            }
         }
     ],
     "content": "Since the traditional and atomic workstation are basically the same (at least as far as package set and user experience are concerned), it would be nice to have a single installer for it which offers a choice between traditional and image mode.\r\n\r\nThis is going to require some nontrivial Anaconda work; there's definitely some benefits to a unified installer, but for the IMO \"default\" path of \"see website, download ISO\" it's less confusing to have two, since people already know what they want at that point.",
@@ -47,7 +65,7 @@
     "date_created": "1525889781",
     "depends": [],
     "id": 13,
-    "last_updated": "1539694255",
+    "last_updated": "1539720509",
     "milestone": null,
     "priority": null,
     "private": false,
