@@ -21,6 +21,25 @@
                 "fullname": "Chris Murphy",
                 "name": "chrismurphy"
             }
+        },
+        {
+            "comment": "> Does this imply a single ISO download with two payloads, traditional and rpm-ostree?\r\n\r\nI think so. This is the first time I've seen this issue. I don't think it's going to be easy to pull off without duplicating content on the ISO. We deliver a live image today for workstation and an OSTree installer (basically anaconda with different default kickstart and an OSTree embedded in the ISO) for Silverblue. ",
+            "date_created": "1539694255",
+            "edited_on": null,
+            "editor": null,
+            "id": 536511,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "Since the traditional and atomic workstation are basically the same (at least as far as package set and user experience are concerned), it would be nice to have a single installer for it which offers a choice between traditional and image mode.\r\n\r\nThis is going to require some nontrivial Anaconda work; there's definitely some benefits to a unified installer, but for the IMO \"default\" path of \"see website, download ISO\" it's less confusing to have two, since people already know what they want at that point.",
@@ -28,7 +47,7 @@
     "date_created": "1525889781",
     "depends": [],
     "id": 13,
-    "last_updated": "1539657034",
+    "last_updated": "1539694255",
     "milestone": null,
     "priority": null,
     "private": false,
