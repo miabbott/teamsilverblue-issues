@@ -3,13 +3,32 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "Does this imply a single ISO download with two payloads, traditional and rpm-ostree?",
+            "date_created": "1539657034",
+            "edited_on": null,
+            "editor": null,
+            "id": 536442,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "bugzilla@colorremedies.com",
+                "emails": [
+                    "bugzilla@colorremedies.com"
+                ],
+                "fullname": "Chris Murphy",
+                "name": "chrismurphy"
+            }
+        }
+    ],
     "content": "Since the traditional and atomic workstation are basically the same (at least as far as package set and user experience are concerned), it would be nice to have a single installer for it which offers a choice between traditional and image mode.\r\n\r\nThis is going to require some nontrivial Anaconda work; there's definitely some benefits to a unified installer, but for the IMO \"default\" path of \"see website, download ISO\" it's less confusing to have two, since people already know what they want at that point.",
     "custom_fields": [],
     "date_created": "1525889781",
     "depends": [],
     "id": 13,
-    "last_updated": "1525889781",
+    "last_updated": "1539657034",
     "milestone": null,
     "priority": null,
     "private": false,
