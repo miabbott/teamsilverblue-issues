@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "1. On Silverblue 28, install Builder from Flathub.\r\n2. Run it from Terminal: `flatpak run org.gnome.Builder`.\r\n3. In Builder, choose Polari under \u201cContribute to an existing project\u201d.\r\n4. Ensure you have an internet connection. Wait while Builder downloads runtimes.\r\n\r\nBuilder crashes. The output in Terminal is:\r\n```\r\n$ flatpak run org.gnome.Builder \r\ncat: /proc/sys/fs/binfmt_misc/qemu-aarch64: No such file or directory\r\ncat: /proc/sys/fs/binfmt_misc/qemu-arm: No such file or directory\r\n**\r\nOSTree:ERROR:src/libostree/ostree-repo.c:3803:ostree_repo_load_file: assertion failed: (S_ISREG (stbuf.st_mode))\r\n\r\n```",
+    "custom_fields": [],
+    "date_created": "1539967963",
+    "depends": [],
+    "id": 51,
+    "last_updated": "1539967963",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Builder crashes while downloading runtimes for Polari",
+    "user": {
+        "default_email": "greg@gkn.me.uk",
+        "emails": [
+            "greg@gkn.me.uk"
+        ],
+        "fullname": "Greg K Nicholson",
+        "name": "gregknicholson"
+    }
+}
