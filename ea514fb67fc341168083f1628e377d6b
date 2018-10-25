@@ -3,13 +3,32 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "I've upgraded to Silverblue 29. The Terminal output is now:\r\n```\r\n$ flatpak run org.gnome.Builder \r\ncat: /proc/sys/fs/binfmt_misc/qemu-aarch64: No such file or directory\r\ncat: /proc/sys/fs/binfmt_misc/qemu-arm: No such file or directory\r\n15:52:38.0362              gbp-flatpak-runtime-provider[    2]:  WARNING: Failed to install runtime: Failed to read commit 341e9f1e812f23ad07bf41713570f55a4ccee1ac5c008d86c1bad3c2f8c7d5ac: No such metadata object bfd532370c11eb4957649667ea85ae6f97fa5471416f03e73e4aa6f5b12dd578.dirtree\r\n**\r\nOSTree:ERROR:src/libostree/ostree-repo.c:3803:ostree_repo_load_file: assertion failed: (S_ISREG (stbuf.st_mode))\r\n```",
+            "date_created": "1540479279",
+            "edited_on": null,
+            "editor": null,
+            "id": 537899,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "greg@gkn.me.uk",
+                "emails": [
+                    "greg@gkn.me.uk"
+                ],
+                "fullname": "Greg K Nicholson",
+                "name": "gregknicholson"
+            }
+        }
+    ],
     "content": "1. On Silverblue 28, install Builder from Flathub.\r\n2. Run it from Terminal: `flatpak run org.gnome.Builder`.\r\n3. In Builder, choose Polari under \u201cContribute to an existing project\u201d.\r\n4. Ensure you have an internet connection. Wait while Builder downloads runtimes.\r\n\r\nBuilder crashes. The output in Terminal is:\r\n```\r\n$ flatpak run org.gnome.Builder \r\ncat: /proc/sys/fs/binfmt_misc/qemu-aarch64: No such file or directory\r\ncat: /proc/sys/fs/binfmt_misc/qemu-arm: No such file or directory\r\n**\r\nOSTree:ERROR:src/libostree/ostree-repo.c:3803:ostree_repo_load_file: assertion failed: (S_ISREG (stbuf.st_mode))\r\n\r\n```",
     "custom_fields": [],
     "date_created": "1539967963",
     "depends": [],
     "id": 51,
-    "last_updated": "1539967963",
+    "last_updated": "1540479279",
     "milestone": null,
     "priority": null,
     "private": false,
