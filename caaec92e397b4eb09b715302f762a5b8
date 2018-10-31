@@ -68,6 +68,24 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "Somehow I sense something is missing.\r\n\r\n$ rpm-ostree status\r\nState: idle\r\nAutomaticUpdates: disabled\r\nDeployments:\r\n\u25cf ostree://atomic:fedora/28/x86_64/workstation\r\n                   Version: 28.20181027.0 (2018-10-27 16:02:21)\r\n                BaseCommit: 1692d98fe75635c855f619ecb5a6915b31d58cdc98de056714e346a17d0dbd23\r\n              GPGSignature: Valid signature by 128CF232A9371991C8A65695E08E7E629DB62FB1\r\n           LayeredPackages: flatpak-builder freecad\r\n\r\n  ostree://atomic:fedora/28/x86_64/workstation\r\n                   Version: 28.20181023.0 (2018-10-23 20:51:48)\r\n                BaseCommit: 18195ddcd86a34da2a0871ca2d5cb95daa5345fcc302d9cf1b3138effa488880\r\n              GPGSignature: Valid signature by 128CF232A9371991C8A65695E08E7E629DB62FB1\r\n           LayeredPackages: flatpak-builder freecad\r\n\r\natomic.conf:\r\n[remote \"atomic\"]\r\nurl=https://kojipkgs.fedoraproject.org/atomic/repo\r\ngpgkeypath=/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-28-primary\r\n\r\nfedora-workstation.conf:\r\n[remote \"fedora-workstation\"]\r\nurl=https://dl.fedoraproject.org/atomic/repo/\r\n\r\nfedora-ws-27.conf:\r\n[remote \"fedora-ws-27\"]\r\nurl=https://dl.fedoraproject.org/ostree/27/\r\ngpgkeypath=/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-27-primary\r\n\r\nfedora-ws-rawhide.conf:\r\n[remote \"fedora-ws-rawhide\"]\r\nurl=https://kojipkgs.fedoraproject.org/compose/ostree/rawhide/\r\ngpg-verify=false\r\n",
+            "date_created": "1541023172",
+            "edited_on": null,
+            "editor": null,
+            "id": 538739,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "mdhillca@gmail.com",
+                "emails": [
+                    "mdhillca@gmail.com"
+                ],
+                "fullname": "Michael Hill",
+                "name": "mdhill"
+            }
         }
     ],
     "content": "I get a trusted keyring error trying to upgrade from f28 to f29:\r\n\r\n$ rpm-ostree rebase fedora/29/x86_64/silverblue\r\nerror: Commit fb3618dd8dd5f3e40ccca7d3c5464e05c12afdcb2636401a54a4a69552074606:\r\nGPG signatures found, but none are in trusted keyring\r\n\r\n$ sudo ostree remote gpg-import fedora-workstation -k /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-29-primary\r\nImported 0 GPG keys to remote \"fedora-workstation\"\r\n\r\nmiabbott suggested trying to remove and re-add...\r\n\r\n$ sudo ostree remote delete fedora-workstation\r\n$ sudo ostree remote add fedora-workstation https://dl.fedoraproject.org/atomic/repo/\r\n$ sudo ostree remote gpg-import fedora-workstation -k /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-29-primary\r\nImported 1 GPG key to remote \"fedora-workstation\"\r\n$ rpm-ostree rebase fedora/29/x86_64/silverblue\r\nerror: Commit fb3618dd8dd5f3e40ccca7d3c5464e05c12afdcb2636401a54a4a69552074606:\r\nGPG signatures found, but none are in trusted keyring\r\n$ sudo rpm-ostree rebase fedora/29/x86_64/silverblue\r\nerror: Commit fb3618dd8dd5f3e40ccca7d3c5464e05c12afdcb2636401a54a4a69552074606:\r\nGPG signatures found, but none are in trusted keyring\r\n\r\nf28 still updates. After the first time I tried, I moved the hard drive to a new laptop for unrelated reasons.",
@@ -75,7 +93,7 @@
     "date_created": "1541015661",
     "depends": [],
     "id": 52,
-    "last_updated": "1541019021",
+    "last_updated": "1541023172",
     "milestone": null,
     "priority": null,
     "private": false,
