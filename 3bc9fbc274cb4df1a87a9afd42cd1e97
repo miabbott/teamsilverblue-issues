@@ -21,6 +21,24 @@
                 "fullname": "Michael Catanzaro",
                 "name": "catanzaro"
             }
+        },
+        {
+            "comment": "See: https://bugzilla.redhat.com/show_bug.cgi?id=1510239#c9",
+            "date_created": "1541000441",
+            "edited_on": null,
+            "editor": null,
+            "id": 538640,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "debarshir@redhat.com",
+                "emails": [
+                    "debarshir@redhat.com"
+                ],
+                "fullname": "Debarshi Ray",
+                "name": "rishi"
+            }
         }
     ],
     "content": "GNOME Todo is a core GNOME app that we can get from Flathub. One of the core features of Todo (even if a plugin really) is the Todoist integration\r\n\r\nWhen we try to setup a Todoist account from Todo, we cannot, because Todoist is missing from GOA",
@@ -28,7 +46,7 @@
     "date_created": "1538991877",
     "depends": [],
     "id": 48,
-    "last_updated": "1540994995",
+    "last_updated": "1541000441",
     "milestone": null,
     "priority": null,
     "private": false,
