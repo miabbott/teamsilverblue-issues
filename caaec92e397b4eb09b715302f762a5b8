@@ -5,10 +5,18 @@
     "closed_at": null,
     "comments": [
         {
-            "comment": "I wasn't able to reproduce this on a test VM, so I'm at a loss for what's happening here.\r\n\r\nI even suggested @mdhill remove the GPG key + remote, then re-add everything.  But that didn't help either.\r\n\r\nIs it possible the trusted keyring as a whole is corrupt?",
+            "comment": "I wasn't able to reproduce this on a test VM, so I'm at a loss for what's happening here.\r\n\r\nI even suggested @mdhill remove the GPG key + remote, then re-add everything.  (i.e rm `/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-29-primary` and `curl -L -o /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-29-primary https://getfedora.org/static/429476B4.txt`) But that didn't help either.\r\n\r\nIs it possible the trusted keyring as a whole is corrupt?",
             "date_created": "1541017127",
-            "edited_on": null,
-            "editor": null,
+            "edited_on": "1541017217",
+            "editor": {
+                "default_email": "miabbott@redhat.com",
+                "emails": [
+                    "miabbott@redhat.com",
+                    "micah.abbott@gmail.com"
+                ],
+                "fullname": "Micah Abbott",
+                "name": "miabbott"
+            },
             "id": 538711,
             "notification": false,
             "parent": null,
@@ -29,7 +37,7 @@
     "date_created": "1541015661",
     "depends": [],
     "id": 52,
-    "last_updated": "1541017127",
+    "last_updated": "1541017217",
     "milestone": null,
     "priority": null,
     "private": false,
