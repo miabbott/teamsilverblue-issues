@@ -3,13 +3,32 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "It's disabled by default upstream.\r\n\r\nAnd explicitly overridden to disabled here:\r\n\r\nhttps://src.fedoraproject.org/cgit/rpms/gnome-online-accounts.git/tree/gnome-online-accounts.spec#n55\r\n\r\n@rishi, can you look at this please? I presume it's disabled for a reason.\r\n\r\nWhy does Fedora use explicit configure args to change the upstream defaults? Doesn't that imply the upstream defaults are bad? It'd be desirable to remove the configure args from the Fedora spec.",
+            "date_created": "1540994995",
+            "edited_on": null,
+            "editor": null,
+            "id": 538618,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "mcatanzaro@gnome.org",
+                "emails": [
+                    "mcatanzaro@gnome.org"
+                ],
+                "fullname": "Michael Catanzaro",
+                "name": "catanzaro"
+            }
+        }
+    ],
     "content": "GNOME Todo is a core GNOME app that we can get from Flathub. One of the core features of Todo (even if a plugin really) is the Todoist integration\r\n\r\nWhen we try to setup a Todoist account from Todo, we cannot, because Todoist is missing from GOA",
     "custom_fields": [],
     "date_created": "1538991877",
     "depends": [],
     "id": 48,
-    "last_updated": "1538991877",
+    "last_updated": "1540994995",
     "milestone": null,
     "priority": null,
     "private": false,
