@@ -2,7 +2,7 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
+    "closed_at": "1541078118",
     "comments": [
         {
             "comment": "I wasn't able to reproduce this on a test VM, so I'm at a loss for what's happening here.\r\n\r\nI even suggested @mdhill remove the GPG key + remote, then re-add everything.  (i.e ` rm /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-29-primary` and `curl -L -o /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-29-primary https://getfedora.org/static/429476B4.txt`) But that didn't help either.\r\n\r\nIs it possible the trusted keyring as a whole is corrupt?",
@@ -123,6 +123,25 @@
                 "fullname": "Michael Hill",
                 "name": "mdhill"
             }
+        },
+        {
+            "comment": "There were multiple remotes (`atomic` and `fedora-workstation`). This was mostly a case applying the gpg import to the wrong remote so it wasn't working properly.\r\n\r\nGoing to close this one out. ",
+            "date_created": "1541078121",
+            "edited_on": null,
+            "editor": null,
+            "id": 538784,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "I get a trusted keyring error trying to upgrade from f28 to f29:\r\n\r\n$ rpm-ostree rebase fedora/29/x86_64/silverblue\r\nerror: Commit fb3618dd8dd5f3e40ccca7d3c5464e05c12afdcb2636401a54a4a69552074606:\r\nGPG signatures found, but none are in trusted keyring\r\n\r\n$ sudo ostree remote gpg-import fedora-workstation -k /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-29-primary\r\nImported 0 GPG keys to remote \"fedora-workstation\"\r\n\r\nmiabbott suggested trying to remove and re-add...\r\n\r\n$ sudo ostree remote delete fedora-workstation\r\n$ sudo ostree remote add fedora-workstation https://dl.fedoraproject.org/atomic/repo/\r\n$ sudo ostree remote gpg-import fedora-workstation -k /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-29-primary\r\nImported 1 GPG key to remote \"fedora-workstation\"\r\n$ rpm-ostree rebase fedora/29/x86_64/silverblue\r\nerror: Commit fb3618dd8dd5f3e40ccca7d3c5464e05c12afdcb2636401a54a4a69552074606:\r\nGPG signatures found, but none are in trusted keyring\r\n$ sudo rpm-ostree rebase fedora/29/x86_64/silverblue\r\nerror: Commit fb3618dd8dd5f3e40ccca7d3c5464e05c12afdcb2636401a54a4a69552074606:\r\nGPG signatures found, but none are in trusted keyring\r\n\r\nf28 still updates. After the first time I tried, I moved the hard drive to a new laptop for unrelated reasons.",
@@ -130,11 +149,11 @@
     "date_created": "1541015661",
     "depends": [],
     "id": 52,
-    "last_updated": "1541069084",
+    "last_updated": "1541078121",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [],
     "title": "Trusted keyring error trying f29 rebase",
     "user": {
