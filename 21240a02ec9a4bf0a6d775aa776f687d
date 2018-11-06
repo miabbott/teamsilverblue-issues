@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "Issue:\r\nWhen downloading the newest *.iso of Silverblue 29 from https://getfedora.org/en/workstation/download/ the verify link directs to https://getfedora.org/en/static/checksums/Fedora-AtomicWorkstation-29-1.2-x86_64-CHECKSUM which doesn't exist. \r\n\r\nSolution:\r\nThe link should redirect to  https://getfedora.org/en/static/checksums/Fedora-Silverblue-29-1.2-x86_64-CHECKSUM which exist and gives the checksums. \r\n\r\nNot really sure where else to report this, but it just looks like the link wasn't changed correctly.",
+    "custom_fields": [],
+    "date_created": "1541526553",
+    "depends": [],
+    "id": 53,
+    "last_updated": "1541526553",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Verification Link for Silveblue 29 Doesn't Work.",
+    "user": {
+        "default_email": "pattyn586@pm.me",
+        "emails": [
+            "pattyn586@pm.me"
+        ],
+        "fullname": "Alex Pattyn",
+        "name": "bproj"
+    }
+}
