@@ -24,10 +24,17 @@
             }
         },
         {
-            "comment": "Um, I am not sure then. I just downloaded and freshly installed fedora silverblue 29 today. Everything was updated and rebooted.",
+            "comment": "Um, I am not sure then. I just downloaded and freshly installed fedora silverblue 29 today. Everything was updated and rebooted. I can double check in a little. But the same was happening on my install of silverblue 28. ",
             "date_created": "1541703981",
-            "edited_on": null,
-            "editor": null,
+            "edited_on": "1541704094",
+            "editor": {
+                "default_email": "pattyn586@pm.me",
+                "emails": [
+                    "pattyn586@pm.me"
+                ],
+                "fullname": "Alex Pattyn",
+                "name": "bproj"
+            },
             "id": 540021,
             "notification": false,
             "parent": null,
@@ -40,6 +47,25 @@
                 "fullname": "Alex Pattyn",
                 "name": "bproj"
             }
+        },
+        {
+            "comment": "what does `rpm-ostree status` show for you?",
+            "date_created": "1541704332",
+            "edited_on": null,
+            "editor": null,
+            "id": 540022,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "Silverblue 28+29\r\nAccording to: https://bugzilla.redhat.com/show_bug.cgi?id=1626898 and https://apps.fedoraproject.org/packages/deja-dup\r\n\r\nIt looks like fedora 28 and 29 should have deja-dup >=38.0-2, however Silverblue is stuck on 37.1.\r\n\r\nIs this an issue with silverblue specific repos?",
@@ -47,7 +73,7 @@
     "date_created": "1541703099",
     "depends": [],
     "id": 54,
-    "last_updated": "1541703981",
+    "last_updated": "1541704332",
     "milestone": null,
     "priority": null,
     "private": false,
