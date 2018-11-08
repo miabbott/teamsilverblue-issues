@@ -257,6 +257,25 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "Ah, that is weird.  I do see the mis-matched version numbers:\r\n\r\n```\r\n$ rpm-ostree status\r\nState: idle\r\nAutomaticUpdates: disabled\r\nDeployments:\r\n\u25cf ostree://fedora-workstation:fedora/29/x86_64/silverblue\r\n                   Version: 29.20181108.0 (2018-11-08T01:49:17Z)\r\n                BaseCommit: fa76021d1ea6d32317e1b2164889ebf4c393649f79c623943af645cd90f08ccd\r\n              GPGSignature: Valid signature by 5A03B4DD8254ECA02FDA1637A20AA56B429476B4\r\n           LayeredPackages: deja-dup\r\n\r\n  ostree://fedora-workstation:fedora/29/x86_64/silverblue\r\n                   Version: 29.20181108.0 (2018-11-08T01:49:17Z)\r\n                    Commit: fa76021d1ea6d32317e1b2164889ebf4c393649f79c623943af645cd90f08ccd\r\n              GPGSignature: Valid signature by 5A03B4DD8254ECA02FDA1637A20AA56B429476B4\r\n\r\n$ rpm -q deja-dup\r\ndeja-dup-38.0-3.fc29.x86_64\r\n\r\n$ deja-dup --version\r\ndeja-dup 37.1\r\n```\r\n\r\nIf I spawn a F29 container and install in there, I see the same thing:\r\n\r\n```\r\n$ sudo podman run --rm -it registry.fedoraproject.org/fedora:29                                                                                                                           \r\n[sudo] password for cloud-user:                                                                                                                                                                                   \r\nTrying to pull registry.fedoraproject.org/fedora:29...Getting image source signatures                                                                                                                             \r\nCopying blob sha256:7692efc5f81cadc73ca1afde08b1a5ea126749fd7520537ceea1a9871329efde                                                                                                                              \r\n 96.61 MB / 96.61 MB [=====================================================] 11s                                                                                                                                  \r\nCopying config sha256:a5cc8ccd230a587867762e1b38efc941ce1743d2151fe36b00c8841ff9e09b62                                                                                                                            \r\n 1.27 KB / 1.27 KB [========================================================] 0s                                                                                                                                  \r\nWriting manifest to image destination                                                                                                                                                                             \r\nStoring signatures                                                                                                                                                                                                \r\n[root@450692efc484 /]# dnf -y install deja-dup                                                                                                                                                                    \r\nFedora Modular 29 - x86_64                                                                                                                                                         532 kB/s | 1.5 MB     00:02    \r\nFedora Modular 29 - x86_64 - Updates                                                                                                                                               383 kB/s | 1.5 MB     00:04    \r\nFedora Modular 29 - x86_64 - Test Updates                                                                                                                                          695 kB/s | 1.6 MB     00:02    \r\nFedora 29 - x86_64 - Test Updates                                                                                                                                                  1.9 MB/s |  15 MB     00:08    \r\nFedora 29 - x86_64 - Updates                                                                                                                                                       1.9 MB/s | 9.7 MB     00:05    \r\nFedora 29 - x86_64                                                                                                                                                                 5.4 MB/s |  62 MB     00:11\r\nDependencies resolved.\r\n===================================================================================================================================================================================================================\r\n Package                                                            Arch                                 Version                                               Repository                                     Size\r\n===================================================================================================================================================================================================================\r\nInstalling:\r\n deja-dup                                                           x86_64                               38.0-3.fc29                                           fedora                                        1.0 M\r\n...\r\n\r\n# rpm -q deja-dup\r\ndeja-dup-38.0-3.fc29.x86_64\r\n# deja-dup --version\r\ndeja-dup 37.1\r\n```\r\n\r\nI think this is a packaging problem with `deja-dup`",
+            "date_created": "1541707540",
+            "edited_on": null,
+            "editor": null,
+            "id": 540043,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "miabbott@redhat.com",
+                "emails": [
+                    "miabbott@redhat.com",
+                    "micah.abbott@gmail.com"
+                ],
+                "fullname": "Micah Abbott",
+                "name": "miabbott"
+            }
         }
     ],
     "content": "Silverblue 28+29\r\nAccording to: https://bugzilla.redhat.com/show_bug.cgi?id=1626898 and https://apps.fedoraproject.org/packages/deja-dup\r\n\r\nIt looks like fedora 28 and 29 should have deja-dup >=38.0-2, however Silverblue is stuck on 37.1.\r\n\r\nIs this an issue with silverblue specific repos?",
@@ -264,7 +283,7 @@
     "date_created": "1541703099",
     "depends": [],
     "id": 54,
-    "last_updated": "1541707167",
+    "last_updated": "1541707540",
     "milestone": null,
     "priority": null,
     "private": false,
