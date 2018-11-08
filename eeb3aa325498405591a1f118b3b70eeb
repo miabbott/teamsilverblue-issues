@@ -84,6 +84,25 @@
                 "fullname": "Alex Pattyn",
                 "name": "bproj"
             }
+        },
+        {
+            "comment": "\r\nweird.. i'm not really sure exactly. The version in fedora 29 is [deja-dup-38.0-3.fc29.x86_64.rpm](https://kojipkgs.fedoraproject.org/compose/29/Fedora-29-20181024.1/compose/Everything/x86_64/os/Packages/d/deja-dup-38.0-3.fc29.x86_64.rpm).\r\n\r\nCan you reset your deployment and re-layer your packages and paste the output?\r\n\r\n- `rpm-ostree ex reset`\r\n- `rpm-ostree install borgbackup deja-dup julia pipenv python3-spyder`",
+            "date_created": "1541705605",
+            "edited_on": null,
+            "editor": null,
+            "id": 540027,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "Silverblue 28+29\r\nAccording to: https://bugzilla.redhat.com/show_bug.cgi?id=1626898 and https://apps.fedoraproject.org/packages/deja-dup\r\n\r\nIt looks like fedora 28 and 29 should have deja-dup >=38.0-2, however Silverblue is stuck on 37.1.\r\n\r\nIs this an issue with silverblue specific repos?",
