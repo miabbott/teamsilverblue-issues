@@ -215,9 +215,9 @@
             }
         },
         {
-            "comment": "Well mine says it downloaded \"deja-dup-38.0-3.fc29.x86_64\" but its showing 37.1 when I run deja-dup --version\r\n",
+            "comment": "Well mine says it downloaded \"deja-dup-38.0-3.fc29.x86_64\" but its showing 37.1 when I run deja-dup --version\r\n\r\nEdit: Well I guess it technically removed  \"deja-dup-38.0-3.fc29.x86_64\"",
             "date_created": "1541707032",
-            "edited_on": "1541707051",
+            "edited_on": "1541707094",
             "editor": {
                 "default_email": "pattyn586@pm.me",
                 "emails": [
@@ -245,7 +245,7 @@
     "date_created": "1541703099",
     "depends": [],
     "id": 54,
-    "last_updated": "1541707032",
+    "last_updated": "1541707051",
     "milestone": null,
     "priority": null,
     "private": false,
