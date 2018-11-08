@@ -2,7 +2,7 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
+    "closed_at": "1541707592",
     "comments": [
         {
             "comment": "Silverblue just pulls from bodhi repos so there shouldn't be an oportunity for them to differ. If you're on latest f29 silverblue then it should match what is in the yum repos for fedora. ",
@@ -283,11 +283,11 @@
     "date_created": "1541703099",
     "depends": [],
     "id": 54,
-    "last_updated": "1541707540",
+    "last_updated": "1541707592",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [],
     "title": "Old version of Deja-dup in repos",
     "user": {
