@@ -66,6 +66,24 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "State: idle\r\nAutomaticUpdates: disabled\r\nDeployments:\r\n\u25cf ostree://fedora-workstation:fedora/29/x86_64/silverblue\r\n                   Version: 29.20181108.0 (2018-11-08T01:49:17Z)\r\n                BaseCommit: fa76021d1ea6d32317e1b2164889ebf4c393649f79c623943af645cd90f08ccd\r\n              GPGSignature: Valid signature by 5A03B4DD8254ECA02FDA1637A20AA56B429476B4\r\n           LayeredPackages: borgbackup deja-dup julia pipenv python3-spyder\r\n\r\n  ostree://fedora-workstation:fedora/29/x86_64/silverblue\r\n                   Version: 29.20181108.0 (2018-11-08T01:49:17Z)\r\n                    Commit: fa76021d1ea6d32317e1b2164889ebf4c393649f79c623943af645cd90f08ccd\r\n              GPGSignature: Valid signature by 5A03B4DD8254ECA02FDA1637A20AA56B429476B4\r\n",
+            "date_created": "1541705055",
+            "edited_on": null,
+            "editor": null,
+            "id": 540024,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "pattyn586@pm.me",
+                "emails": [
+                    "pattyn586@pm.me"
+                ],
+                "fullname": "Alex Pattyn",
+                "name": "bproj"
+            }
         }
     ],
     "content": "Silverblue 28+29\r\nAccording to: https://bugzilla.redhat.com/show_bug.cgi?id=1626898 and https://apps.fedoraproject.org/packages/deja-dup\r\n\r\nIt looks like fedora 28 and 29 should have deja-dup >=38.0-2, however Silverblue is stuck on 37.1.\r\n\r\nIs this an issue with silverblue specific repos?",
@@ -73,7 +91,7 @@
     "date_created": "1541703099",
     "depends": [],
     "id": 54,
-    "last_updated": "1541704332",
+    "last_updated": "1541705055",
     "milestone": null,
     "priority": null,
     "private": false,
