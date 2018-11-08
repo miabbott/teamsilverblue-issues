@@ -139,6 +139,25 @@
                 "fullname": "Alex Pattyn",
                 "name": "bproj"
             }
+        },
+        {
+            "comment": "i was asking more for the actual terminal output when you ran the two commands. It seems like your yum repo files are pointing to the wrong place maybe?\r\n\r\n",
+            "date_created": "1541706495",
+            "edited_on": null,
+            "editor": null,
+            "id": 540036,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "Silverblue 28+29\r\nAccording to: https://bugzilla.redhat.com/show_bug.cgi?id=1626898 and https://apps.fedoraproject.org/packages/deja-dup\r\n\r\nIt looks like fedora 28 and 29 should have deja-dup >=38.0-2, however Silverblue is stuck on 37.1.\r\n\r\nIs this an issue with silverblue specific repos?",
