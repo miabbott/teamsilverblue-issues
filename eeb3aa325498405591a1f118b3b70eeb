@@ -3,13 +3,33 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
-    "content": "Silverblue 28+29\r\nAccording to: https://bugzilla.redhat.com/show_bug.cgi?id=1626898 and https://apps.fedoraproject.org/packages/deja-dup\r\n\r\nIt looks like fedora 28 and I would guess 29 should have deja-dup >=38.0-2, however Silverblue is stuck on 37.1.\r\n\r\nIs this an issue with silverblue specific repos?",
+    "comments": [
+        {
+            "comment": "Silverblue just pulls from bodhi repos so there shouldn't be an oportunity for them to differ. If you're on latest f29 silverblue then it should match what is in the yum repos for fedora. ",
+            "date_created": "1541703500",
+            "edited_on": null,
+            "editor": null,
+            "id": 540018,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
+        }
+    ],
+    "content": "Silverblue 28+29\r\nAccording to: https://bugzilla.redhat.com/show_bug.cgi?id=1626898 and https://apps.fedoraproject.org/packages/deja-dup\r\n\r\nIt looks like fedora 28 and 29 should have deja-dup >=38.0-2, however Silverblue is stuck on 37.1.\r\n\r\nIs this an issue with silverblue specific repos?",
     "custom_fields": [],
     "date_created": "1541703099",
     "depends": [],
     "id": 54,
-    "last_updated": "1541703185",
+    "last_updated": "1541703500",
     "milestone": null,
     "priority": null,
     "private": false,
