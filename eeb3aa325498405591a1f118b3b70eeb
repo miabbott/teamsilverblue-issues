@@ -276,6 +276,44 @@
                 "fullname": "Micah Abbott",
                 "name": "miabbott"
             }
+        },
+        {
+            "comment": "@bproj - can you report a bug against deja dup in bugzilla?\r\n\r\nI'm going to close this since it's not an issue with silverblue. ",
+            "date_created": "1541707592",
+            "edited_on": null,
+            "editor": null,
+            "id": 540046,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
+        },
+        {
+            "comment": "**Metadata Update from @dustymabe**:\n- Issue status updated to: Closed (was: Open)",
+            "date_created": "1541707593",
+            "edited_on": null,
+            "editor": null,
+            "id": 540047,
+            "notification": true,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "Silverblue 28+29\r\nAccording to: https://bugzilla.redhat.com/show_bug.cgi?id=1626898 and https://apps.fedoraproject.org/packages/deja-dup\r\n\r\nIt looks like fedora 28 and 29 should have deja-dup >=38.0-2, however Silverblue is stuck on 37.1.\r\n\r\nIs this an issue with silverblue specific repos?",
@@ -283,7 +321,7 @@
     "date_created": "1541703099",
     "depends": [],
     "id": 54,
-    "last_updated": "1541707592",
+    "last_updated": "1541707593",
     "milestone": null,
     "priority": null,
     "private": false,
