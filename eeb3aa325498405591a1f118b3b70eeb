@@ -176,6 +176,24 @@
                 "fullname": "Alex Pattyn",
                 "name": "bproj"
             }
+        },
+        {
+            "comment": "rpm-ostree install borgbackup deja-dup julia pipenv python3-spyder\r\nChecking out tree fa76021... done\r\nEnabled rpm-md repositories: fedora updates\r\nrpm-md repo 'fedora' (cached); generated: 2018-10-28T11:00:54Z\r\nrpm-md repo 'updates' (cached); generated: 2018-11-07T02:31:50Z\r\nImporting metadata [=============] 100%\r\nResolving dependencies... done\r\nChecking out packages (257/257) [=============] 100%\r\nRunning pre scripts... 2 done\r\nRunning post scripts... 25 done\r\nWriting rpmdb... done\r\nWriting OSTree commit... done\r\nStaging deployment... done\r\nRun \"systemctl reboot\" to start a reboot\r\n",
+            "date_created": "1541706790",
+            "edited_on": null,
+            "editor": null,
+            "id": 540038,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "pattyn586@pm.me",
+                "emails": [
+                    "pattyn586@pm.me"
+                ],
+                "fullname": "Alex Pattyn",
+                "name": "bproj"
+            }
         }
     ],
     "content": "Silverblue 28+29\r\nAccording to: https://bugzilla.redhat.com/show_bug.cgi?id=1626898 and https://apps.fedoraproject.org/packages/deja-dup\r\n\r\nIt looks like fedora 28 and 29 should have deja-dup >=38.0-2, however Silverblue is stuck on 37.1.\r\n\r\nIs this an issue with silverblue specific repos?",
