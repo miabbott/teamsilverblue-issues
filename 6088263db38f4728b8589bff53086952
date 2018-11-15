@@ -2,7 +2,7 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
+    "closed_at": "1542298896",
     "comments": [
         {
             "comment": "This was covered by https://pagure.io/fedora-docs/silverblue/pull-request/13 and https://pagure.io/fedora-docs/silverblue/pull-request/14",
@@ -29,11 +29,11 @@
     "date_created": "1539613665",
     "depends": [],
     "id": 50,
-    "last_updated": "1542298892",
+    "last_updated": "1542298896",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [],
     "title": "docs:  add section to upgrade docs for F28 - > F29",
     "user": {
