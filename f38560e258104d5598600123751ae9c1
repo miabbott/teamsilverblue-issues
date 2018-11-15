@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "Recently I tried to open password protected zip and when trying to open it in nautilus I got:\r\n<!!image>\r\nWith nautilus as only option. There is also no flatpak on Flathub that could be used to work with archives.\r\n\r\nIt will be nice to have some application for this task in base Silverblue image.\r\n\r\n",
+    "custom_fields": [],
+    "date_created": "1542293711",
+    "depends": [],
+    "id": 55,
+    "last_updated": "1542293711",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "No application to open password protected archive",
+    "user": {
+        "default_email": "michalkonec666@gmail.com",
+        "emails": [
+            "michalkonec666@gmail.com"
+        ],
+        "fullname": "Michal Kone\u010dn\u00fd",
+        "name": "zlopez"
+    }
+}
