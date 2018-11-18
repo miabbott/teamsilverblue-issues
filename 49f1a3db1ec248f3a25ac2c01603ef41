@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "There's apparently an issue in the 4.19 kernel that's crashing some Docker builds. The details are at https://github.com/docker/for-linux/issues/480. If you don't already have a test for this, you might want to add one.",
+    "custom_fields": [],
+    "date_created": "1542585272",
+    "depends": [],
+    "id": 56,
+    "last_updated": "1542585272",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Heads up on 4.19 kernel Docker build issue",
+    "user": {
+        "default_email": "znmeb@znmeb.net",
+        "emails": [
+            "znmeb@znmeb.net"
+        ],
+        "fullname": "M. Edward (Ed) Borasky",
+        "name": "znmeb"
+    }
+}
