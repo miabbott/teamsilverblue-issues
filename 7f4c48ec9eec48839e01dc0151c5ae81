@@ -96,6 +96,25 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "> \r\n> Firefox switched from gstreamer to ffmpeg  a while back and sadly you need to get the codecs from rpmfusion now to get this working.\r\n> \r\n> This is unfortunate. Was this something we decided to inherit in Fedora. Could we switch it back? What would the pros/cons be?\r\n\r\nI don't know, that's a question to the firefox maintainers. @stransky @xhorak",
+            "date_created": "1542639981",
+            "edited_on": null,
+            "editor": null,
+            "id": 541686,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "klember@redhat.com",
+                "emails": [
+                    "kalevlember@gmail.com",
+                    "klember@redhat.com"
+                ],
+                "fullname": "Kalev Lember",
+                "name": "kalev"
+            }
         }
     ],
     "content": "Hi,\r\n\r\naccording to https://www.youtube.com/html5 Firefox on Silverblue doesn't have H.264 support.\r\nSo I installed `gstreamer1-plugin-openh264` and `mozilla-openh264` and still no luck.\r\n\r\nThis is the output of `rpm-ostree status`\r\n```\r\nState: idle\r\nAutomaticUpdates: disabled\r\nDeployments:\r\n\u25cf ostree://fedora-workstation:fedora/29/x86_64/silverblue\r\n                   Version: 29.20181112.0 (2018-11-12T00:58:12Z)\r\n                BaseCommit: b7c7432244c32f1d85442be323ae60ee0a8973b74aa8f856a3e911e90a61f97b\r\n              GPGSignature: Valid signature by 5A03B4DD8254ECA02FDA1637A20AA56B429476B4\r\n           LayeredPackages: ansible cherrytree gnome-tweak-tool gobby gstreamer1-plugin-openh264 krb5-workstation libvirt mozilla-openh264 powerline-fonts vagrant vagrant-libvirt vagrant-sshfs\r\n             LocalPackages: nautilus-dropbox-2015.10.28-1.fc10.x86_64 redhat-internal-cert-install-0.1-7.el7.csb.noarch\r\n\r\n  ostree://fedora-workstation:fedora/29/x86_64/silverblue\r\n                   Version: 29.20181109.0 (2018-11-09T01:33:51Z)\r\n                BaseCommit: 8eb384ed07a1c68a89125a7c3e84befcd0e806b41afd5446ffd2e0d4d1759cd4\r\n              GPGSignature: Valid signature by 5A03B4DD8254ECA02FDA1637A20AA56B429476B4\r\n           LayeredPackages: ansible cherrytree gnome-tweak-tool gobby gstreamer1-plugin-openh264 krb5-workstation libvirt mozilla-openh264 powerline-fonts vagrant vagrant-libvirt vagrant-sshfs\r\n             LocalPackages: nautilus-dropbox-2015.10.28-1.fc10.x86_64 redhat-internal-cert-install-0.1-7.el7.csb.noarch\r\n```\r\n\r\nIs there something I'm missing perhaps?",
@@ -103,7 +122,7 @@
     "date_created": "1542618664",
     "depends": [],
     "id": 57,
-    "last_updated": "1542637905",
+    "last_updated": "1542639981",
     "milestone": null,
     "priority": null,
     "private": false,
