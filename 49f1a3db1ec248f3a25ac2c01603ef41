@@ -22,6 +22,24 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "On fedora kernels docker should not face this issue as we don't have metacopy enabled by default. A user will see this issue only if user chose to enable metacopy feature explicitly either during module load time or during mount time. \r\n\r\nSo existing users upgrading to fedora 4.19 kernel should not run into this issue (docker does not enable metacopy feature at its own yet).",
+            "date_created": "1542641234",
+            "edited_on": null,
+            "editor": null,
+            "id": 541731,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "vgoyal@redhat.com",
+                "emails": [
+                    "vgoyal@redhat.com"
+                ],
+                "fullname": "Vivek Goyal",
+                "name": "vgoyal"
+            }
         }
     ],
     "content": "There's apparently an issue in the 4.19 kernel that's crashing some Docker builds. The details are at https://github.com/docker/for-linux/issues/480. If you don't already have a test for this, you might want to add one.",
@@ -29,7 +47,7 @@
     "date_created": "1542585272",
     "depends": [],
     "id": 56,
-    "last_updated": "1542638395",
+    "last_updated": "1542641234",
     "milestone": null,
     "priority": null,
     "private": false,
