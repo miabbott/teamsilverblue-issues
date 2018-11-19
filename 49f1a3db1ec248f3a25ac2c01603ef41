@@ -3,7 +3,27 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "thanks for the heads up @znmeb - unfortunately we don't have any automated testing for silverblue but we do for atomic host. It looks like from the upstream issue you were having an issue with `buildah bud` too? Have you been able to reproduce this on Fedora? ",
+            "date_created": "1542638395",
+            "edited_on": null,
+            "editor": null,
+            "id": 541653,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
+        }
+    ],
     "content": "There's apparently an issue in the 4.19 kernel that's crashing some Docker builds. The details are at https://github.com/docker/for-linux/issues/480. If you don't already have a test for this, you might want to add one.",
     "custom_fields": [],
     "date_created": "1542585272",
