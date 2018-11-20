@@ -3,13 +3,32 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "Closing - it works after a reboot ",
+            "date_created": "1542697000",
+            "edited_on": null,
+            "editor": null,
+            "id": 541854,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "znmeb@znmeb.net",
+                "emails": [
+                    "znmeb@znmeb.net"
+                ],
+                "fullname": "M. Edward (Ed) Borasky",
+                "name": "znmeb"
+            }
+        }
+    ],
     "content": "\r\n```\r\n$ sudo rpm-ostree upgrade\r\n1 metadata, 0 content objects fetched; 569 B transferred in 1 seconds\r\nChecking out tree 55e64ae... done\r\nEnabled rpm-md repositories: fedora updates\r\nUpdating metadata for 'fedora': [=============] 100%\r\nrpm-md repo 'fedora'; generated: 2018-10-24T22:20:15Z\r\nUpdating metadata for 'updates': [=============] 100%\r\nrpm-md repo 'updates'; generated: 2018-11-19T21:29:40Z\r\nImporting metadata [=============] 100%\r\nResolving dependencies... done\r\nChecking out packages (97/97) [=============] 100%\r\nRunning pre scripts... 3 done\r\nRunning post scripts... 25 done\r\nWriting rpmdb... done\r\nWriting OSTree commit... done\r\nStaging deployment... error: Cleaning deployments: unlinkat: Operation not permitted\r\n```",
     "custom_fields": [],
     "date_created": "1542693122",
     "depends": [],
     "id": 58,
-    "last_updated": "1542693122",
+    "last_updated": "1542697000",
     "milestone": null,
     "priority": null,
     "private": false,
