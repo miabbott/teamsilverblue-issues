@@ -2,7 +2,7 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
+    "closed_at": "1542697010",
     "comments": [
         {
             "comment": "Closing - it works after a reboot ",
@@ -28,11 +28,11 @@
     "date_created": "1542693122",
     "depends": [],
     "id": 58,
-    "last_updated": "1542697000",
+    "last_updated": "1542697010",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [],
     "title": "rpm-ostree upgrade throws error ",
     "user": {
