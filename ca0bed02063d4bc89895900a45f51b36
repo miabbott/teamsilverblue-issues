@@ -354,10 +354,19 @@
             }
         },
         {
-            "comment": "I have osinfo-db-20181116-1.fc29.noarch",
+            "comment": "I have osinfo-db-20181116-1.fc29.noarch and it has the patch.",
             "date_created": "1544025057",
-            "edited_on": null,
-            "editor": null,
+            "edited_on": "1544025195",
+            "editor": {
+                "default_email": "mhroncok@redhat.com",
+                "emails": [
+                    "churchyard@fedoraproject.org",
+                    "mhroncok@redhat.com",
+                    "miro@hroncok.cz"
+                ],
+                "fullname": "Miro Hron\u010dok",
+                "name": "churchyard"
+            },
             "id": 544665,
             "notification": false,
             "parent": null,
