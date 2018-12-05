@@ -267,10 +267,19 @@
             }
         },
         {
-            "comment": "GNOME Boxes. Fedora-Silverblue-ostree-x86_64-29-1.2.iso from https://github.com/pypa/virtualenv/pull/1252 - it only fails when I leave the \"express installation\" option checked.",
+            "comment": "GNOME Boxes. Fedora-Silverblue-ostree-x86_64-29-1.2.iso from https://silverblue.fedoraproject.org/download - it only fails when I leave the \"express installation\" option checked.\r\n\r\nEDIT: Fixed wrong link (old clipboard)",
             "date_created": "1544023349",
-            "edited_on": null,
-            "editor": null,
+            "edited_on": "1544023396",
+            "editor": {
+                "default_email": "mhroncok@redhat.com",
+                "emails": [
+                    "churchyard@fedoraproject.org",
+                    "mhroncok@redhat.com",
+                    "miro@hroncok.cz"
+                ],
+                "fullname": "Miro Hron\u010dok",
+                "name": "churchyard"
+            },
             "id": 544657,
             "notification": false,
             "parent": null,
