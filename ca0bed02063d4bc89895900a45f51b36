@@ -354,9 +354,9 @@
             }
         },
         {
-            "comment": "I have osinfo-db-20181116-1.fc29.noarch and it has the patch.",
+            "comment": "I have osinfo-db-20181116-1.fc29.noarch and itsems to have the patch.\r\n\r\n```\r\n$ grep ostreesetup /usr/share/osinfo/install-script/fedoraproject.org/silverblue-kickstart-desktop.xml \r\nostreesetup --osname=\"fedora-workstation\" --remote=\"fedora-<xsl:value-of select=\"os/version\"/>\" --url=\"file:///ostree/repo\" --ref=\"fedora/<xsl:value-of select=\"os/version\"/>/<xsl:value-of select=\"config/hardware-arch\"/>/workstation\" --nogpg\r\n```",
             "date_created": "1544025057",
-            "edited_on": "1544025195",
+            "edited_on": "1544025254",
             "editor": {
                 "default_email": "mhroncok@redhat.com",
                 "emails": [
@@ -388,7 +388,7 @@
     "date_created": "1535303341",
     "depends": [],
     "id": 29,
-    "last_updated": "1544025195",
+    "last_updated": "1544025210",
     "milestone": null,
     "priority": null,
     "private": false,
