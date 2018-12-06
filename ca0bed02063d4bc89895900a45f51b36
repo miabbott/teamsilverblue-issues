@@ -484,6 +484,24 @@
                 "fullname": "Micah Abbott",
                 "name": "miabbott"
             }
+        },
+        {
+            "comment": "It's been merged:\r\n 5420829e03348bd0fd30dd28fdc86d099ebb0215\r\n\r\nThe next release (which will include this fix) should happen around Dec 21st.",
+            "date_created": "1544120427",
+            "edited_on": null,
+            "editor": null,
+            "id": 545008,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "fidencio@redhat.com",
+                "emails": [
+                    "fidencio@redhat.com"
+                ],
+                "fullname": "Fabiano Fid\u00eancio",
+                "name": "fidencio"
+            }
         }
     ],
     "content": "I just downloaded fedora atomic 28 [0] and installed it on my fedora machine inside gnome boxes with express install. It works! \r\n\r\nHowever, I can't update. I noticed the community discourse website is different than it used to be but I found the google cache [1] for an old discussion. To cut a long story short, what is worstation? Is it a typo for workstation? \r\n\r\nEdit: Sorry if it is an inside joke that I didn't get (: \r\n\r\n```\r\n[kushal@silverblue28 kushal]$ rpm-ostree upgrade\r\nerror: Remote \"fedora-workstation\" not found\r\n[kushal@silverblue28 kushal]$ rpm-ostree upgrade\r\nerror: Remote \"fedora-workstation\" not found\r\n[kushal@silverblue28 kushal]$ rpm-ostree upgrade --check\r\nerror: Remote \"fedora-workstation\" not found\r\n[kushal@silverblue28 kushal]$ cat /etc/ostree/remotes.d/fedora-workstation.conf \r\ncat: /etc/ostree/remotes.d/fedora-workstation.conf: No such file or directory\r\n[kushal@silverblue28 kushal]$ cat /etc/ostree/remotes.d/fedora-worstation-28.conf \r\n[remote \"fedora-worstation-28\"]\r\nurl=https://kojipkgs.fedoraproject.org/atomic/workstation/\r\ngpgkeypath=/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-28-primary\r\n[kushal@silverblue28 kushal]$ ostree remote list -u\r\nfedora-worstation-28  https://kojipkgs.fedoraproject.org/atomic/workstation/\r\n[kushal@silverblue28 kushal]$ ostree remote refs fedora-workstation\r\nerror: Remote \"fedora-workstation\" not found\r\n[kushal@silverblue28 kushal]$ ostree remote refs fedora-workstation-28\r\nerror: Remote \"fedora-workstation-28\" not found\r\n[kushal@silverblue28 kushal]$ ostree remote refs fedora-worstation-28\r\nfedora-worstation-28:fedora/27/x86_64/testing/workstation\r\nfedora-worstation-28:fedora/27/x86_64/updates/workstation\r\nfedora-worstation-28:fedora/27/x86_64/workstation\r\n[kushal@silverblue28 kushal]$ \r\n```\r\n\r\n\r\n[0] http://mirrors.syringanetworks.net/fedora/linux/releases/28/AtomicWorkstation/x86_64/iso/Fedora-AtomicWorkstation-ostree-x86_64-28-1.1.iso \r\n\r\n[1] https://webcache.googleusercontent.com/search?q=cache:KpbQm0r2I48J:https://community.teamsilverblue.org/t/remote-fedora-workstation-not-found/101+&cd=1&hl=en&ct=clnk&gl=us&client=firefox-b-1-ab\r\n",
@@ -491,7 +509,7 @@
     "date_created": "1535303341",
     "depends": [],
     "id": 29,
-    "last_updated": "1544112997",
+    "last_updated": "1544120427",
     "milestone": null,
     "priority": null,
     "private": false,
