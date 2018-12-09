@@ -3,13 +3,50 @@
     "blocks": [],
     "close_status": null,
     "closed_at": "1544378274",
-    "comments": [],
+    "comments": [
+        {
+            "comment": "Fixed, thanks for the report.",
+            "date_created": "1544378275",
+            "edited_on": null,
+            "editor": null,
+            "id": 545601,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "sanja@redhat.com",
+                "emails": [
+                    "sanja@redhat.com"
+                ],
+                "fullname": "Sanja Bonic",
+                "name": "sanja"
+            }
+        },
+        {
+            "comment": "**Metadata Update from @sanja**:\n- Issue status updated to: Closed (was: Open)",
+            "date_created": "1544378275",
+            "edited_on": null,
+            "editor": null,
+            "id": 545602,
+            "notification": true,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "sanja@redhat.com",
+                "emails": [
+                    "sanja@redhat.com"
+                ],
+                "fullname": "Sanja Bonic",
+                "name": "sanja"
+            }
+        }
+    ],
     "content": "The download link here https://docs.fedoraproject.org/en-US/fedora-silverblue/installation-guide/ points to https://teamsilverblue.org/download which doesn't exist:\r\n\r\n```\r\n$ nslookup teamsilverblue.org\r\n;; Got SERVFAIL reply from fd00::eadf:70ff:fe95:18d4, trying next server\r\nServer:\t\t192.168.178.1\r\nAddress:\t192.168.178.1#53\r\n\r\n** server can't find teamsilverblue.org: SERVFAIL\r\n\r\n$ nslookup teamsilverblue.org NIRVANA.EASYDNS.NET\r\nServer:\t\tNIRVANA.EASYDNS.NET\r\nAddress:\t45.79.142.6#53\r\n\r\n** server can't find teamsilverblue.org: REFUSED\r\n\r\n$ nslookup teamsilverblue.org RUSH.EASYDNS.COM\r\nServer:\t\tRUSH.EASYDNS.COM\r\nAddress:\t46.101.120.153#53\r\n\r\n** server can't find teamsilverblue.org: REFUSED\r\n\r\n$ nslookup teamsilverblue.org MOTORHEAD.EASYDNS.ORG\r\nServer:\t\tMOTORHEAD.EASYDNS.ORG\r\nAddress:\t173.255.247.224#53\r\n\r\n** server can't find teamsilverblue.org: REFUSED\r\n```\r\n\r\nI've eventually found the download link using Google, it is here:\r\nhttps://silverblue.fedoraproject.org/download",
     "custom_fields": [],
     "date_created": "1544376282",
     "depends": [],
     "id": 59,
-    "last_updated": "1544378274",
+    "last_updated": "1544378275",
     "milestone": null,
     "priority": null,
     "private": false,
