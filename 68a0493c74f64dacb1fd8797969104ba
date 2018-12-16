@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "I can't install packages inside the container created by fedora-toolbox:\r\n```\r\nedwin@bolt:~ % SHELL=/bin/bash fedora-toolbox -v enter\r\n\ud83d\udd39[edwin@toolbox ~]$ sudo dnf\r\nsudo: effective uid is not 0, is /usr/bin/sudo on a file system with the 'nosuid' option set or an NFS file system without root privileges?\r\n\ud83d\udd39[edwin@toolbox ~]$ dnf install vim\r\nError: This command has to be run under the root user.\r\n```",
+    "custom_fields": [],
+    "date_created": "1544981547",
+    "depends": [],
+    "id": 61,
+    "last_updated": "1544981547",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "fedora-toolbox image: sudo does not work",
+    "user": {
+        "default_email": "edwin+bugs@etorok.eu",
+        "emails": [
+            "edwin+bugs@etorok.eu"
+        ],
+        "fullname": "T\u00f6r\u00f6k Edwin",
+        "name": "edwintorok"
+    }
+}
