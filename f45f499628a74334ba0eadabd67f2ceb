@@ -3,13 +3,33 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "Can you try the suggestion in https://github.com/projectatomic/rpm-ostree/pull/1717?",
+            "date_created": "1545083207",
+            "edited_on": null,
+            "editor": null,
+            "id": 546933,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "jlebon@redhat.com",
+                "emails": [
+                    "jlebon@redhat.com",
+                    "jonathan@jlebon.com"
+                ],
+                "fullname": "Jonathan Lebon",
+                "name": "jlebon"
+            }
+        }
+    ],
     "content": "Did package versions go backwards?\r\n```\r\n[root@bolt ~]# rpm-ostree upgrade\r\nnote: automatic updates (stage) are enabled\r\n1 metadata, 0 content objects fetched; 569 B transferred in 2 seconds\r\nChecking out tree 967d012... done\r\nEnabled rpm-md repositories: fedora updates\r\nrpm-md repo 'fedora' (cached); generated: 2018-10-24T22:20:15Z\r\nrpm-md repo 'updates' (cached); generated: 2018-12-16T03:17:06Z\r\nImporting metadata [=============] 100%\r\nResolving dependencies... Forbidden base package replacements:\r\n  glibc 2.28-26.fc29 -> 2.28-23.fc29 (updates)\r\n  glibc-common 2.28-26.fc29 -> 2.28-23.fc29 (updates)\r\n  glibc-all-langpacks 2.28-26.fc29 -> 2.28-23.fc29 (updates)\r\n```\r\n\r\nI am using this remote URL (the default one was way too slow, and I found that this one would be recommended to use as it has caching via cloudfront):\r\n```\r\n# ostree remote show-url fedora-workstation \r\nhttps://dl.fedoraproject.org/atomic/repo/\r\n```",
     "custom_fields": [],
     "date_created": "1545080254",
     "depends": [],
     "id": 62,
-    "last_updated": "1545080254",
+    "last_updated": "1545083207",
     "milestone": null,
     "priority": null,
     "private": false,
