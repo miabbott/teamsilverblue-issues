@@ -2,7 +2,7 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
+    "closed_at": "1545056653",
     "comments": [
         {
             "comment": "I did try to clean up the \"extra\" user set up, by deleting their existence from /etc/subgid and /etc/subuid and that got rid of them for sure, but I still don't automatically get the correct user being offered. ",
@@ -21,6 +21,24 @@
                 "fullname": "Steven Snow",
                 "name": "jakfrost"
             }
+        },
+        {
+            "comment": "**Metadata Update from @jakfrost**:\n- Issue status updated to: Closed (was: Open)",
+            "date_created": "1545056654",
+            "edited_on": null,
+            "editor": null,
+            "id": 546806,
+            "notification": true,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "s40w5s@gmail.com",
+                "emails": [
+                    "s40w5s@gmail.com"
+                ],
+                "fullname": "Steven Snow",
+                "name": "jakfrost"
+            }
         }
     ],
     "content": "When I did a rebase from F28 Silverbue to F29 Silverblue beta for the test day, it went marvelous right up to the point where I typed 'systemctl reboot'. After that the machine booted up and presented me with the first screen you would see from doing a fresh install onto bare metal. The only way forward at that point is to set up a user. You are unable to skip it or choose an already set up user. Afterwards, I am able to log in as my (previous) user, and everything is OK with the home directory, etc... however, the GDM login always picks the user you set up not the last one you log in with. I know that it can be rectified (likely) by modifying user accounts after the fact, but this is seemingly a bug. Another individual has made the same observation going from F27 to F28.",
@@ -28,11 +46,11 @@
     "date_created": "1539315935",
     "depends": [],
     "id": 49,
-    "last_updated": "1539319393",
+    "last_updated": "1545056654",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [],
     "title": "Rebasing from F28 Silverblue to F29 Silverblue results in booting into the initial user setup screen",
     "user": {
