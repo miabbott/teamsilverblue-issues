@@ -5,10 +5,18 @@
     "closed_at": null,
     "comments": [
         {
-            "comment": "Can you try the suggestion in https://github.com/projectatomic/rpm-ostree/pull/1717?",
+            "comment": "Can you try the suggestion in https://github.com/projectatomic/rpm-ostree/pull/1717 ?",
             "date_created": "1545083207",
-            "edited_on": null,
-            "editor": null,
+            "edited_on": "1545083215",
+            "editor": {
+                "default_email": "jlebon@redhat.com",
+                "emails": [
+                    "jlebon@redhat.com",
+                    "jonathan@jlebon.com"
+                ],
+                "fullname": "Jonathan Lebon",
+                "name": "jlebon"
+            },
             "id": 546933,
             "notification": false,
             "parent": null,
@@ -22,6 +30,25 @@
                 "fullname": "Jonathan Lebon",
                 "name": "jlebon"
             }
+        },
+        {
+            "comment": "are you following the stable ref or the `testing` ref? ? unfortunately there was an issue not too long ago where the updates ref was actually getting `updates-testing` content so this may how you ended up in this state. \r\n\r\ncan you show the output of `rpm-ostree status`?",
+            "date_created": "1545084495",
+            "edited_on": null,
+            "editor": null,
+            "id": 546934,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "Did package versions go backwards?\r\n```\r\n[root@bolt ~]# rpm-ostree upgrade\r\nnote: automatic updates (stage) are enabled\r\n1 metadata, 0 content objects fetched; 569 B transferred in 2 seconds\r\nChecking out tree 967d012... done\r\nEnabled rpm-md repositories: fedora updates\r\nrpm-md repo 'fedora' (cached); generated: 2018-10-24T22:20:15Z\r\nrpm-md repo 'updates' (cached); generated: 2018-12-16T03:17:06Z\r\nImporting metadata [=============] 100%\r\nResolving dependencies... Forbidden base package replacements:\r\n  glibc 2.28-26.fc29 -> 2.28-23.fc29 (updates)\r\n  glibc-common 2.28-26.fc29 -> 2.28-23.fc29 (updates)\r\n  glibc-all-langpacks 2.28-26.fc29 -> 2.28-23.fc29 (updates)\r\n```\r\n\r\nI am using this remote URL (the default one was way too slow, and I found that this one would be recommended to use as it has caching via cloudfront):\r\n```\r\n# ostree remote show-url fedora-workstation \r\nhttps://dl.fedoraproject.org/atomic/repo/\r\n```",
@@ -29,7 +56,7 @@
     "date_created": "1545080254",
     "depends": [],
     "id": 62,
-    "last_updated": "1545083207",
+    "last_updated": "1545084495",
     "milestone": null,
     "priority": null,
     "private": false,
