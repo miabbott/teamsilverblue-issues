@@ -2,7 +2,7 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
+    "closed_at": "1545077939",
     "comments": [
         {
             "comment": "Also tried the `--sudo` flag but that failed in a different way:\r\n```\r\nfedora-toolbox --sudo -v create\r\nerror reading image \"fedora-toolbox-edwin:29\": error reading image: error locating image \"fedora-toolbox-edwin:29\" for importing settings: error locating image with name \"fedora-toolbox-edwin:29\": image not known\r\nError determining manifest MIME type for docker://localhost/fedora-toolbox:29: pinging docker registry returned: Get https://localhost/v2/: dial tcp [::1]:443: connect: connection refused\r\nGetting image source signatures\r\nCopying blob sha256:af19ce19de5ee70d1ca852c65f9927fab6ba09de2864af2acdf18d60774bffbd\r\n 85.70 MiB / 85.70 MiB [===================================================] 15s\r\nCopying blob sha256:6df1bfffa76ae08ebcb61de2ae28fbf5f8a84079b6cb316d095cdf4cb5e2bdbb\r\n 182.56 MiB / 182.56 MiB [=================================================] 29s\r\nCopying config sha256:032b427fbbf72ac22336638af319ef989a2b99e038ca087743c132ab71445ed8\r\n 2.69 KiB / 2.69 KiB [======================================================] 0s\r\nWriting manifest to image destination\r\nStoring signatures\r\npasswd: Note: deleting a password also unlocks the password.\r\npasswd: Note: deleting a password also unlocks the password.\r\nGetting image source signatures\r\nSkipping fetch of repeat blob sha256:8080f9aa6262000ad12d3d7e55331d275d412faa730b75c41bbf444b4ce056e9\r\nSkipping fetch of repeat blob sha256:d399ea65472cbad41d640ec2a09724c2f11ac7fa52636b6cec6905e8fa490865\r\nCopying blob sha256:080bbdcce425af12a424a190521c874cb1f8e46546a95698b7cb44a9bb2cdfaa\r\n 1.95 KiB / 1.95 KiB [======================================================] 0s\r\nCopying config sha256:cb6e83d458a67a5aece6b5505d25e2a83b168b3f87250990d87fcd08c0c15f44\r\n 1.43 KiB / 1.43 KiB [======================================================] 0s\r\nWriting manifest to image destination\r\nStoring signatures\r\nerror looking up container \"fedora-toolbox-edwin:29\": no container with name or ID fedora-toolbox-edwin:29 found: no such container\r\nerror creating container storage: error creating ID-mapped copy of layer \"8042eb3a896959439cf57f9e6c964552292c90a8540048fa2efb80cef5d5feec\": exit status 1: error during chown: storage-chown-by-maps: chown(\"usr/bin/ping\"): no data available\r\n/usr/bin/fedora-toolbox: failed to create container fedora-toolbox-edwin:29\r\n\r\n```",
@@ -83,6 +83,25 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "**Metadata Update from @dustymabe**:\n- Issue status updated to: Closed (was: Open)",
+            "date_created": "1545077940",
+            "edited_on": null,
+            "editor": null,
+            "id": 546908,
+            "notification": true,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "I can't install packages inside the container created by fedora-toolbox:\r\n```\r\nedwin@bolt:~ % SHELL=/bin/bash fedora-toolbox -v enter\r\n\ud83d\udd39[edwin@toolbox ~]$ sudo dnf\r\nsudo: effective uid is not 0, is /usr/bin/sudo on a file system with the 'nosuid' option set or an NFS file system without root privileges?\r\n\ud83d\udd39[edwin@toolbox ~]$ dnf install vim\r\nError: This command has to be run under the root user.\r\n```\r\n\r\nI'm running the latest packages from rpm-ostree:\r\n\r\n```\r\nedwin@bolt:~ % rpm-ostree status\r\nState: idle\r\nWarning: failed to query journal: address not available\r\nAutomaticUpdates: stage; rpm-ostreed-automatic.timer: last run 5h 1min ago\r\nDeployments:\r\n\u25cf ostree://fedora-workstation:fedora/29/x86_64/silverblue\r\n                   Version: 29.20181216.0 (2018-12-16T00:57:21Z)\r\n                BaseCommit: 9e79f2d859ceebec1e07db8eb2dc3d120f45a46260df530d173ef2a6c3d058d7\r\n              GPGSignature: Valid signature by 5A03B4DD8254ECA02FDA1637A20AA56B429476B4\r\n           LayeredPackages: ansible bcc-tools chromium dconf-editor evince evolution fedora-toolbox gnome-photos gnome-tweak-tool kernel-tools latencytop libreoffice mesa-vulkan-drivers.i686\r\n                            mozilla-ublock-origin neovim pass perf python3-psutil ripgrep stow tig weston zsh\r\n\r\n  ostree://fedora-workstation:fedora/29/x86_64/silverblue\r\n                   Version: 29.20181214.0 (2018-12-14T10:52:14Z)\r\n                BaseCommit: 2c3e9279d3ebc2f46ad2b9daf270d884b2f40f056a3404a0e0d51f764b7da047\r\n              GPGSignature: Valid signature by 5A03B4DD8254ECA02FDA1637A20AA56B429476B4\r\n           LayeredPackages: ansible bcc-tools chromium dconf-editor evince evolution fedora-toolbox gnome-photos gnome-tweak-tool kernel-tools latencytop libreoffice mesa-vulkan-drivers.i686\r\n                            mozilla-ublock-origin neovim pass perf python3-psutil ripgrep stow tig weston zsh\r\n\r\nedwin@bolt:~ % podman --version\r\npodman version 0.12.1.1\r\nedwin@bolt:~ % buildah --version\r\nbuildah version 1.5 (image-spec 1.0.0, runtime-spec 1.0.0)\r\n\r\n```\r\n\r\n",
@@ -90,11 +109,11 @@
     "date_created": "1544981547",
     "depends": [],
     "id": 61,
-    "last_updated": "1545057445",
+    "last_updated": "1545077940",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [],
     "title": "fedora-toolbox image: sudo does not work",
     "user": {
