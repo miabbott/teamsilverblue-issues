@@ -41,10 +41,17 @@
             }
         },
         {
-            "comment": "Opened buildah bug here: https://github.com/containers/buildah/issues/1240",
+            "comment": "Opened buildah bug here: https://github.com/containers/buildah/issues/1240 and podman bug here: https://github.com/containers/libpod/issues/2015",
             "date_created": "1544985920",
-            "edited_on": null,
-            "editor": null,
+            "edited_on": "1544986349",
+            "editor": {
+                "default_email": "edwin+bugs@etorok.eu",
+                "emails": [
+                    "edwin+bugs@etorok.eu"
+                ],
+                "fullname": "T\u00f6r\u00f6k Edwin",
+                "name": "edwintorok"
+            },
             "id": 546709,
             "notification": false,
             "parent": null,
@@ -57,6 +64,25 @@
                 "fullname": "T\u00f6r\u00f6k Edwin",
                 "name": "edwintorok"
             }
+        },
+        {
+            "comment": "Thanks @edwintorok - I'll follow the upstream bug reports.\r\n\r\nShould we close this issue since it's being addressed upstream? ",
+            "date_created": "1545057445",
+            "edited_on": null,
+            "editor": null,
+            "id": 546823,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "I can't install packages inside the container created by fedora-toolbox:\r\n```\r\nedwin@bolt:~ % SHELL=/bin/bash fedora-toolbox -v enter\r\n\ud83d\udd39[edwin@toolbox ~]$ sudo dnf\r\nsudo: effective uid is not 0, is /usr/bin/sudo on a file system with the 'nosuid' option set or an NFS file system without root privileges?\r\n\ud83d\udd39[edwin@toolbox ~]$ dnf install vim\r\nError: This command has to be run under the root user.\r\n```\r\n\r\nI'm running the latest packages from rpm-ostree:\r\n\r\n```\r\nedwin@bolt:~ % rpm-ostree status\r\nState: idle\r\nWarning: failed to query journal: address not available\r\nAutomaticUpdates: stage; rpm-ostreed-automatic.timer: last run 5h 1min ago\r\nDeployments:\r\n\u25cf ostree://fedora-workstation:fedora/29/x86_64/silverblue\r\n                   Version: 29.20181216.0 (2018-12-16T00:57:21Z)\r\n                BaseCommit: 9e79f2d859ceebec1e07db8eb2dc3d120f45a46260df530d173ef2a6c3d058d7\r\n              GPGSignature: Valid signature by 5A03B4DD8254ECA02FDA1637A20AA56B429476B4\r\n           LayeredPackages: ansible bcc-tools chromium dconf-editor evince evolution fedora-toolbox gnome-photos gnome-tweak-tool kernel-tools latencytop libreoffice mesa-vulkan-drivers.i686\r\n                            mozilla-ublock-origin neovim pass perf python3-psutil ripgrep stow tig weston zsh\r\n\r\n  ostree://fedora-workstation:fedora/29/x86_64/silverblue\r\n                   Version: 29.20181214.0 (2018-12-14T10:52:14Z)\r\n                BaseCommit: 2c3e9279d3ebc2f46ad2b9daf270d884b2f40f056a3404a0e0d51f764b7da047\r\n              GPGSignature: Valid signature by 5A03B4DD8254ECA02FDA1637A20AA56B429476B4\r\n           LayeredPackages: ansible bcc-tools chromium dconf-editor evince evolution fedora-toolbox gnome-photos gnome-tweak-tool kernel-tools latencytop libreoffice mesa-vulkan-drivers.i686\r\n                            mozilla-ublock-origin neovim pass perf python3-psutil ripgrep stow tig weston zsh\r\n\r\nedwin@bolt:~ % podman --version\r\npodman version 0.12.1.1\r\nedwin@bolt:~ % buildah --version\r\nbuildah version 1.5 (image-spec 1.0.0, runtime-spec 1.0.0)\r\n\r\n```\r\n\r\n",
@@ -64,7 +90,7 @@
     "date_created": "1544981547",
     "depends": [],
     "id": 61,
-    "last_updated": "1544985920",
+    "last_updated": "1545057445",
     "milestone": null,
     "priority": null,
     "private": false,
