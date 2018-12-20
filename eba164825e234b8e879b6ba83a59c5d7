@@ -2,7 +2,7 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
+    "closed_at": "1545315570",
     "comments": [
         {
             "comment": "FWIW I've seen similar issues when I tried using `buildah` and `podman` manually, however `podman build` worked on my own containers.",
@@ -64,11 +64,11 @@
     "date_created": "1544482226",
     "depends": [],
     "id": 60,
-    "last_updated": "1545315563",
+    "last_updated": "1545315570",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [],
     "title": "fedora-toolbox create doesn't work anymore: podman cannot see image created by buildah?",
     "user": {
