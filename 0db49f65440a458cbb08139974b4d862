@@ -1,0 +1,27 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "comments": [],
+    "content": "Alex investigated ways to make rpm-ostree work with the nvidia driver. In the end, the most practical solution is to just include the needed BRs in the compose. We should make the necessary changes to silverblue config.\r\n\r\nhttps://pagure.io/workstation-ostree-config/pull-request/119",
+    "custom_fields": [],
+    "date_created": "1546623089",
+    "depends": [],
+    "id": 64,
+    "last_updated": "1546623089",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "add build requires for the nvidia driver",
+    "user": {
+        "default_email": "mclasen@redhat.com",
+        "emails": [
+            "mclasen@redhat.com"
+        ],
+        "fullname": "Matthias Clasen",
+        "name": "mclasen"
+    }
+}
