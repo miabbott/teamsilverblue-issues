@@ -4,13 +4,32 @@
     "close_status": null,
     "closed_at": null,
     "closed_by": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "Fun fact: I was notified of pending ostree updates (via Gnome SW) while I was filing this. After I finished I closed out everything (except Gnome SW) and applied updates, then did the restart and update for the ostree and codec's and firefox. When I rebooted, I was faced with the first login user setup screen. So it happens on an ostree update too!",
+            "date_created": "1547395098",
+            "edited_on": null,
+            "editor": null,
+            "id": 549353,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "s40w5s@gmail.com",
+                "emails": [
+                    "s40w5s@gmail.com"
+                ],
+                "fullname": "Steven Snow",
+                "name": "jakfrost"
+            }
+        }
+    ],
     "content": "Late last year, I was using fedora-toolbox on Silverblue. After a podman/buildah update, my fedora-toolbox `broke`. So I talked with @rishi about it and was guided to override those two packages, which solved my issue with using my pet container. Recently, with the new upgrade to fedora-toolbox, I tried to reset those downgrades, beginning with buildah. So I used a command something like this 'rpm-ostree override reset buildah https://koji.fedoraproject.org/koji/buildinfo?buildID=1157063' which failed. I then typed 'rpm-ostree install --allow-inactive buildah-1.5-1.gite94b4f9.fc29\" which seemed to work, i did 'systemctl reboot'. On reboot I was faced with the first run user setup screen. I can repeat this, using a different package (podman in this case), which would seem to indicate it isn't related to those packages. This has also happened to me on an upgrade of Silverblue from F28 to F29.",
     "custom_fields": [],
     "date_created": "1547394152",
     "depends": [],
     "id": 65,
-    "last_updated": "1547394152",
+    "last_updated": "1547395098",
     "milestone": null,
     "priority": null,
     "private": false,
