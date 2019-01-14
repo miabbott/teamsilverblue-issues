@@ -3,6 +3,7 @@
     "blocks": [],
     "close_status": null,
     "closed_at": null,
+    "closed_by": null,
     "comments": [
         {
             "comment": "Did anything ever happen with this? Is there a repository?",
@@ -39,6 +40,24 @@
                 "fullname": "Matthias Clasen",
                 "name": "mclasen"
             }
+        },
+        {
+            "comment": "Should this not now be closed? fedora-toolbox is out for awhile now.",
+            "date_created": "1547476542",
+            "edited_on": null,
+            "editor": null,
+            "id": 549513,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "s40w5s@gmail.com",
+                "emails": [
+                    "s40w5s@gmail.com"
+                ],
+                "fullname": "Steven Snow",
+                "name": "jakfrost"
+            }
         }
     ],
     "content": "It would be good if beyond installing all the commandline container tools, we could have some desktop integration for working with containers, and 'pet' containers in particular. This could be just like a 'smart terminal' that is aware of containers.\r\n\r\nWe have started initial work towards a design for this tool. Allan is currently doing some interviews with developers to learn about workflows.",
@@ -46,7 +65,7 @@
     "date_created": "1525888657",
     "depends": [],
     "id": 5,
-    "last_updated": "1538425232",
+    "last_updated": "1547476542",
     "milestone": "F29",
     "priority": null,
     "private": false,
