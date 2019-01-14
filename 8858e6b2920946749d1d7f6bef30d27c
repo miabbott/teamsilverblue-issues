@@ -41,6 +41,24 @@
                 "fullname": "Jonathan Lebon",
                 "name": "jlebon"
             }
+        },
+        {
+            "comment": "Hello,\r\nInitially, I was trying override with reset option for either podman or buildah, I would get the message that there was nothing to do. When I checked their version it would show the earlier version I  wanted to not use. So I did an rpm-ostree status to see if the packages were actually there, etc... anyway it showed them (podman and buildah) with their current up to date versions as inactive. So I thought to use --allow-inactive, although rpm-ostree balked at the switch/option. Yeah, i uninstalled the buildah rpm, then allowed the upgrade to go ahead.\r\nAs for the upgrade and new user thing, yes this is the third time it has happened to me personally, and there was another user I talked with on the Silverblue discussion site about it happening to them. I can access my original user afterwards, but I must go through the initial setup of another user to get there. The packages my original user had installed are all there less the layered ones, with the new user. The original user dotfiles, home, everything is still intact, so nothing lost. I suppose, I could have interrupted the bootup and gone directly to a prompt and logged in a terminal at start instead of Gnome. Then likely prevented this from happening by ???? creating a 'firstrundone' text file?",
+            "date_created": "1547476394",
+            "edited_on": null,
+            "editor": null,
+            "id": 549512,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "s40w5s@gmail.com",
+                "emails": [
+                    "s40w5s@gmail.com"
+                ],
+                "fullname": "Steven Snow",
+                "name": "jakfrost"
+            }
         }
     ],
     "content": "Late last year, I was using fedora-toolbox on Silverblue. After a podman/buildah update, my fedora-toolbox `broke`. So I talked with @rishi about it and was guided to override those two packages, which solved my issue with using my pet container. Recently, with the new upgrade to fedora-toolbox, I tried to reset those downgrades, beginning with buildah. So I used a command something like this 'rpm-ostree override reset buildah https://koji.fedoraproject.org/koji/buildinfo?buildID=1157063' which failed. I then typed 'rpm-ostree install --allow-inactive buildah-1.5-1.gite94b4f9.fc29\" which seemed to work, i did 'systemctl reboot'. On reboot I was faced with the first run user setup screen. I can repeat this, using a different package (podman in this case), which would seem to indicate it isn't related to those packages. This has also happened to me on an upgrade of Silverblue from F28 to F29.",
