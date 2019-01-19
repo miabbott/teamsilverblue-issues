@@ -4,13 +4,33 @@
     "close_status": null,
     "closed_at": null,
     "closed_by": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "Hmm, might be a regression from https://github.com/ostreedev/ostree/pull/1785.",
+            "date_created": "1547931697",
+            "edited_on": null,
+            "editor": null,
+            "id": 550298,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "jlebon@redhat.com",
+                "emails": [
+                    "jlebon@redhat.com",
+                    "jonathan@jlebon.com"
+                ],
+                "fullname": "Jonathan Lebon",
+                "name": "jlebon"
+            }
+        }
+    ],
     "content": "Kernel parameters which aren't in the form of key=value like quiet or rghb can't be passed to kernel anymore.\r\n\r\nI changed my kernel parameters with `rpm-ostree kargs --editor` and now I'm stuck with an unpleasant boot experience.\r\n\r\nMy actual configuration:\r\n```\r\n# Please enter the kernel arguments. Each kernel argument# should be in the form of key=value.\r\n# Lines starting with '#' will be ignored. Each key=value pair should be\r\n# separated by spaces, and multiple value associated with one key is allowed.\r\n# Also, please note that any changes to the ostree argument will not be\r\n# effective as they are usually regenerated when bootconfig changes.\r\nresume=/dev/mapper/fedora-swap rd.lvm.lv=fedora/root rd.lvm.lv=fedora/swap root=/dev/mapper/fedora-root zswap.enabled=1 rghb quiet\r\n```\r\n\r\nThe problem is that a equal sign is appended to rghb and quiet.\r\n\r\nOutput of rpm-ostree kargs:\r\n```\r\nThe kernel arguments are:\r\nresume=/dev/mapper/fedora-swap rd.lvm.lv=fedora/root rd.lvm.lv=fedora/swap root=/dev/mapper/fedora-root zswap.enabled=1 rghb= quiet= ostree=/ostree/boot.1/fedora-workstation/15f9970c158b7b79b71190e887b9bfdbc48c98cdac3c7a1819cc3365059b7e3b/0\r\n```\r\n\r\nI want to pass rghb and quiet as kernel arguments so that I can have the normal boot experience.",
     "custom_fields": [],
     "date_created": "1547928909",
     "depends": [],
     "id": 66,
-    "last_updated": "1547928909",
+    "last_updated": "1547931697",
     "milestone": null,
     "priority": null,
     "private": false,
