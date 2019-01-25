@@ -123,10 +123,17 @@
             }
         },
         {
-            "comment": "Hello @jlebon ,\r\n@dustymabe  helped get me directed to where to look with ostree pull --commit -data-only and I was able to go back to where I know the timeframe is of the issue. I get the following printout from the command (showing only the pertinent timeframe)\r\n\r\n\r\n[![Screenshot_from_2019-01-25_13-32-42.png](/teamsilverblue/issue/raw/files/bdcc6b35272f82cd76abc98b45cb4120da6a8966440ed7240e96d7b0ce10e743-Screenshot_from_2019-01-25_13-32-42.png)](/teamsilverblue/issue/raw/files/bdcc6b35272f82cd76abc98b45cb4120da6a8966440ed7240e96d7b0ce10e743-Screenshot_from_2019-01-25_13-32-42.png)\r\nThe deploy for the 7th works, the one for the 11th (which was after I accepted defeat and just logged in as nee user) works fine too. The two on 10th however are unreachable giving me the error message about \r\n[![Screenshot_from_2019-01-25_13-36-09.png](/teamsilverblue/issue/raw/files/0afa98aef436bd9d144269c4573077f7f8528688c017bd6444d3b141b451110c-Screenshot_from_2019-01-25_13-36-09.png)](/teamsilverblue/issue/raw/files/0afa98aef436bd9d144269c4573077f7f8528688c017bd6444d3b141b451110c-Screenshot_from_2019-01-25_13-36-09.png)\r\nWhat I can tell you is I had my podman buildah set up as downgraded with rpm-ostree override command as per this info\r\n\"https://koji.fedoraproject.org/koji/buildinfo?buildID=1157063\r\nhttps://koji.fedoraproject.org/koji/buildinfo?buildID=1157063\r\nAnd also buildah down to 1.4.x. \r\ndowngrade to a 0.10.x version of podman\"\r\nfrom @rishi to get my fedora-toolbox working, which would have been for some time too since it broke for me after the initial release was upgraded (0.1 to 0.2 )? Is there anything file wise on my system that could help to diagnose this? I mean that you think I should paste somewhere. I don't mind testing something for it too if necessary, all my work is from my home at this point in time so it's easy to progress through things sometimes.",
+            "comment": "Hello @jlebon ,\r\n@dustymabe  helped get me directed to where to look with ostree pull --commit -data-only and I was able to go back to where I know the timeframe is of the issue. I get the following printout from the command (showing only the pertinent timeframe)\r\n\r\n\r\n[![Screenshot_from_2019-01-25_13-32-42.png](/teamsilverblue/issue/raw/files/bdcc6b35272f82cd76abc98b45cb4120da6a8966440ed7240e96d7b0ce10e743-Screenshot_from_2019-01-25_13-32-42.png)](/teamsilverblue/issue/raw/files/bdcc6b35272f82cd76abc98b45cb4120da6a8966440ed7240e96d7b0ce10e743-Screenshot_from_2019-01-25_13-32-42.png)\r\nThe deploy for the 7th works, the one for the 11th (which was after I accepted defeat and just logged in as new user) works fine too. The two on 10th however are unreachable giving me the error message about \r\n[![Screenshot_from_2019-01-25_13-36-09.png](/teamsilverblue/issue/raw/files/0afa98aef436bd9d144269c4573077f7f8528688c017bd6444d3b141b451110c-Screenshot_from_2019-01-25_13-36-09.png)](/teamsilverblue/issue/raw/files/0afa98aef436bd9d144269c4573077f7f8528688c017bd6444d3b141b451110c-Screenshot_from_2019-01-25_13-36-09.png)\r\nWhat I can tell you is I had my podman buildah set up as downgraded with rpm-ostree override command as per this info\r\n\"https://koji.fedoraproject.org/koji/buildinfo?buildID=1157063\r\nhttps://koji.fedoraproject.org/koji/buildinfo?buildID=1157063\r\nAnd also buildah down to 1.4.x. \r\ndowngrade to a 0.10.x version of podman\"\r\nfrom @rishi to get my fedora-toolbox working, which would have been for some time too since it broke for me after the initial release was upgraded (0.1 to 0.2 )? Is there anything file wise on my system that could help to diagnose this? I mean that you think I should paste somewhere. I don't mind testing something for it too if necessary, all my work is from my home at this point in time so it's easy to progress through things sometimes.",
             "date_created": "1548441905",
-            "edited_on": null,
-            "editor": null,
+            "edited_on": "1548442124",
+            "editor": {
+                "default_email": "s40w5s@gmail.com",
+                "emails": [
+                    "s40w5s@gmail.com"
+                ],
+                "fullname": "Steven Snow",
+                "name": "jakfrost"
+            },
             "id": 550848,
             "notification": false,
             "parent": null,
@@ -139,6 +146,25 @@
                 "fullname": "Steven Snow",
                 "name": "jakfrost"
             }
+        },
+        {
+            "comment": "@jakfrost - I think the dates look a little off because the output is telling when the commits were signed in your local TZ but the version numbers of the commits represent the date in UTC when the compose was started. \r\n\r\n\r\nHere are the commits for the 9th and 11th\r\n\r\n```\r\ncommit d30e6754df8d97569cb90ce3eebb0b419c1afef7694fadd5526ac9ca52a1d49f\r\nContentChecksum:  1886731169822980471944f0173a5f0eb5326e46bdab9653d1a5b595eacb022d\r\nDate:  2019-01-11 02:41:43 +0000\r\nVersion: 29.20190111.0\r\n(no subject)\r\n\r\ncommit f701d4fac2af4d79dbcdc6a335b52e24cd85cd08d3a170957f592feb0a04667a\r\nContentChecksum:  7e9189688e34a21d9fa6316a4e26f735a71736281dce4d253e91f2c8ee17731d\r\nDate:  2019-01-09 21:49:36 +0000\r\nVersion: 29.20190109.2\r\n(no subject)\r\n\r\n```\r\n\r\n\r\n",
+            "date_created": "1548445065",
+            "edited_on": null,
+            "editor": null,
+            "id": 550849,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "Late last year, I was using fedora-toolbox on Silverblue. After a podman/buildah update, my fedora-toolbox `broke`. So I talked with @rishi about it and was guided to override those two packages, which solved my issue with using my pet container. Recently, with the new upgrade to fedora-toolbox, I tried to reset those downgrades, beginning with buildah. So I used a command something like this 'rpm-ostree override reset buildah https://koji.fedoraproject.org/koji/buildinfo?buildID=1157063' which failed. I then typed 'rpm-ostree install --allow-inactive buildah-1.5-1.gite94b4f9.fc29\" which seemed to work, i did 'systemctl reboot'. On reboot I was faced with the first run user setup screen. I can repeat this, using a different package (podman in this case), which would seem to indicate it isn't related to those packages. This has also happened to me on an upgrade of Silverblue from F28 to F29.",
@@ -146,7 +172,7 @@
     "date_created": "1547394152",
     "depends": [],
     "id": 65,
-    "last_updated": "1548441905",
+    "last_updated": "1548445065",
     "milestone": null,
     "priority": null,
     "private": false,
