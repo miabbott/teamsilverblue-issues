@@ -165,6 +165,24 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "After spending the better part of two days trying to recreate this issue, I am still unable to. I was able to get back to the particular ostree image I was interested in, I just cannot get it to recreate the issue of first run after upgrade. Which makes me think it is likely something not part of the image itself, but the user system. Through the efforts of jogging my memory on the steps I executed that resulted in the issue noted, I realised that at least twice I had performed an rpm-ostree commit before rebooting into a previous commit. The last such time (in memory) podman was still at version 0.10.3 and still reporting nothing to reset with the override reset command. Buildah was for sure the rpm version I had downloaded (also noted above) and managed to get installed (through removing the base version). I know I had used ostree command's in the mix, but I remember that being for checking for the existing images, and no writing/committing function was ever used.\r\n[![Screenshot_from_2019-01-26_08-09-13.png](/teamsilverblue/issue/raw/files/3ece7c85257b7b4b735e7e5c4c3e5fcfa917614f9121db55a26c78ff47042930-Screenshot_from_2019-01-26_08-09-13.png)](/teamsilverblue/issue/raw/files/3ece7c85257b7b4b735e7e5c4c3e5fcfa917614f9121db55a26c78ff47042930-Screenshot_from_2019-01-26_08-09-13.png)\r\nThe screenshot above shows the output of both podman images and buildah images commands, done this morning before I continue trying. My point here is that I am pretty certain I was the creator of my issue as noted above, and so too were others likely that had the same problem. Having said that I am all for finding out what I did to avoid doing that specific thing again. In my day to day job there are times when the how is not as important as the why, which when applied to this issue brings me to the point that this approach to a workstation setup is new to a lot of us. Although I keep up to date on the newer technologies as they get rolled out, I am cognizant always that I generally don't employ most aspects of it at the levels of use that it was designed to be, and as a consequence misapply some commands likely, break some verboten rules (also likely) without realising it.",
+            "date_created": "1548509408",
+            "edited_on": null,
+            "editor": null,
+            "id": 550876,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "s40w5s@gmail.com",
+                "emails": [
+                    "s40w5s@gmail.com"
+                ],
+                "fullname": "Steven Snow",
+                "name": "jakfrost"
+            }
         }
     ],
     "content": "Late last year, I was using fedora-toolbox on Silverblue. After a podman/buildah update, my fedora-toolbox `broke`. So I talked with @rishi about it and was guided to override those two packages, which solved my issue with using my pet container. Recently, with the new upgrade to fedora-toolbox, I tried to reset those downgrades, beginning with buildah. So I used a command something like this 'rpm-ostree override reset buildah https://koji.fedoraproject.org/koji/buildinfo?buildID=1157063' which failed. I then typed 'rpm-ostree install --allow-inactive buildah-1.5-1.gite94b4f9.fc29\" which seemed to work, i did 'systemctl reboot'. On reboot I was faced with the first run user setup screen. I can repeat this, using a different package (podman in this case), which would seem to indicate it isn't related to those packages. This has also happened to me on an upgrade of Silverblue from F28 to F29.",
@@ -172,7 +190,7 @@
     "date_created": "1547394152",
     "depends": [],
     "id": 65,
-    "last_updated": "1548445065",
+    "last_updated": "1548509408",
     "milestone": null,
     "priority": null,
     "private": false,
