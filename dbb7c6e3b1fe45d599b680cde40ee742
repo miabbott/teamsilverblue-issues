@@ -1,0 +1,28 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "closed_by": null,
+    "comments": [],
+    "content": "<!!image>\r\n",
+    "custom_fields": [],
+    "date_created": "1548629748",
+    "depends": [],
+    "id": 68,
+    "last_updated": "1548629748",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Hungarian Firefox localization extension is outdated.",
+    "user": {
+        "default_email": "iamreallynotapokemon@gmail.com",
+        "emails": [
+            "iamreallynotapokemon@gmail.com"
+        ],
+        "fullname": "Norbert Makula",
+        "name": "ancovens"
+    }
+}
