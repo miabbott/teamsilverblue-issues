@@ -63,6 +63,26 @@
                 "fullname": "Adam Williamson",
                 "name": "adamwill"
             }
+        },
+        {
+            "comment": "So, the lorax command looks like this:\r\n\r\n    lorax --product=Fedora --version=Rawhide --release=20190107.n.0 '--source=http://kojipkgs.fedoraproject.org/compose/rawhide/Fedora-Rawhide-20190107.n.0/work/$basearch/repo' '--source=http://kojipkgs.fedoraproject.org/compose/rawhide/Fedora-Rawhide-20190107.n.0/work/$basearch/comps_repo_Silverblue' --variant=Silverblue --nomacboot --volid=Fedora-SB-ostree-x86_64-rawh --add-template=/mnt/koji/compose/rawhide/Fedora-Rawhide-20190107.n.0/work/x86_64/Silverblue/lorax_templates/ostree-based-installer/lorax-configure-repo.tmpl --add-template=/mnt/koji/compose/rawhide/Fedora-Rawhide-20190107.n.0/work/x86_64/Silverblue/lorax_templates/ostree-based-installer/lorax-embed-repo.tmpl --add-template-var=ostree_install_repo=https://kojipkgs.fedoraproject.org/compose/atomic/repo/ --add-template-var=ostree_update_repo=https://kojipkgs.fedoraproject.org/atomic/repo/ --add-template-var=ostree_osname=fedora-workstation --add-template-var=ostree_oskey=fedora-30-primary --add-template-var=ostree_install_ref=fedora/rawhide/x86_64/silverblue --add-template-var=ostree_update_ref=fedora/rawhide/x86_64/silverblue --logfile=/mnt/koji/compose/rawhide/Fedora-Rawhide-20190107.n.0/logs/x86_64/Silverblue/ostree_installer-4/lorax.log --rootfs-size=8 /mnt/koji/compose/rawhide/Fedora-Rawhide-20190107.n.0/work/x86_64/Silverblue/ostree_installer\r\n\r\nFrom that note the two repos specified:\r\n\r\n* http://kojipkgs.fedoraproject.org/compose/rawhide/Fedora-Rawhide-20190107.n.0/work/$basearch/repo\r\n* http://kojipkgs.fedoraproject.org/compose/rawhide/Fedora-Rawhide-20190107.n.0/work/$basearch/comps_repo_Silverblue\r\n\r\nLooking at those, the second seems to be there solely to provide comps data, its `primary.xml` is tiny, so the first is the main package repo for the lorax run. If we grab the [primary.xml from that repo](https://kojipkgs.fedoraproject.org/compose/rawhide/Fedora-Rawhide-20190107.n.0/work/x86_64/repo/repodata/422579daa3eb6c6854a225758c2c653b9af9202c02e5bb0dd4cf7447a65397fd-primary.xml.gz) and examine it, we see that it contains both i686 and x86_64 anaconda-core packages:\r\n\r\n    [adamw@xps13k tmp]$ grep anaconda-core-30.*rpm 422579daa3eb6c6854a225758c2c653b9af9202c02e5bb0dd4cf7447a65397fd-primary.xml\r\n      <location xml:base=\"file:///mnt/koji/\" href=\"packages/anaconda/30.13/1.fc30/data/signed/cfc659b9/i686/anaconda-core-30.13-1.fc30.i686.rpm\"/>\r\n      <location xml:base=\"file:///mnt/koji/\" href=\"packages/anaconda/30.13/1.fc30/data/signed/cfc659b9/x86_64/anaconda-core-30.13-1.fc30.x86_64.rpm\"/>\r\n\r\nSo I kinda suspect that this is part of the problem. I'm not sure what *changed* here, though, and unfortunately we no longer have a Rawhide compose where Silverblue succeeded available for examination, which makes it harder to tell. It could be that this 'work' repo didn't used to include any packages from a different arch, and that changed somehow. Or it could be that the `q.available()` that lorax's `get_buildarch()` does used to filter out non-native arch packages and no longer does (that seems unlikely, but it's possible). Or it could I guess be that there always were both i686 and x86_64 packages available but `get_buildarch` for some reason used to hit the x86_64 one first, but now hits the i686 one first. Or it could be something else I'm not seeing yet...",
+            "date_created": "1548669485",
+            "edited_on": null,
+            "editor": null,
+            "id": 550961,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "adamwill@fedoraproject.org",
+                "emails": [
+                    "adamwill",
+                    "adamwill@fedoraproject.org",
+                    "awilliam@redhat.com"
+                ],
+                "fullname": "Adam Williamson",
+                "name": "adamwill"
+            }
         }
     ],
     "content": "I just noticed that Silverblue has not built in Rawhide since (it looks like) 2018-12-01. The current failure looks like this ([full logs](https://kojipkgs.fedoraproject.org/compose/rawhide/Fedora-Rawhide-20190121.n.0/logs/x86_64/Silverblue/ostree_installer-4/)):\r\n\r\n    verifying the installroot\r\n    libgstapp-1.0.so.0, needed by /usr/bin/gnome-help, not found\r\n    libgstbase-1.0.so.0, needed by /usr/bin/gnome-help, not found\r\n    libgstreamer-1.0.so.0, needed by /usr/bin/gnome-help, not found\r\n    libgstpbutils-1.0.so.0, needed by /usr/bin/gnome-help, not found\r\n    libgstaudio-1.0.so.0, needed by /usr/bin/gnome-help, not found\r\n    libgsttag-1.0.so.0, needed by /usr/bin/gnome-help, not found\r\n    libgstvideo-1.0.so.0, needed by /usr/bin/gnome-help, not found\r\n    libgstgl-1.0.so.0, needed by /usr/bin/gnome-help, not found\r\n    libgstfft-1.0.so.0, needed by /usr/bin/gnome-help, not found\r\n    libmetacity.so.1, needed by /usr/bin/metacity, not found\r\n    libvorbisfile.so.3, needed by /usr/bin/metacity, not found\r\n    libvorbisfile.so.3, needed by /usr/bin/metacity, not found\r\n    libvorbisfile.so.3, needed by /usr/bin/canberra-boot, not found\r\n    libgstapp-1.0.so.0, needed by /usr/bin/yelp, not found\r\n    libgstbase-1.0.so.0, needed by /usr/bin/yelp, not found\r\n    libgstreamer-1.0.so.0, needed by /usr/bin/yelp, not found\r\n    libgstpbutils-1.0.so.0, needed by /usr/bin/yelp, not found\r\n    libgstaudio-1.0.so.0, needed by /usr/bin/yelp, not found\r\n    libgsttag-1.0.so.0, needed by /usr/bin/yelp, not found\r\n    libgstvideo-1.0.so.0, needed by /usr/bin/yelp, not found\r\n    libgstgl-1.0.so.0, needed by /usr/bin/yelp, not found\r\n    libgstfft-1.0.so.0, needed by /usr/bin/yelp, not found\r\n\r\nThese are things that `runtime-cleanup.tmpl` is removing, I believe. But I think there's a wrinkle here: I think they're not intended to be removed, but are being removed because lorax thinks `${libdir}` is `lib` when it should be `lib64`. Note this from the logs:\r\n\r\n    removefrom libvorbis --allbut /usr/lib/libvorbisfile.* /usr/lib/libvorbis.*: removed 12/12 files, 2731kb/2731kb\r\n\r\nBut the line in `runtime-cleanup.tmpl` is:\r\n\r\n    removefrom libvorbis --allbut /usr/${libdir}/libvorbisfile.* /usr/${libdir}/libvorbis.*\r\n\r\nTagging @bcl on this, I'll look into it a bit.",
@@ -70,7 +90,7 @@
     "date_created": "1548600037",
     "depends": [],
     "id": 67,
-    "last_updated": "1548667976",
+    "last_updated": "1548669485",
     "milestone": null,
     "priority": null,
     "private": false,
