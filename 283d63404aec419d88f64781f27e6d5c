@@ -163,10 +163,19 @@
             }
         },
         {
-            "comment": "So @lsedlar and I have a nice consistent story now: it *was* that change that broke things, and they broke on 2018-12-02 because, while the pungi change was committed on 2018-11-12, there wasn't a build until 2018-11-26, and that build wasn't installed on the builders until 2018-12-01. So that all adds up.\r\n\r\nFixing `get_buildarch` is easy to do in a dumb way but seems a bit harder to do in any 'smart' way (at least on half an hour of research), and we both think that the most sensible fix is just to have pungi pass `--buildarch` explicitly to lorax and avoid running into this questionable autodetection entirely. It already does that for regular installer builds anyway, it seems it was just overlooked for ostree installer builds.\r\n\r\nI'll file a lorax bug for the autodetection failure, but perhaps we can simply remove the autodetection entirely and make passing `--buildarch` mandatory, or something. We'll see what @bcl thinks.",
+            "comment": "So @lsedlar and I have a nice consistent story now: it *was* that change that broke things, and they broke on 2018-12-02 because, while the pungi change was committed on 2018-11-12, there wasn't a build until 2018-11-26, and that build wasn't installed on the builders until 2018-12-01. So that all adds up.\r\n\r\nFixing `get_buildarch` is easy to do in a dumb way but seems a bit harder to do in any 'smart' way (at least on half an hour of research), and we both think that the most sensible fix is just to have pungi pass `--buildarch` explicitly to lorax and avoid running into this questionable autodetection entirely. It already does that for regular installer builds anyway, it seems it was just overlooked for ostree installer builds. @lsedlar is going to do that.\r\n\r\nI'll file a lorax bug for the autodetection failure, but perhaps we can simply remove the autodetection entirely and make passing `--buildarch` mandatory, or something. We'll see what @bcl thinks.",
             "date_created": "1548678434",
-            "edited_on": null,
-            "editor": null,
+            "edited_on": "1548678448",
+            "editor": {
+                "default_email": "adamwill@fedoraproject.org",
+                "emails": [
+                    "adamwill",
+                    "adamwill@fedoraproject.org",
+                    "awilliam@redhat.com"
+                ],
+                "fullname": "Adam Williamson",
+                "name": "adamwill"
+            },
             "id": 551014,
             "notification": false,
             "parent": null,
