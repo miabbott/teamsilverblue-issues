@@ -43,6 +43,26 @@
                 "fullname": "Dusty Mabe",
                 "name": "dustymabe"
             }
+        },
+        {
+            "comment": "Not precisely yet, but I'm working on it :) I'm digging through logs and lorax code to see how it gets set. So far, it looks from [runroot.log](https://kojipkgs.fedoraproject.org/compose/rawhide/Fedora-Rawhide-20190107.n.0/logs/x86_64/Silverblue/ostree_installer-4/runroot.log) like Koji does not pass `--buildarch` to lorax, so I think we hit [this chunk](https://github.com/weldr/lorax/blob/master/src/pylorax/__init__.py#L369) of lorax, which looks like it attempts to kinda autodetect the buildarch based on the arch of the first (non-source) anaconda-core package it finds in the repos available to it...that's as far as I've got so far.",
+            "date_created": "1548667976",
+            "edited_on": null,
+            "editor": null,
+            "id": 550957,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "adamwill@fedoraproject.org",
+                "emails": [
+                    "adamwill",
+                    "adamwill@fedoraproject.org",
+                    "awilliam@redhat.com"
+                ],
+                "fullname": "Adam Williamson",
+                "name": "adamwill"
+            }
         }
     ],
     "content": "I just noticed that Silverblue has not built in Rawhide since (it looks like) 2018-12-01. The current failure looks like this ([full logs](https://kojipkgs.fedoraproject.org/compose/rawhide/Fedora-Rawhide-20190121.n.0/logs/x86_64/Silverblue/ostree_installer-4/)):\r\n\r\n    verifying the installroot\r\n    libgstapp-1.0.so.0, needed by /usr/bin/gnome-help, not found\r\n    libgstbase-1.0.so.0, needed by /usr/bin/gnome-help, not found\r\n    libgstreamer-1.0.so.0, needed by /usr/bin/gnome-help, not found\r\n    libgstpbutils-1.0.so.0, needed by /usr/bin/gnome-help, not found\r\n    libgstaudio-1.0.so.0, needed by /usr/bin/gnome-help, not found\r\n    libgsttag-1.0.so.0, needed by /usr/bin/gnome-help, not found\r\n    libgstvideo-1.0.so.0, needed by /usr/bin/gnome-help, not found\r\n    libgstgl-1.0.so.0, needed by /usr/bin/gnome-help, not found\r\n    libgstfft-1.0.so.0, needed by /usr/bin/gnome-help, not found\r\n    libmetacity.so.1, needed by /usr/bin/metacity, not found\r\n    libvorbisfile.so.3, needed by /usr/bin/metacity, not found\r\n    libvorbisfile.so.3, needed by /usr/bin/metacity, not found\r\n    libvorbisfile.so.3, needed by /usr/bin/canberra-boot, not found\r\n    libgstapp-1.0.so.0, needed by /usr/bin/yelp, not found\r\n    libgstbase-1.0.so.0, needed by /usr/bin/yelp, not found\r\n    libgstreamer-1.0.so.0, needed by /usr/bin/yelp, not found\r\n    libgstpbutils-1.0.so.0, needed by /usr/bin/yelp, not found\r\n    libgstaudio-1.0.so.0, needed by /usr/bin/yelp, not found\r\n    libgsttag-1.0.so.0, needed by /usr/bin/yelp, not found\r\n    libgstvideo-1.0.so.0, needed by /usr/bin/yelp, not found\r\n    libgstgl-1.0.so.0, needed by /usr/bin/yelp, not found\r\n    libgstfft-1.0.so.0, needed by /usr/bin/yelp, not found\r\n\r\nThese are things that `runtime-cleanup.tmpl` is removing, I believe. But I think there's a wrinkle here: I think they're not intended to be removed, but are being removed because lorax thinks `${libdir}` is `lib` when it should be `lib64`. Note this from the logs:\r\n\r\n    removefrom libvorbis --allbut /usr/lib/libvorbisfile.* /usr/lib/libvorbis.*: removed 12/12 files, 2731kb/2731kb\r\n\r\nBut the line in `runtime-cleanup.tmpl` is:\r\n\r\n    removefrom libvorbis --allbut /usr/${libdir}/libvorbisfile.* /usr/${libdir}/libvorbis.*\r\n\r\nTagging @bcl on this, I'll look into it a bit.",
@@ -50,7 +70,7 @@
     "date_created": "1548600037",
     "depends": [],
     "id": 67,
-    "last_updated": "1548643621",
+    "last_updated": "1548667976",
     "milestone": null,
     "priority": null,
     "private": false,
