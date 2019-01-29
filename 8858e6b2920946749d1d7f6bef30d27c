@@ -2,8 +2,15 @@
     "assignee": null,
     "blocks": [],
     "close_status": null,
-    "closed_at": null,
-    "closed_by": null,
+    "closed_at": "1548784860",
+    "closed_by": {
+        "default_email": "s40w5s@gmail.com",
+        "emails": [
+            "s40w5s@gmail.com"
+        ],
+        "fullname": "Steven Snow",
+        "name": "jakfrost"
+    },
     "comments": [
         {
             "comment": "Fun fact: I was notified of pending ostree updates (via Gnome SW) while I was filing this. After I finished I closed out everything (except Gnome SW) and applied updates, then did the restart and update for the ostree and codec's and firefox. When I rebooted, I was faced with the first login user setup screen. So it happens on an ostree update too!",
@@ -245,11 +252,11 @@
     "date_created": "1547394152",
     "depends": [],
     "id": 65,
-    "last_updated": "1548784847",
+    "last_updated": "1548784860",
     "milestone": null,
     "priority": null,
     "private": false,
-    "status": "Open",
+    "status": "Closed",
     "tags": [],
     "title": "Pacakge reset causes first run on new ostree",
     "user": {
