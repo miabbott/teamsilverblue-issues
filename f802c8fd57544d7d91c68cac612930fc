@@ -106,6 +106,25 @@
                 "fullname": "Jonathan Lebon",
                 "name": "jlebon"
             }
+        },
+        {
+            "comment": "Oh I see, you're saying it'll fix itself during the f29 -> f30 rebase because that definitely requires manual typing. Hmm, yeah I guess that does help.",
+            "date_created": "1549487682",
+            "edited_on": null,
+            "editor": null,
+            "id": 552538,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "jlebon@redhat.com",
+                "emails": [
+                    "jlebon@redhat.com",
+                    "jonathan@jlebon.com"
+                ],
+                "fullname": "Jonathan Lebon",
+                "name": "jlebon"
+            }
         }
     ],
     "content": "In https://github.com/ostreedev/ostree/issues/1541, a new remote config was established for the Fedora OSTree repo. I'm filing this on the Silverblue site since it likely emotionally affects Silverblue users the most, but the fix should apply to all OSTree variants. The new config looks something like this:\r\n\r\n```\r\n[remote \"fedora\"]\r\nurl=https://ostree.fedoraproject.org\r\ngpg-verify=true\r\ngpgkeypath=/etc/pki/rpm-gpg\r\ncontenturl=mirrorlist=https://ostree.fedoraproject.org/mirrorlist\r\n```\r\n\r\nWe now need to figure out a way to update user remotes. Long-term, the plan is to ship this remote config as part of an RPM (see the tracker for this in FCOS: https://github.com/coreos/fedora-coreos-tracker/issues/143).\r\n\r\nCurrent idea is to simply ship a systemd unit that fires on boot to update the remote config if it wasn't modified (which we'll have to determine carefully, since it's written by Anaconda and thus always shows up as \"Added\" in e.g. `ostree admin config-diff`). We don't want to touch remote configs that don't point to Fedora's repos.",
@@ -113,7 +132,7 @@
     "date_created": "1549471586",
     "depends": [],
     "id": 69,
-    "last_updated": "1549487584",
+    "last_updated": "1549487682",
     "milestone": null,
     "priority": null,
     "private": false,
