@@ -32,6 +32,32 @@
             "id": 552504,
             "notification": false,
             "parent": null,
+            "reactions": {
+                "Heart": [
+                    "dustymabe"
+                ],
+                "Thumbs up": [
+                    "dustymabe"
+                ]
+            },
+            "user": {
+                "default_email": "jlebon@redhat.com",
+                "emails": [
+                    "jlebon@redhat.com",
+                    "jonathan@jlebon.com"
+                ],
+                "fullname": "Jonathan Lebon",
+                "name": "jlebon"
+            }
+        },
+        {
+            "comment": "Thinking more on this, I think we might need both. I.e. ship the remote in an RPM, but also ship code to automatically change configs to use the new remote. I think this will also require kickstart modifications to only delete the Anaconda generated config, and not create a new one as well.",
+            "date_created": "1549480462",
+            "edited_on": null,
+            "editor": null,
+            "id": 552524,
+            "notification": false,
+            "parent": null,
             "reactions": {},
             "user": {
                 "default_email": "jlebon@redhat.com",
@@ -49,7 +75,7 @@
     "date_created": "1549471586",
     "depends": [],
     "id": 69,
-    "last_updated": "1549473869",
+    "last_updated": "1549480462",
     "milestone": null,
     "priority": null,
     "private": false,
