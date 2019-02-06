@@ -68,6 +68,25 @@
                 "fullname": "Jonathan Lebon",
                 "name": "jlebon"
             }
+        },
+        {
+            "comment": "> Thinking more on this, I think we might need both. I.e. ship the remote in an RPM, but also ship code to automatically change configs to use the new remote.\r\n\r\nI'd rather not. This seems error prone and not something we need to spend time on since everything is already working and this is simply an optimization. New installs will come with the right config by default and upgrades can get updated when people go to rebase and look for instructions. \r\n\r\n\r\n\r\n> I think this will also require kickstart modifications to only delete the Anaconda generated config, and not create a new one as well.\r\n\r\nyeah. We can remove the part that recreates the remote once we are shipping via rpm. \r\n\r\n",
+            "date_created": "1549486802",
+            "edited_on": null,
+            "editor": null,
+            "id": 552536,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
         }
     ],
     "content": "In https://github.com/ostreedev/ostree/issues/1541, a new remote config was established for the Fedora OSTree repo. I'm filing this on the Silverblue site since it likely emotionally affects Silverblue users the most, but the fix should apply to all OSTree variants. The new config looks something like this:\r\n\r\n```\r\n[remote \"fedora\"]\r\nurl=https://ostree.fedoraproject.org\r\ngpg-verify=true\r\ngpgkeypath=/etc/pki/rpm-gpg\r\ncontenturl=mirrorlist=https://ostree.fedoraproject.org/mirrorlist\r\n```\r\n\r\nWe now need to figure out a way to update user remotes. Long-term, the plan is to ship this remote config as part of an RPM (see the tracker for this in FCOS: https://github.com/coreos/fedora-coreos-tracker/issues/143).\r\n\r\nCurrent idea is to simply ship a systemd unit that fires on boot to update the remote config if it wasn't modified (which we'll have to determine carefully, since it's written by Anaconda and thus always shows up as \"Added\" in e.g. `ostree admin config-diff`). We don't want to touch remote configs that don't point to Fedora's repos.",
@@ -75,7 +94,7 @@
     "date_created": "1549471586",
     "depends": [],
     "id": 69,
-    "last_updated": "1549480462",
+    "last_updated": "1549486802",
     "milestone": null,
     "priority": null,
     "private": false,
