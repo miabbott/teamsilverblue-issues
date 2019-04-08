@@ -1,0 +1,28 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "closed_by": null,
+    "comments": [],
+    "content": "It will be nice to switch to fedora-release-silverblue package since it provides Silverblue specific information in os-release . This makes easier to identify whether running system is SIlverblue or not\r\n\r\nos-release content from F30 fedora-release-silverblue package:\r\n```\r\nNAME=Fedora\r\nVERSION=\"30 (Silverblue)\"\r\nID=fedora\r\nVERSION_ID=30\r\nVERSION_CODENAME=\"\"\r\nPLATFORM_ID=\"platform:f30\"\r\nPRETTY_NAME=\"Fedora 30 (Silverblue)\"\r\nANSI_COLOR=\"0;34\"\r\nLOGO=fedora-logo-icon\r\nCPE_NAME=\"cpe:/o:fedoraproject:fedora:30\"\r\nHOME_URL=\"https://fedoraproject.org/\"\r\nDOCUMENTATION_URL=\"https://docs.fedoraproject.org/en-US/fedora-silverblue/\"\r\nSUPPORT_URL=\"https://fedoraproject.org/wiki/Communicating_and_getting_help\"\r\nBUG_REPORT_URL=\"https://bugzilla.redhat.com/\"\r\nREDHAT_BUGZILLA_PRODUCT=\"Fedora\"\r\nREDHAT_BUGZILLA_PRODUCT_VERSION=30\r\nREDHAT_SUPPORT_PRODUCT=\"Fedora\"\r\nREDHAT_SUPPORT_PRODUCT_VERSION=30\r\nPRIVACY_POLICY_URL=\"https://fedoraproject.org/wiki/Legal:PrivacyPolicy\"\r\nVARIANT=\"Silverblue\"\r\nVARIANT_ID=silverblue\r\n```\r\n\r\nNote that there are some additional files provided by fedora-release-workstation ( `usr/lib/systemd/system-preset/80-workstation.preset` , `/usr/share/glib-2.0/schemas/org.gnome.shell.gschema.override` , `usr/share/polkit-1/rules.d/org.projectatomic.rpmostree1.rules`  ) which are not part of fedora-release-silverblue . We may need to patch [fedora-release](https://src.fedoraproject.org/rpms/fedora-release) to include missing files in fedora-release-silverblue depending upon what Silverblue system requirement is",
+    "custom_fields": [],
+    "date_created": "1554736615",
+    "depends": [],
+    "id": 70,
+    "last_updated": "1554736615",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Switch from fedora-release-workstation to fedora-release-silverblue package",
+    "user": {
+        "default_email": "ksinny@gmail.com",
+        "emails": [
+            "ksinny@gmail.com"
+        ],
+        "fullname": "Sinny Kumari",
+        "name": "sinnykumari"
+    }
+}
