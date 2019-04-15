@@ -1,0 +1,28 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "closed_by": null,
+    "comments": [],
+    "content": "I like to know the use of option \"Language Support\" presented in anaconda. If we use the same for Feodra 30 netinstall, I can get additional packages installed but I think with Silverblue installation we cannot get additional packages.",
+    "custom_fields": [],
+    "date_created": "1555313248",
+    "depends": [],
+    "id": 71,
+    "last_updated": "1555313248",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "What is use of \"Language Support\" option in Anaconda?",
+    "user": {
+        "default_email": "pnemade@redhat.com",
+        "emails": [
+            "pnemade@redhat.com"
+        ],
+        "fullname": "Parag Nemade",
+        "name": "pnemade"
+    }
+}
