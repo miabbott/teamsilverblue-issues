@@ -1,0 +1,28 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "closed_by": null,
+    "comments": [],
+    "content": "Both could be useful for an immutable distribution",
+    "custom_fields": [],
+    "date_created": "1556563887",
+    "depends": [],
+    "id": 72,
+    "last_updated": "1556563887",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Are there any means to use /nix or /snap ?",
+    "user": {
+        "default_email": "abvit89@gmail.com",
+        "emails": [
+            "abvit89@gmail.com"
+        ],
+        "fullname": "pwtail",
+        "name": "pwtail"
+    }
+}
