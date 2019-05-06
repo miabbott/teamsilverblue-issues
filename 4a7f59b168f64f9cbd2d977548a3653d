@@ -4,13 +4,70 @@
     "close_status": null,
     "closed_at": null,
     "closed_by": null,
-    "comments": [],
+    "comments": [
+        {
+            "comment": "Silverblue ships will all languages right now. Anaconda knows how to read the supported ones from the OSTree, so it should only be presenting locales which are actually present. Is that not what you are observing?",
+            "date_created": "1555532997",
+            "edited_on": null,
+            "editor": null,
+            "id": 566537,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "jlebon@redhat.com",
+                "emails": [
+                    "jlebon@redhat.com",
+                    "jonathan@jlebon.com"
+                ],
+                "fullname": "Jonathan Lebon",
+                "name": "jlebon"
+            }
+        },
+        {
+            "comment": "sorry I missed your reply.\r\n\r\nI have been using \"Language Support\" to get respective `langpacks-<langcode>` packages installed during anaconda installation. This currently works fine if we install Fedora Workstation using netinstall method which also offers \"Language Support\" but same is not available on Live iso, hence not possible to get langpacks auto-installed. I guess then same for OSTree here. Its not coming with pre-packaged `langpacks-<langcode>` meta-package?",
+            "date_created": "1556034106",
+            "edited_on": null,
+            "editor": null,
+            "id": 567046,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "pnemade@redhat.com",
+                "emails": [
+                    "pnemade@redhat.com"
+                ],
+                "fullname": "Parag Nemade",
+                "name": "pnemade"
+            }
+        },
+        {
+            "comment": "@pnemade - I don't know if this answers your question but in F29 Silverblue this is what I see in the base ostree:\r\n\r\n```\r\n[dustymabe@hattop ~]$ rpm-ostree db list 9d45a122c91deb47cb7b0a35aa8434170bb3720cb0a32cb4690828b4dbb8c1dc | grep langpack\r\n evolution-data-server-langpacks-3.30.5-2.fc29.noarch\r\n glibc-all-langpacks-2.28-27.fc29.x86_64\r\n\r\n```",
+            "date_created": "1556741549",
+            "edited_on": null,
+            "editor": null,
+            "id": 568453,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "dusty@dustymabe.com",
+                "emails": [
+                    "dusty@dustymabe.com",
+                    "dustymabe@redhat.com"
+                ],
+                "fullname": "Dusty Mabe",
+                "name": "dustymabe"
+            }
+        }
+    ],
     "content": "I like to know the use of option \"Language Support\" presented in anaconda. If we use the same for Feodra 30 netinstall, I can get additional packages installed but I think with Silverblue installation we cannot get additional packages.",
     "custom_fields": [],
     "date_created": "1555313248",
     "depends": [],
     "id": 71,
-    "last_updated": "1555313248",
+    "last_updated": "1556741549",
     "milestone": null,
     "priority": null,
     "private": false,
