@@ -1,0 +1,28 @@
+{
+    "assignee": null,
+    "blocks": [],
+    "close_status": null,
+    "closed_at": null,
+    "closed_by": null,
+    "comments": [],
+    "content": "Apropos is not mapped upon clean install\r\n\r\nApropos is not defined out of the box. Any search returns:\r\n\r\n\"x: nothing appropriate.\"",
+    "custom_fields": [],
+    "date_created": "1556728854",
+    "depends": [],
+    "id": 73,
+    "last_updated": "1556728854",
+    "milestone": null,
+    "priority": null,
+    "private": false,
+    "status": "Open",
+    "tags": [],
+    "title": "Apropos is not mapped upon clean install",
+    "user": {
+        "default_email": "barn.lewis@protonmail.com",
+        "emails": [
+            "barn.lewis@protonmail.com"
+        ],
+        "fullname": "barnabas lewis",
+        "name": "barn"
+    }
+}
