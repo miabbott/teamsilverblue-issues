@@ -42,6 +42,24 @@
                 "fullname": "Jonathan Lebon",
                 "name": "jlebon"
             }
+        },
+        {
+            "comment": "ok, thanks",
+            "date_created": "1558550210",
+            "edited_on": null,
+            "editor": null,
+            "id": 571713,
+            "notification": false,
+            "parent": null,
+            "reactions": {},
+            "user": {
+                "default_email": "15116@protonmail.com",
+                "emails": [
+                    "15116@protonmail.com"
+                ],
+                "fullname": "Marco Cavanna",
+                "name": "xeboc"
+            }
         }
     ],
     "content": "Can someone explain me how can I add my user to wireshark group?\r\nusermod -a -G is not working, if I add manually the wireshark group to /etc/group, like this:\r\n\r\n    echo -E wireshark:x:967: >> /etc/group\r\n\r\nthen the usermod command works and it adds my user to the wireshark group, everything seems working fine until i try to install a new pkg or upgrade the system, the rpm-ostree commands return the error:\r\n\r\n    While applying overrides for pkg wireshark-cli: Could not find group 'wireshark' in group file\r\n\r\n(rmp-ostree returns to work properly if a I remove  the wireshark group from /etc/group)\r\n\r\nI guess I'm missing something, it is the first time I'm using a distro with ostree",
